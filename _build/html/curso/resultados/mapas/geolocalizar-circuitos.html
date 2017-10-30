@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Geolocalizar Circuitos fuera de la capital. &mdash; documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../../search.html"/>
+    <link rel="top" title="documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - " href="../../../index.html"/>
+        <link rel="up" title="Mapas de los resultados" href="index.html"/>
+        <link rel="next" title="Procesar CSV para Geolocalizar" href="geolocalizar-csv.html"/>
+        <link rel="prev" title="Formatos de datos espaciales" href="formatos-geo.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datos-ministerio-del-interior/index.html">Datos que publica el Ministerio del Interior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analisis-y-graficos/index.html">Analizando resultados electorales</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Mapas de los resultados</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="formatos-geo.html">Formatos de datos espaciales</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-csv.html">Procesar CSV para Geolocalizar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poligonos.html">Poligonos de Secciones y Circuitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Mapas de los resultados</a> &raquo;</li>
+      
+    <li>Geolocalizar Circuitos fuera de la capital.</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/curso/resultados/mapas/geolocalizar-circuitos.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="geolocalizar-circuitos-fuera-de-la-capital">
+<h1>Geolocalizar Circuitos fuera de la capital.<a class="headerlink" href="#geolocalizar-circuitos-fuera-de-la-capital" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Fuera de la capital la realidad de Córdoba es compleja en cuanto a
+polígonos de límites de ciudades. Más del 80% del territorio provincia
+no pertenece a ningún municipio y los territorios que si pertenecen se
+encuentran en disputas actualmente.</p>
+<p><a class="reference external" href="https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/">Ver más
+info</a>
+<img alt="municipios-de-cordoba" src="https://andresvazquez.com.ar/blog/wp-content/uploads/2014/05/Selection_034.png" /></p>
+<p>La forma posibles es el uso de <em>localidades censales</em> descriptos en <a class="reference external" href="poligonos.md">el
+capítulo de recursos greográficos</a>.</p>
+<div class="line-block">
+<div class="line">Antes de eso tomamos nuesra lista de Circuitos trabajados en base a la
+carta marina 2015.</div>
+<div class="line"><a class="reference external" href="../recursos/circuitos-y-electores-2007-2017.csv">Circuitos y electores 2007 -
+2017</a>.</div>
+<div class="line">Este recurso incluye a todos los circuitos vía carta marina a
+excepción de la Capital que fue unificada como una única ciudad.</div>
+</div>
+<div class="figure" id="id1">
+<img alt="muestra-2007-2017" src="../../../_images/muestra-2007-2017.png" />
+<p class="caption"><span class="caption-text">muestra-2007-2017</span></p>
+</div>
+<p><a class="reference external" href="../recursos/Capa-provincial-Cordoba-Localidades-Censales-2010-SHP.zip">Localidades censales en
+SHP</a>.</p>
+<div class="line-block">
+<div class="line">Añadir como capa vectorial con QGis.</div>
+<div class="line"><img alt="anadir-capa-vectorial" src="../../../_images/anadir-capa-vectorial.png" /></div>
+</div>
+<div class="figure" id="id2">
+<img alt="qgis-abierto" src="../../../_images/qgis-abierto.png" />
+<p class="caption"><span class="caption-text">qgis-abierto</span></p>
+</div>
+<div class="line-block">
+<div class="line">Probar si la proyección esta bien poniendo un mapa real de fondo.</div>
+<div class="line"><img alt="qgis-con-gmaps" src="../../../_images/qgis-con-gmaps.png" /></div>
+</div>
+<p>Exportar a CSV con datos espaciales.</p>
+<div class="figure" id="id3">
+<img alt="qgis-exportando-01" src="../../../_images/qgis-exportando-01.png" />
+<p class="caption"><span class="caption-text">qgis-exportando-01</span></p>
+</div>
+<div class="figure" id="id4">
+<img alt="qgis-exportando-02" src="../../../_images/qgis-exportando-02.png" />
+<p class="caption"><span class="caption-text">qgis-exportando-02</span></p>
+</div>
+<div class="line-block">
+<div class="line">Proyección <em>Posgar 94 EPSG:22184</em> se usa muchas veces en datos
+producidos en Argentina. En este caso es la del SHP de origen.</div>
+<div class="line">Proyección <em>Pseido Mercator EPSG:4326</em>, recomendada para exportar
+siempre, es la que usamos para exportar.</div>
+</div>
+<p><a class="reference external" href="../recursos/localidades-censales-2010.csv">Localidades censales en CSV desde el
+SHP</a>.</p>
+<p>Ahora tenemos un CSV con campos espaciales junto a los datos de cada
+localidad censal usada en 2010 con motivo del censo. Son 522 registros
+(mas que las localidades reales de la Provincia de Córdoba).</p>
+<p>Es necesario conectarlas de modo de contar con una lista unificada de
+datos útiles (electores o diferencias entre ellos) y la geolocalización
+de cada uno. Esto es posible con un proceso complejo que sería mucho más
+simples <strong>si fuera norma usar identificadores únicos para todos los
+datos liberados por los gobiernos</strong>. Esto no sucede y tenemos que
+conectar datos por textos escritos de diferentes formas.</p>
+<p>Una forma de hacerlo sin desarrollar software o usar algoritmos para
+esto es tomar ambas listas y ordenar cada una por <em>departamento/sección</em>
+y en segundo lugar por nombre de la <em>ciudad/circuito</em>. Esto es mejor que
+hacerlo simplemente por circuito ya que hay nombres similares que se
+repiten.</p>
+<p>Una vez ordenadas ambas listas se pegan ambas en una nueva planilla en
+columnas consecutivas.</p>
+<p>A continuación deberán acomodarse las filas (el proceso tiene su
+complejidad pero no debería llevar mucho tiempo).</p>
+<div class="figure" id="id5">
+<img alt="csv-mezclados" src="../../../_images/csv-mezclados.png" />
+<p class="caption"><span class="caption-text">csv-mezclados</span></p>
+</div>
+<p><a class="reference external" href="../recursos/circuitos-geolocalizados-segun-localidades-censales-2010.csv">CSV
+terminado</a>.</p>
+<p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1fYJhzRYtZ_U3tj1tY9IspOQ24HGTzCoad1NfWj1Eb7I">Todo junto en Google
+Drive</a>.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="geolocalizar-csv.html" class="btn btn-neutral float-right" title="Procesar CSV para Geolocalizar" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="formatos-geo.html" class="btn btn-neutral" title="Formatos de datos espaciales" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

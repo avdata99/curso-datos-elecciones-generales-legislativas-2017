@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Conectar datos de planillas distintas &mdash; documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../../search.html"/>
+    <link rel="top" title="documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - " href="../../../index.html"/>
+        <link rel="up" title="Analizando resultados electorales" href="index.html"/>
+        <link rel="next" title="D’Hont" href="dhont.html"/>
+        <link rel="prev" title="Agrupar datos" href="agrupar-datos.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datos-ministerio-del-interior/index.html">Datos que publica el Ministerio del Interior</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Analizando resultados electorales</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Conectar datos de planillas distintas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dhont.html">D&#8217;Hont</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicar-tablas-y-graficos.html">Publicar tablas y gráficos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualizaciones-legislativas.html">Visualizaciones legislativas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mapas/index.html">Mapas de los resultados</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Analizando resultados electorales</a> &raquo;</li>
+      
+    <li>Conectar datos de planillas distintas</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/curso/resultados/analisis-y-graficos/conectar-datos.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="conectar-datos-de-planillas-distintas">
+<h1>Conectar datos de planillas distintas<a class="headerlink" href="#conectar-datos-de-planillas-distintas" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El análisis se vuelve interesantes cuando los acumulados por circuitos
+de diferentes elecciones (vía cartas marinas) pueden reunirse en un solo
+documento.</p>
+<p>En este caso estamos trabajando con la carta marina 2015 y tenemos a
+mano, en formato reutilizable la carta marina 2007 en excel (aparece
+buscando <em>&#8220;carta marina filetype:xls&#8221;</em>).</p>
+<p>Podemos colocar nuestras <a class="reference external" href="agrupar-datos.md">planillas de electores por
+circuitos</a> en una hoja de nuestra planilla y la de
+2007 en otra hoja.</p>
+<p>A ambas hojas las ordenamos por códigos de sección y códigos de circuito
+(de modo que queden ordenadas por circuito dentro de cada <em>sección</em>).</p>
+<p><strong>La existencia de códigos únicos de Circuitos y Secciones nos ayana el
+camino</strong>. Es importante exigir este tipo de identificadores para los
+gobiernos que liberan datos.</p>
+<p>De esta forma ambas planillas estaran muy similares, cercanas a la
+posibilidad de unirse.</p>
+<p>Una forma simple de hacerlo es copiar una de las dos planillas completas
+junto a la otra en columnas libres de modo que conformen una sola
+planilla.</p>
+<p>Conviene a continuación ordenar las columnas con los nombres de los
+códigos o nombres de circuitos de modo que queden contiguas.</p>
+<p>La comparación a continuación es manual y simple. Si existieran nuevos
+circuitos simplemente deberán insertarse celdas para que la planilla
+quede <em>alineada</em>.</p>
+<div class="figure" id="id1">
+<img alt="tablas-unidas" src="../../../_images/tablas-unidas.png" />
+<p class="caption"><span class="caption-text">tablas-unidas</span></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dhont.html" class="btn btn-neutral float-right" title="D’Hont" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="agrupar-datos.html" class="btn btn-neutral" title="Agrupar datos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

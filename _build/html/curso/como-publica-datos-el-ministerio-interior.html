@@ -1,0 +1,547 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Como publica los datos el Ministerio del Interior &mdash; documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../search.html"/>
+    <link rel="top" title="documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - " href="../index.html"/>
+        <link rel="next" title="Analizando los datos del ministerio del interior" href="analizar-datos-ministerio-interior.html"/>
+        <link rel="prev" title="Agrupar datos" href="agrupar-datos.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conectar-datos.html">Conectar datos de planillas distintas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Como publica los datos el Ministerio del Interior</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#archivos-incluidos">Archivos incluidos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tipos-de-eleccion">Tipos de elección</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ambitos-electorales">Ámbitos electorales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#totales">Totales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#totales-por-listas">Totales por listas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#listas-participantes">Listas participantes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#trabajo-terminado-abierto">Trabajo terminado abierto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="carta-marina-Cordoba.html">Procesar la carta marina Córdoba 2015</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dhont.html">D&#8217;Hont</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formatos-geo.html">Formatos de datos espaciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geolocalizar-csv.html">Procesar CSV para Geolocalizar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="poligonos.html">Poligonos de Secciones y Circuitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publicar-tablas-y-graficos.html">Publicar tablas y gráficos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualizaciones-legislativas.html">Visualizaciones legislativas</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Como publica los datos el Ministerio del Interior</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/curso/como-publica-datos-el-ministerio-interior.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="como-publica-los-datos-el-ministerio-del-interior">
+<h1>Como publica los datos el Ministerio del Interior<a class="headerlink" href="#como-publica-los-datos-el-ministerio-del-interior" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Para 2017 (al igual que 2015) los interesados pueden recibir datos de la
+elección durante el día de la misma y posteriormente. Estos datos se
+entregan en formatos reutilizables.</p>
+<p>Si desean formar parte del grupo que recibe esta información técnica es
+necesario manifestarlo por email a Yanina Sandra Martinez
+<a class="reference external" href="mailto:ymartinez&#37;&#52;&#48;mininterior&#46;gob&#46;ar">ymartinez<span>&#64;</span>mininterior<span>&#46;</span>gob<span>&#46;</span>ar</a>. Esta es la forma que el Ministerio del
+Interior provee esta información.</p>
+<p>Para las elecciones 2017 todos estos datos se compartieron
+<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md">aquí</a>.</p>
+<div class="figure" id="id1">
+<img alt="repo-mininterior" src="../_images/repo-mininterior.png" />
+<p class="caption"><span class="caption-text">repo-mininterior</span></p>
+</div>
+<p>El documento indica cuales y en que formatos están los documentos. El
+proceso a continuación es el uso de estos datos para construir resumenes
+y visualizaciones útiles.</p>
+<p>Para procecar estos daton abrimos una planilla de cálculo nueva de
+Google Drive.</p>
+<div class="section" id="archivos-incluidos">
+<h2>Archivos incluidos<a class="headerlink" href="#archivos-incluidos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="tipos-de-eleccion">
+<h3>Tipos de elección<a class="headerlink" href="#tipos-de-eleccion" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="line-block">
+<div class="line">El primer dato es la lista de códigos para los cargos electivos. No
+esta en un CSV, es un texto suelto.</div>
+<div class="line">Copiamos el texto y lo pegamos en la planilla.</div>
+</div>
+<div class="figure" id="id2">
+<img alt="dato-texto-01-indra" src="../_images/dato-texto-01-indra.png" />
+<p class="caption"><span class="caption-text">dato-texto-01-indra</span></p>
+</div>
+<p>Luego seleccionamos las celdas con texto y usamos la funcionalidad de
+<em>Dividir texto en columnas</em> (en el menú <em>datos</em>) con el separador &#8221; = &#8221;
+(espacio, signo igual, espacio). Además le agregamos encabezado a las
+columnas.</p>
+<div class="figure" id="id3">
+<img alt="dato-texto-02-indra" src="../_images/dato-texto-02-indra.png" />
+<p class="caption"><span class="caption-text">dato-texto-02-indra</span></p>
+</div>
+<p><strong>Nota para todos los datos:</strong> El código 999 se refiere a totales
+provinciales.</p>
+</div>
+<div class="section" id="ambitos-electorales">
+<h3>Ámbitos electorales<a class="headerlink" href="#ambitos-electorales" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>El alcance máximo de estos datos son las secciones electorales (en
+Córdoba, Departamentos). La lista de estos departamentos esta en el
+archivo
+<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/generales_00/ambitos_00.csv">*ambitos_00.csv*</a>.</p>
+<p>Tip: Este archivo en este caso está en la plataforma <em>GitHub</em> (la más
+usadas por los programadores para compartir código y datos). Para poder
+ver esto en su formato real y descargarlo o copiarlo le agregamos
+<em>?raw=true</em> al final de link en el navegador.</p>
+<p>Tip II: Notó que separa los campos con <em>punto y coma</em>? Es <em>Excel
+Friendly</em>.</p>
+<div class="figure" id="id4">
+<img alt="raw-true" src="../_images/raw-true.png" />
+<p class="caption"><span class="caption-text">raw-true</span></p>
+</div>
+<p>Allí el texto se podrá mostrar tal cual es. Lo copiamos y pegamos en una
+<strong>hoja nueva</strong> de nuestra planilla de drive. Será necesario nuevamente
+<em>dividir el texto en columnas</em>. Esta vez el separador es el punto y
+coma.</p>
+<div class="line-block">
+<div class="line">Hay que agregar los nombres de las columnas: Provincia, Sección y
+Nombre Sección.</div>
+<div class="line">Aquí uno puede <em>adivinar</em> que Córdoba es la número 4, este dato nos va
+a servir para los datos a continuación.</div>
+</div>
+</div>
+<div class="section" id="totales">
+<h3>Totales<a class="headerlink" href="#totales" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="line-block">
+<div class="line">Hay un archivo de totales por cada provincia. Con <em>totales</em> se refiere
+a datos generales de cada departamento, a los votos generales
+(positivos, válidos, en blanco, etc), no a los votos que recibió cada
+lista.</div>
+<div class="line">En este caso, el de Córdoba es
+<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totales_04.csv">*totales_04.csv*</a>.</div>
+</div>
+<p>Al igual que el anterior agregamos <em>?raw=true</em> al final para poder
+llevarlo a una nueva hoja en la planilla de Google Drive.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">03254</span><span class="p">;</span><span class="mi">00790</span><span class="p">;</span><span class="mi">02428</span><span class="p">;</span><span class="mi">01109229</span><span class="p">;</span><span class="mi">00228008</span><span class="p">;</span><span class="mi">02056</span><span class="p">;</span><span class="mi">08472</span><span class="p">;</span><span class="mi">00269120</span><span class="p">;</span><span class="mi">02426</span><span class="p">;</span><span class="mi">00197652</span><span class="p">;</span><span class="mi">08669</span><span class="p">;</span><span class="mi">00172862</span><span class="p">;</span><span class="mi">07581</span><span class="p">;</span><span class="mi">00024790</span><span class="p">;</span><span class="mi">01087</span><span class="p">;</span><span class="mi">00011052</span><span class="p">;</span><span class="mi">00485</span><span class="p">;</span><span class="mi">00019304</span><span class="p">;</span><span class="mi">00847</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">15</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">002</span><span class="p">;</span><span class="mi">00163</span><span class="p">;</span><span class="mi">00113</span><span class="p">;</span><span class="mi">06933</span><span class="p">;</span><span class="mi">00051517</span><span class="p">;</span><span class="mi">00029735</span><span class="p">;</span><span class="mi">05772</span><span class="p">;</span><span class="mi">08481</span><span class="p">;</span><span class="mi">00035062</span><span class="p">;</span><span class="mi">06806</span><span class="p">;</span><span class="mi">00025773</span><span class="p">;</span><span class="mi">08668</span><span class="p">;</span><span class="mi">00022539</span><span class="p">;</span><span class="mi">07580</span><span class="p">;</span><span class="mi">00003234</span><span class="p">;</span><span class="mi">01088</span><span class="p">;</span><span class="mi">00001438</span><span class="p">;</span><span class="mi">00484</span><span class="p">;</span><span class="mi">00002524</span><span class="p">;</span><span class="mi">00849</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">15</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">003</span><span class="p">;</span><span class="mi">00653</span><span class="p">;</span><span class="mi">00289</span><span class="p">;</span><span class="mi">04426</span><span class="p">;</span><span class="mi">00222846</span><span class="p">;</span><span class="mi">00083426</span><span class="p">;</span><span class="mi">03744</span><span class="p">;</span><span class="mi">08491</span><span class="p">;</span><span class="mi">00098250</span><span class="p">;</span><span class="mi">04409</span><span class="p">;</span><span class="mi">00072380</span><span class="p">;</span><span class="mi">08676</span><span class="p">;</span><span class="mi">00063305</span><span class="p">;</span><span class="mi">07588</span><span class="p">;</span><span class="mi">00009075</span><span class="p">;</span><span class="mi">01088</span><span class="p">;</span><span class="mi">00004044</span><span class="p">;</span><span class="mi">00485</span><span class="p">;</span><span class="mi">00007002</span><span class="p">;</span><span class="mi">00839</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">004</span><span class="p">;</span><span class="mi">00159</span><span class="p">;</span><span class="mi">00101</span><span class="p">;</span><span class="mi">06352</span><span class="p">;</span><span class="mi">00049037</span><span class="p">;</span><span class="mi">00026358</span><span class="p">;</span><span class="mi">05375</span><span class="p">;</span><span class="mi">08419</span><span class="p">;</span><span class="mi">00031309</span><span class="p">;</span><span class="mi">06385</span><span class="p">;</span><span class="mi">00022837</span><span class="p">;</span><span class="mi">08664</span><span class="p">;</span><span class="mi">00019974</span><span class="p">;</span><span class="mi">07578</span><span class="p">;</span><span class="mi">00002863</span><span class="p">;</span><span class="mi">01086</span><span class="p">;</span><span class="mi">00001270</span><span class="p">;</span><span class="mi">00482</span><span class="p">;</span><span class="mi">00002251</span><span class="p">;</span><span class="mi">00854</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">20</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">005</span><span class="p">;</span><span class="mi">00090</span><span class="p">;</span><span class="mi">00072</span><span class="p">;</span><span class="mi">08000</span><span class="p">;</span><span class="mi">00028384</span><span class="p">;</span><span class="mi">00019032</span><span class="p">;</span><span class="mi">06705</span><span class="p">;</span><span class="mi">08454</span><span class="p">;</span><span class="mi">00022512</span><span class="p">;</span><span class="mi">07931</span><span class="p">;</span><span class="mi">00016502</span><span class="p">;</span><span class="mi">08671</span><span class="p">;</span><span class="mi">00014433</span><span class="p">;</span><span class="mi">07584</span><span class="p">;</span><span class="mi">00002069</span><span class="p">;</span><span class="mi">01087</span><span class="p">;</span><span class="mi">00000920</span><span class="p">;</span><span class="mi">00483</span><span class="p">;</span><span class="mi">00001610</span><span class="p">;</span><span class="mi">00846</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">13</span><span class="p">;</span><span class="mi">45</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Según el documento se indica que los campos:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="80%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DESCRIPCIÓN</th>
+<th class="head">LONGITUD</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Código de elección</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Código de provincia</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Código de comuna</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>Total de mesas</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Mesas escrutadas</td>
+<td>5</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de mesas escrutadas</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Electores</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Total de votantes</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Participación sobre padrón</td>
+<td>5</td>
+</tr>
+<tr class="row-odd"><td>Participación sobre escrutado</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Electores escrutados</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de electores escrutados</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Votos válidos</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de votos válidos</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Votos positivos</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de votos positivos</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Votos en blanco</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de votos en blanco</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Votos nulos</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de votos nulos</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Votos recurridos, impugnados y comando</td>
+<td>8</td>
+</tr>
+<tr class="row-odd"><td>Porcentaje de votos recurridos e impugnados</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>Día</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>Hora</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Minuto</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>La <em>Longitud</em> es la cantidad de caractares (letras) que el campo de la
+tabla podrá tener. Es un método que usaban nuestros <strong>ancestros</strong> para
+optimizar el espacio en disco de los datos.</p>
+<p>Tip: Una forma fácil de usar estos datos como titulos de las columnas es
+copiar la tabla, pegarla Google Drive, volver a copiarla y hacer el
+pegado especial que se llama <em>Pegado con transposición de datos</em>. Esto
+transforma filas en columnas.</p>
+<p>Debería verse así:</p>
+<div class="figure" id="id5">
+<img alt="totales-04-indra" src="../_images/totales-04-indra.png" />
+<p class="caption"><span class="caption-text">totales-04-indra</span></p>
+</div>
+</div>
+<div class="section" id="totales-por-listas">
+<h3>Totales por listas<a class="headerlink" href="#totales-por-listas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Esta lista si incluye los totales de cada lista junto a las agrupaciones
+que compiten en internas. A los fines de conservar todos estos datos en
+una sola tabla simple se agregan al final tres columnas todas las veces
+que sean necesarias para mostrar las agrupaciones internas que compiten
+dentro de cada lista.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DESCRIPCIÓN</th>
+<th class="head">LONGITUD</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Código de
+elección</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Código de
+provincia</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Código de
+sección/
+comuna</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>Día</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Hora</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>Minuto</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>Código de la
+agrupación
+política</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>Votos a la
+agrupación
+política</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Porcentaje de
+votos a la
+agrupación
+política</td>
+<td>5</td>
+</tr>
+<tr class="row-odd"><td><strong>Tabla de 10
+elementos,
+correspondien
+tes
+a las listas
+propuestas
+por cada
+partido</strong></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Código de
+lista</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>Votos al
+lista</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Porcentaje de
+votos a la
+lista</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Haciendo el mismo proceso con el archivo de <a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totaleslistas_04.csv">*totales por listas* para
+Córdoba</a>
+se debe llegar a esta lista:</p>
+<div class="figure" id="id6">
+<img alt="totales-listas-04-indra" src="../_images/totales-listas-04-indra.png" />
+<p class="caption"><span class="caption-text">totales-listas-04-indra</span></p>
+</div>
+</div>
+<div class="section" id="listas-participantes">
+<h3>Listas participantes<a class="headerlink" href="#listas-participantes" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="line-block">
+<div class="line">Así como la de ámbitos se liberan las listas de todas las agrupaciones
+participantes.</div>
+<div class="line">Este archivo puede usarse como dato accesorio para ponerle nombre a
+los datos anteriores.</div>
+</div>
+<p>Al igual que los demas datos es necesario descargar <a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/generales_00/listas_00.csv">este
+archivo</a>
+y pasarlo a Google Drive.</p>
+<div class="line-block">
+<div class="line">Según la documentación, las tres columnas representan <em>Codigo, Siglas
+y Denominación</em>.</div>
+<div class="line">Debe quedar así:</div>
+</div>
+<div class="figure" id="id7">
+<img alt="listas" src="../_images/listas.png" />
+<p class="caption"><span class="caption-text">listas</span></p>
+</div>
+<p>Cómo se ve todavía el dato no está erminado y son datos de prueba.</p>
+<div class="section" id="trabajo-terminado-abierto">
+<h4>Trabajo terminado abierto<a class="headerlink" href="#trabajo-terminado-abierto" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Finalmente todo este proceso <a class="reference external" href="https://docs.google.com/spreadsheets/d/1k8fHbUGyQo5NzW46C2RD1N_Jk9QRcUJHRf8Dh_gP5Do/edit?usp=sharing">esta libre y disponible en Google
+Drive</a>.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="analizar-datos-ministerio-interior.html">Analizando los datos del ministerio del interior</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="analizar-datos-ministerio-interior.html#resultados-totales-provincia-por-lista">Resultados totales provincia por lista</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="analizar-datos-ministerio-interior.html" class="btn btn-neutral float-right" title="Analizando los datos del ministerio del interior" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="agrupar-datos.html" class="btn btn-neutral" title="Agrupar datos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

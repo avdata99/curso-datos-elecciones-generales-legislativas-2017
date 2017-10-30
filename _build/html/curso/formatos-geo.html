@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Formatos de datos espaciales &mdash; documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../search.html"/>
+    <link rel="top" title="documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - " href="../index.html"/>
+        <link rel="next" title="Geolocalizar Circuitos fuera de la capital." href="geolocalizar-circuitos.html"/>
+        <link rel="prev" title="Formatos de archivos" href="formatos-de-archivo.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conectar-datos.html">Conectar datos de planillas distintas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datos-ministerio-interior-e-Indra.html">Análisis de datos de Indra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datos-ministerio-interior-e-Indra.html#trabajo-terminado-abierto">Trabajo terminado abierto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analizar-datos-ministerio-interior-e-Indra.html">Analizando los resultados de la elección</a></li>
+<li class="toctree-l1"><a class="reference internal" href="carta-marina-Cordoba.html">Procesar la carta marina Córdoba 2015</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dhont.html">D&#8217;Hont</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Formatos de datos espaciales</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#kml">KML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wkt-para-csv">WKT (para CSV)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shp">SHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geojson">GeoJSON</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geolocalizar-csv.html">Procesar CSV para Geolocalizar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="poligonos.html">Poligonos de Secciones y Circuitos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publicar-tablas-y-graficos.html">Publicar tablas y gráficos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualizaciones-legislativas.html">Visualizaciones legislativas</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Formatos de datos espaciales</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/curso/formatos-geo.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="formatos-de-datos-espaciales">
+<h1>Formatos de datos espaciales<a class="headerlink" href="#formatos-de-datos-espaciales" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="line-block">
+<div class="line">Llamamos datos <em>espaciales</em> a aquellos que refieren a la ubicación en
+un espacio de referencia.</div>
+<div class="line">Decimos que son datos <em>georreferenciados</em> cuando esa referencia se
+establece sobre la superficie terrestre. <a class="reference external" href="https://es.wikipedia.org/wiki/Base_de_datos_espacial">Ver más en
+Wikipedia</a>.</div>
+</div>
+<p>Para representar datos georeferrenciados (en un plano de dos
+dimensiones) usamos tres tipos de objetos: - <strong>Puntos</strong>: Incluye dos
+valores que representan la latitud y la longitud. No existe una forma
+única de representar estos valores. Hay cientos de formas de representar
+estos valores, estos se llaman <em>Sistemas de proyección cartográfica</em>.
+Tengamos en cuenta que nuestro planeta es una espera y para representar
+una ubicación solo con dos puntos (dimensiones) necesitamos <em>proyectar</em>
+esa esfera en un plano de dos dimensiones. - <strong>Lineas</strong>: Un conjunto de
+<em>puntos</em> conectados, por ejemplo el recorrido de una linea de transporte
+público. - <strong>Polígonos</strong>: Igual que una línea pero se entiende que el
+último se conecta al primero formando un figura cerrada. Ejemplo:
+poligono de los límites de una ciudad o estado.</p>
+<p>Con estos tres alcanza para la gran mayoría de los casos aunque hay
+casos complejos y especiales que no exceden el alcance de este apunte.</p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cartogr%C3%A1fica">Ver más sobre proyección
+cartográfica</a>.</p>
+<p>Los formatos de interés para un periodista de datos o usuario de datos
+espaciales son (no en orden de importancia):</p>
+<div class="section" id="kml">
+<h2>KML<a class="headerlink" href="#kml" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="line-block">
+<div class="line">Es un archivo de texto que usa el marcado XML. Incluye la descripcion
+de objetos espaciales con coordendas. Puede enriquecese incluyendo
+estilos gráficos (ancho y color de bordes, rellenos, íconos, etc). Es
+usado por Google MyMaps y muchos otros para exportar.</div>
+<div class="line"><a class="reference external" href="https://es.wikipedia.org/wiki/KML">Ver más en Wikipedia</a>.</div>
+</div>
+<div class="figure" id="id1">
+<img alt="kml-sample" src="curso/../img/kml-sample.png" />
+<p class="caption"><span class="caption-text">kml-sample</span></p>
+</div>
+</div>
+<div class="section" id="wkt-para-csv">
+<h2>WKT (para CSV)<a class="headerlink" href="#wkt-para-csv" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="line-block">
+<div class="line">Es una forma de texto muy simple para describir objetos espaciales. Es
+útil para combinar como columna extra en CSV. Es compatible con muchas
+herramientas de mapeo.</div>
+<div class="line"><a class="reference external" href="https://es.wikipedia.org/wiki/Well_Known_Text">Ver más en
+Wikipedia</a>
+<img alt="CSV-WKT-sample" src="curso/../img/CSV-WKT-sample.png" /></div>
+</div>
+</div>
+<div class="section" id="shp">
+<h2>SHP<a class="headerlink" href="#shp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Es un formato de archivo propietario de datos espaciales desarrollado
+por la compañía ESRI. En realidad son múltiples archivos (uno para las
+corrdenadas, otros para los datos y otro para los índices) que suelen
+incluirse en uno final comprimido. Es usado en los entornos más técnicos
+de cartógrafos y afines. hay mucho material interesante en este formato.
+Se puede pasar a formatos más <em>amigables</em> con productos como QGis u
+Ogr2ogr.</p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/Shapefile">Ver más en Wikipedia</a></p>
+</div>
+<div class="section" id="geojson">
+<h2>GeoJSON<a class="headerlink" href="#geojson" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="line-block">
+<div class="line">Es un archivo de texto que cumple con las normas JSON pero que incluye
+datos espaciales.</div>
+<div class="line"><a class="reference external" href="http://geojson.org/">Ver más sobre GeoJSON</a>.</div>
+<div class="line"><img alt="json-sample" src="curso/../img/json-sample.png" /></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="geolocalizar-circuitos.html" class="btn btn-neutral float-right" title="Geolocalizar Circuitos fuera de la capital." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="formatos-de-archivo.html" class="btn btn-neutral" title="Formatos de archivos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

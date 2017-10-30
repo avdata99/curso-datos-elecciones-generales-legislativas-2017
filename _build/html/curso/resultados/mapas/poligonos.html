@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Poligonos de Secciones y Circuitos &mdash; documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../../search.html"/>
+    <link rel="top" title="documentación de Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba - " href="../../../index.html"/>
+        <link rel="up" title="Mapas de los resultados" href="index.html"/>
+        <link rel="next" title="Recursos y ejemplos" href="recursos-externos-y-ejemplos.html"/>
+        <link rel="prev" title="Procesar CSV para Geolocalizar" href="geolocalizar-csv.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datos-ministerio-del-interior/index.html">Datos que publica el Ministerio del Interior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analisis-y-graficos/index.html">Analizando resultados electorales</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Mapas de los resultados</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="formatos-geo.html">Formatos de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-csv.html">Procesar CSV para Geolocalizar</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Poligonos de Secciones y Circuitos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#secciones-electorales">Secciones electorales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#circuitos-electorales">Circuitos electorales</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Mapas de los resultados</a> &raquo;</li>
+      
+    <li>Poligonos de Secciones y Circuitos</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/curso/resultados/mapas/poligonos.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="poligonos-de-secciones-y-circuitos">
+<h1>Poligonos de Secciones y Circuitos<a class="headerlink" href="#poligonos-de-secciones-y-circuitos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Para poner en mapas datos más agregados (por circuito o sección
+electoral) se requieren los <em>polígonos</em> o puntos que los representan.</p>
+<div class="section" id="secciones-electorales">
+<h2>Secciones electorales<a class="headerlink" href="#secciones-electorales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La secciones electorales (depratamentos) tienen una definición clara y
+están disponibles desde el
+<a class="reference external" href="http://estadistica.cba.gov.ar/Territorio/GeoPortal/tabid/564/language/es-AR/Default.aspx">GeoPortal</a>
+de la Provincia de Córdoba.</p>
+<div class="figure" id="id1">
+<img alt="geoportal" src="../../../_images/geoportal-home.png" />
+<p class="caption"><span class="caption-text">geoportal</span></p>
+</div>
+<p>El GeoPortal incluye muchos datos útiles, en este caso tienen <a class="reference external" href="http://estadistica.cba.gov.ar/Territorio/GeoPortal/CapasProvincia/CapasGeneralesProvincia/CapasdePol%C3%ADticayAdministraci%C3%B3nProvincia/tabid/847/language/es-AR/Default.aspx">una
+sección</a>
+que inluye (entre otros datos útiles) los <em>poligonos</em> de los
+departamentos de la Provincia.</p>
+<p>El formato usado en general por el GeoPortal es el SHP
+(<a class="reference external" href="https://es.wikipedia.org/wiki/Shapefile">*shapefile*</a>). Este
+formato es usado en ambientes técnicos y todavía no compatible con otras
+herramientas más simples de este curso.</p>
+<p>Los departamentos de Córdoba en SHP pueden descargarse desde
+<a class="reference external" href="http://estadistica.cba.gov.ar/LinkClick.aspx?fileticket=A4SgYgeHpIc%3d&amp;tabid=696&amp;language=es-AR">aquí</a>.</p>
+<div class="figure" id="id2">
+<img alt="geoportal-poligonos" src="../../../_images/geoportal-poligonos.png" />
+<p class="caption"><span class="caption-text">geoportal-poligonos</span></p>
+</div>
+<p>En el portal de Gobierno Abierto de la Ciudad de Córdoba se replica este
+datos y se agrega un mapa online y otros formatos más fáciles de
+reulizar.</p>
+<p><a class="reference external" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/datos-geograficos-y-mapas/departamentos-de-la-provincia-de-cordoba/214">Ir al
+recurso</a>.</p>
+<div class="figure" id="id3">
+<img alt="departamentos-cordoba-portal-muni" src="../../../_images/departamentos-cordoba-portal-muni.png" />
+<p class="caption"><span class="caption-text">departamentos-cordoba-portal-muni</span></p>
+</div>
+</div>
+<div class="section" id="circuitos-electorales">
+<h2>Circuitos electorales<a class="headerlink" href="#circuitos-electorales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los circuitos electorales de la provincia de Córdoba al parecer no están
+disponibles en formatos de polígonos en su totalidad.</p>
+<p>La Ciudad de Córdoba publica los polígonos de sus circuitos electorales
+(Córdoba es a la vez sección/departamento y una ciudad). Pueden verse y
+descargarse
+<a class="reference external" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/legislacion/seccionales-y-circuitos-electorales/212">aquí</a>.</p>
+<p>A diferencia de la provincia incluye un mapa online y múltiples formatos
+más simples de reutilizar por audiencias no especializadas.</p>
+<p>La realidad del resto de la provincia de Córdoba es compleja. Más del
+80% del territorio provincia no pertenece a ningún municipio y los
+territorios que si pertenecen se encuentran en disputas actualmente.</p>
+<p><a class="reference external" href="https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/">Ver más
+info</a>
+<img alt="municipios-de-cordoba" src="https://andresvazquez.com.ar/blog/wp-content/uploads/2014/05/Selection_034.png" /></p>
+<p>El recurso más aproximado que aparece son los puntos de <em>localidades
+censales</em> de 2010 que se encuentra en el mismo GeoPortal de la Provincia
+de Córdoba: <a class="reference external" href="http://estadistica.cba.gov.ar/LinkClick.aspx?fileticket=eEKeiKWrGvE%3d&amp;tabid=696&amp;language=es-AR">SHP Localidades Censales
+2010</a>.</p>
+<p>El problema con este recurso es que las <em>localidades censales</em> son más
+parecidas a una lista de asentamientos humanos que no diferencia las
+delimitaciones de ciudades o circuitos electorales.</p>
+<p>Todos estos recursos son datos geoespaciales en diferentes formatos.
+Vale la pena revisar las diferencias y alcances de cada uno en la
+<a class="reference external" href="formatos-geo.md">siguiente sección</a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="recursos-externos-y-ejemplos.html" class="btn btn-neutral float-right" title="Recursos y ejemplos" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="geolocalizar-csv.html" class="btn btn-neutral" title="Procesar CSV para Geolocalizar" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
