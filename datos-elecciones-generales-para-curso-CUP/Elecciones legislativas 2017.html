@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://descargas.resultados.gob.ar/desca_prim/descripcion.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths desktop landscape linux 64bit chrome chrome57 chrome57_0 webkit es-419"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Elecciones legislativas 2017 </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="https://descargas.resultados.gob.ar/imagenes/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./Elecciones legislativas 2017_files/normalize_1_1_3.css">
+    <link rel="stylesheet" type="text/css" href="./Elecciones legislativas 2017_files/estilos.css">
+    <link rel="stylesheet" type="text/css" href="./Elecciones legislativas 2017_files/descargas.css">
+
+    <script type="text/javascript" src="./Elecciones legislativas 2017_files/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./Elecciones legislativas 2017_files/modernizr.js"></script>
+    <script type="text/javascript" src="./Elecciones legislativas 2017_files/detectizr.js"></script>
+    <script type="text/javascript" src="./Elecciones legislativas 2017_files/general.js"></script>
+</head>
+
+<body>
+
+    <!-- BANNER -->
+    <div id="banner">
+     <div class="logoContainer">
+        <img class="imgLogo" src="./Elecciones legislativas 2017_files/banner.png" alt="Logo Elecciones legislativas Argentinas 2017"> 
+    </div>			
+</div>        
+<!-- FIN BANNER -->	
+
+<!-- PAGINA -->
+<div id="pagina">
+    <div id="contenido">
+        <div id="interiorcontenido">
+           <div id="cabecera">						
+              <div class="menu">
+                 <div id="menubotones">
+                    <ul>
+                       <li><a href="https://descargas.resultados.gob.ar/inides.htm" class="boton">Inicio</a></li>
+                       <li><a href="https://descargas.resultados.gob.ar/desca_prim/descargas.htm" class="boton">Descarga de archivos</a></li>
+                       <li><a href="https://descargas.resultados.gob.ar/desca_prim/descripcion.htm" class="boton act">Descripción de archivos</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div id="titulo">
+             <p>Descarga de archivos</p>
+         </div>
+
+     </div>
+     <div id="datos">
+        <p>Todos los archivos descargables desde estas páginas tienen las características siguientes:</p>
+        <ul>
+            <li>Registros de longitud fija con final de registro tipo DOS (<span class="bold"> LF</span>).</li>
+            <li>Campos delimitados por separadores "<span class="bold">;</span>"(punto y coma).</li>
+            <li>Encoding <span class="bold">UTF-8</span>.</li>
+        </ul>
+        <p> En los campos de tipo "porcentaje", las dos últimas posiciones por la derecha se consideran decimales.</p>
+        <p>Las longitudes que se detallan a continuación en los diseños de los archivos <span class="bold">NO</span> incluyen el separador de campos.</p>
+
+        <p>
+            Los archivos están comprimidos con "gzip", siendo compatibles con la
+            mayoría de los programas de compresión, como WinZip, Winrar, etc.</p>
+            <p>Identificación de tipos de elección:</p>
+            <ul>
+                <li>Senadores Nacionales = 2 </li>
+                <li>Diputados Nacionales = 3 </li>
+                <li>Senadores Provinciales = 5 </li>
+                <li>Diputados Provinciales = 6 </li>
+                <li>Municipales de Provincia de Buenos Aires = 7 </li>
+            </ul>
+
+            <div class="fichero">
+                <table>
+                    <colgroup>
+                    <col width="85%">
+                    <col width="15%">
+                </colgroup>
+                <thead>
+                    <tr class="titulo">
+                        <th colspan="2">Archivos de totales de recuento provisional</th>
+                    </tr>
+                    <tr class="nombre">
+                        <th colspan="2">Nombre de archivo: totales_XX.csv</th>
+                    </tr>
+                    <tr class="descripcion">
+                        <th colspan="2">Contiene la información del Recuento Provisional totalizada a nivel de País, Distrito y Sección. El archivo está dividido en provincias, siendo XX el número de provincia.</th>
+                    </tr>
+                    <tr class="cabecera">
+                        <th>Descripción</th>
+                        <th>Longitud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Código de Elección</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Código de Distrito:
+                            <ul>
+                                <li>País =  <span class="bold">"99"</span></li>
+                                <li>Distrito = Código de Distrito &lt;&gt; <span class="bold">"99"</span></li>
+                            </ul>
+                        </th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Código de Sección:
+                            <ul>
+                                <li>Distrito = <span class="bold">"999"</span></li>
+                                <li>Sección = Código de Sección &lt;&gt; <span class="bold">"999"</span></li>
+                            </ul>
+                        </th>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Número de mesas totales</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Número de mesas escrutadas</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Porcentaje de mesas escrutadas</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Electores</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Total de votantes</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Participación sobre escrutado</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Electores escrutados</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Porcentaje de electores escrutados</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Votos positivos</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Porcentaje votos positivos</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Votos en blanco</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Porcentaje votos en blanco</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Votos nulos</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Porcentaje votos nulos</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Votos recurridos, impugnados y comando</th>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <th>Porcentaje votos recurridos, impugnados y comando</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Mes</th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Día</th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Hora</th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Minuto</th>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="fichero">
+            <table>
+                <colgroup>
+                <col width="85%">
+                <col width="15%">
+            </colgroup>
+            <thead>
+                <tr class="titulo">
+                    <th colspan="2">Archivo de recuento provisional por agrupaciones</th>
+                </tr>
+                <tr class="nombre">
+                    <th colspan="2">Nombre de archivo: totalesagrupaciones_XX.csv</th>
+                </tr>
+                <tr class="descripcion">
+                    <th colspan="2">Contiene la información del Recuento Provisional totalizada a nivel de partido. El archivo está dividido en provincias, siendo XX el número de provincia.</th>
+                </tr>
+                <tr class="cabecera">
+                    <th>Descripción</th>
+                    <th>Longitud</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Código de Elección</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Código de Distrito:
+                        <ul>
+                            <li>País =  <span class="bold">"99"</span></li>
+                            <li>Distrito = Código de Distrito &lt;&gt; <span class="bold">"999"</span></li>
+                        </ul>
+                    </th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Código de Sección:
+                        <ul>
+                            <li>Distrito = <span class="bold">"999"</span></li>
+                            <li>Sección = Código de Sección &lt;&gt; <span class="bold">"999"</span></li>
+                        </ul>
+                    </th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>Mes</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Día</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Hora</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Minuto</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Código de agrupación política</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Votos a la agrupación política</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>Porcentaje de votos a la agrupación política calculado sobre votos positivos</th>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="fichero">
+        <table>
+            <colgroup>
+            <col width="85%">
+            <col width="15%">
+        </colgroup>
+        <thead>
+            <tr class="titulo">
+                <th colspan="2">Archivo de agrupaciones políticas</th>
+            </tr>
+            <tr class="nombre">
+                <th colspan="2">Nombre de archivo: agrupaciones.csv</th>
+            </tr>
+            <tr class="descripcion">
+                <th colspan="2">Contiene la información de agrupaciones políticas.</th>
+            </tr>
+            <tr class="cabecera">
+                <th>Descripción</th>
+                <th>Longitud</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Código de agrupación política </th>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Siglas de agrupación política</th>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>Denominación de agrupación política</th>
+                <td>100</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<div class="fichero">
+    <table>
+        <colgroup>
+        <col width="85%">
+        <col width="15%">
+    </colgroup>
+    <thead>
+        <tr class="titulo">
+            <th colspan="2">Archivo de ámbitos.</th>
+        </tr>
+        <tr class="nombre">
+            <th colspan="2">Nombre de archivo: ambitos.csv</th>
+        </tr>
+        <tr class="descripcion">
+            <th colspan="2">Contiene la información de las provincias y secciones/comunas.</th>
+        </tr>
+        <tr class="cabecera">
+            <th>Descripción</th>
+            <th>Longitud</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Código de provincia</th>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th>Código de sección/comuna</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Denominación de ámbito</th>
+            <td>40</td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- FIN PAGINA -->
+
+
+
+
+
+
+
+</body></html>
