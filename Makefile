@@ -7,7 +7,7 @@
 # SPHINXOPTS    =
 
 # para recompilar todo 
-SPHINXOPTS    = "-a"
+SPHINXOPTS    = "-Ea"
 
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = CursoLegislativas
