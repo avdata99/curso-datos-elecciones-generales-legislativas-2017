@@ -2,11 +2,17 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = "-Ea"
+
+# Sin opciones
+# SPHINXOPTS    =
+
+# para recompilar todo 
+SPHINXOPTS    = "-E"
+
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = CursoLegislativas
 SOURCEDIR     = .
-BUILDDIR      = manual
+BUILDDIR      = _build
 
 # Put it first so that "make" without argument is like "make help".
 help:
