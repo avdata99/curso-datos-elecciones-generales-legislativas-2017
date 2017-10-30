@@ -4,10 +4,10 @@
 # You can set these variables from the command line.
 
 # Sin opciones
-# SPHINXOPTS    =
+SPHINXOPTS    =
 
 # para recompilar todo 
-SPHINXOPTS    = "-Ea"
+# SPHINXOPTS    = "-Ea"
 
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = CursoLegislativas
