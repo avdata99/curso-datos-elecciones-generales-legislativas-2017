@@ -12,7 +12,7 @@ SPHINXOPTS    = "-Ea"
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = CursoLegislativas
 SOURCEDIR     = .
-BUILDDIR      = _build
+BUILDDIR      = manual
 
 # Put it first so that "make" without argument is like "make help".
 help:
