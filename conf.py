@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Curso para el uso de datos de las Elecciones Legislativas Generales 2017 en Córdoba'
+project = 'Curso Elecciones Legislativas 2017 en Córdoba'
 copyright = '2017, Andrés Vázquez'
 author = 'Andres Vazquez'
 
