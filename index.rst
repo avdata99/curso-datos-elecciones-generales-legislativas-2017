@@ -6,17 +6,17 @@ Curso Legislativas Córdoba 2017
 Objetivos
 ---------
 
-* Identificar, buscar, analizar y visualizar datos de elecciones legislativas.
-* Analizar datos pre y post elección.
+* Identificar, buscar, conocer datos de elecciones legislativas.
+* Analizar y visualizar estos datos en gráficos simples y mapas.
 
-Requisitos y recomendaciones
-----------------------------
+Requisitos
+----------
 
-Es necesario o recomendable tener: 
+Para el curso es necesario tener: 
 
-* Una conexión a internet decente ya que habrá muchas tareas online. 
-* Una cuenta de Gmail o compatible para usar Google Drive, MyMaps y Fusion Tables. 
-* Una cuenta en `Carto <https://carto.com/>`__ (es gratuita) 
+* Una conexión a internet ya que casi todas las tareas son online. 
+* Una cuenta de Gmail o compatible para usar Google Drive y MyMaps. 
+* Una cuenta en `CartoDB <https://carto.com/>`__ (es gratuita) 
 * Tener descargado e instalado `Tabula PDF <http://tabula.technology/>`__ 
 * Tener descargado e instalado `QGis <http://www.qgis.org/es/site/>`__
 
@@ -24,9 +24,9 @@ Datos a conocer y usar
 ~~~~~~~~~~~~~~~~~~~~~~
 
 * Carta marina (lista de centro de elección).
-* Polígonos de circuitos electorales.
-* Lista de legisladores vigentes y nuevos candidatos.
 * Resultados electorales.
+* Polígonos de secciones y circuitos electorales.
+* Como contexto: Padrones electorales y listas de candidatos
 
 .. toctree::
    :maxdepth: 2

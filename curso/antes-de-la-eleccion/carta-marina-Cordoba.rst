@@ -1,90 +1,41 @@
-Procesar la carta marina Córdoba 2015
-=====================================
+¿Que es una carta marina?
+=========================
+Antes de cualquier elección la justicia electoral se encarga de confeccionar una lista 
+de los centros donde se desarrollará la votación. Además se disribuyen las mesas y los electores. 
 
-Una búsqueda en Google dará con una lista de `recursos en el poder
-judicial de Nación sobre
-CORDOBA <https://www.pjn.gov.ar/cne/secelec/secciones/otros/otros_view.php?oID=674&dID=4>`__.
-Hay de todas las provincias. Lamentablemente son PDFs difíciles de
-procesar en general.
+¿Por que se llama *Carta Marina*? 
 
-Tip de búsqueda
-~~~~~~~~~~~~~~~
+.. figure:: /img/porque-marina.png
+  :alt: explicación de Perez corti
+  :target: https://twitter.com/JPerezCorti/status/894362211392512000
 
-| Si se busca *"Carta Marina" Córdoba* y se agrega además ...
-| - *filetype:pdf*: Solo archivos PDF - *filetype:csv*: Solo archivos
-  CSV - *filetype:xls*: Solo archivos de Excel - *site:gov.ar*: Solo
-  sitios de Gobierno en Argentina (sumar además el nuevo gob.ar)
+Esta lista de centros de votación incluye tambien el circuito electoral a que pertenece cada uno.
+Concretamente entonces una *Carta Marina* (lista de centros de votación) en Córdoba incluye:
 
-... los resultados cambian sensiblemente. Google no sabe que tipo de
-archivos buscamos y si solo queremos algunos sitios específicamente (en
-este caso, datos oficiales de gobierno).
+* El nombre y dirección de cada centro de votación (escuelas en general).
+* El circuito electoral de cada centro.
+* La mesas (con númeración incluida) a usarse en cada centro.
+* El total de electores en cada escuela.
 
-`Ver diferencias entre PDF, Excel y CSV <formatos-de-archivo.md>`__.
+Este documento permite organizar una elección a la justicia electoral pero tambien a los partídos políticos para la logística del día de la elección. Este documento tambien permite otros análisis. 
+Si se analizan estos datos sumando los de elecciones anteriores pueden hacerse muchas consideraciones sobre las variaciones en la cantidad de electores por distrito.
 
-Allí se encuentra la `Carta Marina Córdoba 2015 en
-PDF <https://www.pjn.gov.ar/cne/secelec/document/otros/4-Carta%20Marina%202015.pdf>`__.
+Ejemplo: análisis para la provincia de Córdoba 2007-2017:
 
-.. figure:: /img/carta-marina-pdf.png
-   :alt: carta
+.. figure:: /img/evolucion-padrones-deptos-cordoba.gif
+  :target: https://modernizacionmunicba.github.io/visualizaciones-electores-por-circuito-en-cordoba/
 
-   carta
+Otros usos periodísticos
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Una vez descargado se debe abrir con `Tabula
-PDF <http://tabula.technology/>`__. Este producto libre y gratuito
-permite pasar tablas a formatos reutilizables de datos.
+El departamento Cólon paso al segundo lugar en Córdoba
 
-Como primera prueba se puede seleccionar directamente una parte de la
-tabla para analizar si el resultado es útil.
+.. figure:: /img/news-marina-1.png
 
-.. figure:: /img/marcando-zona-en-tabula.png
-   :alt: marca
+Circuitos electorales en franco decrecimiento y a punto de desaparecer
 
-   marca
+.. figure:: /img/news-marina-2.png
 
-Luego del proceso se ven los resultados pasados a una tabla de datos
-reutilizable.
+Completo analisis de la variación de los padrones electorales
 
-.. figure:: /img/primer-intento-tabula.png
-   :alt: intento
-
-   intento
-
-Se ve que no tomo correctamente las celdas como uno podría imaginar. Se
-requiere que cada dato esté en una celda individual. El que construyo el
-PDF no lo hizo construyendo una tabla ordenadamente sino que dejo varias
-líneas de texto en cada *celda*.
-
-Como prueba adicional se puede usar el detector automático de tablas en
-Tabula y ver los resultados.
-
-.. figure:: /img/prueba-2-tabula.png
-   :alt: prueba2
-
-   prueba2
-
-Como se ve, la falla es la misma. Este PDF no es procesable de manera
-que entregue resultados listos para usar. En estos casos las opciones
-son: - Si el PDF no es muy largo, tomar estos resultados (o copiar el
-texto del PDF y pasarlos a un editor de texto) para limpiarlos a mano. -
-Si el PDF es muy largo se puede contar con la colaboración de algún
-programador que procese automáticamente y obtenga el resultado deseado.
-- Si se tienen contactos con algún partido político o con funcionarios
-de la junta electoral se puede solicitar una versión más amigable
-(Excel, CSV o similares).
-
-En 2015 este problema ya se presentó con esta carta marina, `se
-resolvió <https://github.com/OpenDataCordoba/elecciones2015/tree/master/resources/carta-marina>`__
-y se dejaron liberados los resultados:
-
-`Carta Marina 2015
-CSV <https://github.com/OpenDataCordoba/elecciones2015/blob/master/resources/carta-marina/escuelas-elecciones-2015-cordoba.csv?raw=true>`__
-(`copia local <../recursos/escuelas-elecciones-2015-cordoba.csv>`__).
-
-A los fines de usar Tabula en casos efectivos pueden tomarse dos
-ejemplos relacionados en casos donde el PDF si se puede transformar: -
-`NÓMINA DE AUTORIDADES DE MESA -ELECCIONES BALOTAJE
-2015 <https://www.pjn.gov.ar/cne/secelec/document/otros/4-04_web_am181115_20h40m.pdf>`__
-- `Integración de Alianzas
-2015 <https://www.pjn.gov.ar/cne/secelec/document/otros/4-INTEGRACION%20DE%20ALIANZAS%202015%20ELECCIONES%20PASO.pdf>`__
-
-`PROCESAR ESTE CSV >> <geolocalizar-csv.md>`__
+.. figure:: /img/news-marina-3.png
