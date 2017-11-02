@@ -35,7 +35,7 @@
         <link rel="search" title="Búsqueda" href="../../../search.html"/>
     <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../../index.html"/>
         <link rel="up" title="Datos que publica el Ministerio del Interior" href="index.html"/>
-        <link rel="next" title="Analizando los datos del ministerio del interior" href="analizar-datos-ministerio-interior.html"/>
+        <link rel="next" title="Google Sheets" href="google-sheets.html"/>
         <link rel="prev" title="Datos que publica el Ministerio del Interior" href="index.html"/> 
 
   
@@ -100,6 +100,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="google-sheets.html">Google Sheets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analizar-datos-ministerio-interior.html">Analizando los datos del ministerio del interior</a></li>
 </ul>
 </li>
@@ -160,17 +161,14 @@ entregan en formatos reutilizables.</p>
 necesario manifestarlo por email a Yanina Sandra Martinez
 <a class="reference external" href="mailto:ymartinez&#37;&#52;&#48;mininterior&#46;gob&#46;ar">ymartinez<span>&#64;</span>mininterior<span>&#46;</span>gob<span>&#46;</span>ar</a>. Esta es la forma que el Ministerio del
 Interior provee esta información.</p>
-<p>Para las elecciones 2017 todos estos datos se compartieron
-<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md">aquí</a>.</p>
-<div class="figure" id="id1">
-<img alt="repo-mininterior" src="../../../_images/repo-mininterior.png" />
-<p class="caption"><span class="caption-text">repo-mininterior</span></p>
+<p>Para las elecciones 2017 todos estos datos se compartieron vía email: <a class="reference external" href="/static/Elecciones-legislativas-2017.html">muestra</a>
+(<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md">version PASO</a>).</p>
+<div class="figure">
+<img alt="Datos informados por el ministerio del interior" src="../../../_images/muestra-mininterior-explicacion.png" />
 </div>
 <p>El documento indica cuales y en que formatos están los documentos. El
 proceso a continuación es el uso de estos datos para construir resumenes
 y visualizaciones útiles.</p>
-<p>Para procecar estos daton abrimos una planilla de cálculo nueva de
-Google Drive.</p>
 <div class="section" id="archivos-incluidos">
 <h2>Archivos incluidos<a class="headerlink" href="#archivos-incluidos" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="tipos-de-eleccion">
@@ -180,7 +178,7 @@ Google Drive.</p>
 esta en un CSV, es un texto suelto.</div>
 <div class="line">Copiamos el texto y lo pegamos en la planilla.</div>
 </div>
-<div class="figure" id="id2">
+<div class="figure" id="id1">
 <img alt="dato-texto-01-indra" src="../../../_images/dato-texto-01-indra.png" />
 <p class="caption"><span class="caption-text">dato-texto-01-indra</span></p>
 </div>
@@ -188,7 +186,7 @@ esta en un CSV, es un texto suelto.</div>
 <em>Dividir texto en columnas</em> (en el menú <em>datos</em>) con el separador &#8221; = &#8221;
 (espacio, signo igual, espacio). Además le agregamos encabezado a las
 columnas.</p>
-<div class="figure" id="id3">
+<div class="figure" id="id2">
 <img alt="dato-texto-02-indra" src="../../../_images/dato-texto-02-indra.png" />
 <p class="caption"><span class="caption-text">dato-texto-02-indra</span></p>
 </div>
@@ -207,7 +205,7 @@ ver esto en su formato real y descargarlo o copiarlo le agregamos
 <em>?raw=true</em> al final de link en el navegador.</p>
 <p>Tip II: Notó que separa los campos con <em>punto y coma</em>? Es <em>Excel
 Friendly</em>.</p>
-<div class="figure" id="id4">
+<div class="figure" id="id3">
 <img alt="raw-true" src="../../../_images/raw-true.png" />
 <p class="caption"><span class="caption-text">raw-true</span></p>
 </div>
@@ -338,7 +336,7 @@ copiar la tabla, pegarla Google Drive, volver a copiarla y hacer el
 pegado especial que se llama <em>Pegado con transposición de datos</em>. Esto
 transforma filas en columnas.</p>
 <p>Debería verse así:</p>
-<div class="figure" id="id5">
+<div class="figure" id="id4">
 <img alt="totales-04-indra" src="../../../_images/totales-04-indra.png" />
 <p class="caption"><span class="caption-text">totales-04-indra</span></p>
 </div>
@@ -427,7 +425,7 @@ lista</td>
 <p>Haciendo el mismo proceso con el archivo de <a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totaleslistas_04.csv">*totales por listas* para
 Córdoba</a>
 se debe llegar a esta lista:</p>
-<div class="figure" id="id6">
+<div class="figure" id="id5">
 <img alt="totales-listas-04-indra" src="../../../_images/totales-listas-04-indra.png" />
 <p class="caption"><span class="caption-text">totales-listas-04-indra</span></p>
 </div>
@@ -448,24 +446,13 @@ y pasarlo a Google Drive.</p>
 y Denominación</em>.</div>
 <div class="line">Debe quedar así:</div>
 </div>
-<div class="figure" id="id7">
+<div class="figure" id="id6">
 <img alt="listas" src="../../../_images/listas.png" />
 <p class="caption"><span class="caption-text">listas</span></p>
 </div>
 <p>Cómo se ve todavía el dato no está erminado y son datos de prueba.</p>
-<div class="section" id="trabajo-terminado-abierto">
-<h4>Trabajo terminado abierto<a class="headerlink" href="#trabajo-terminado-abierto" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Finalmente todo este proceso <a class="reference external" href="https://docs.google.com/spreadsheets/d/1k8fHbUGyQo5NzW46C2RD1N_Jk9QRcUJHRf8Dh_gP5Do/edit?usp=sharing">esta libre y disponible en Google
-Drive</a>.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="analizar-datos-ministerio-interior.html">Analizando los datos del ministerio del interior</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="analizar-datos-ministerio-interior.html#resultados-totales-provincia-por-lista">Resultados totales provincia por lista</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<p>Para procesar estos daton abrimos una planilla de cálculo nueva de
+Google Drive.</p>
 </div>
 </div>
 </div>
@@ -477,7 +464,7 @@ Drive</a>.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="analizar-datos-ministerio-interior.html" class="btn btn-neutral float-right" title="Analizando los datos del ministerio del interior" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="google-sheets.html" class="btn btn-neutral float-right" title="Google Sheets" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Datos que publica el Ministerio del Interior" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

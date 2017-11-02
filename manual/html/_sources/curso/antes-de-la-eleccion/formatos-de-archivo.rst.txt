@@ -13,7 +13,7 @@ Es un formato universal de contenido enriquecido pensado para presentar informac
 
 Una de sus virtudes es que puede leerse casi desde cualquier dispositivo, abundan los *lectores de PDF*. Por otro lado la información contenida puede presentar dificultades para extraerse parcialmente o reutilizarse
 
-XLS (EXCEL)
+XLS (Excel)
 ~~~~~~~~~~~
 Es un formato pensado para contener datos numéricos. Si bien es posible su fuerte y utilidad no esta en presentar contenido de texto enriquecido, imágenes u otro contenido multimedia.
 

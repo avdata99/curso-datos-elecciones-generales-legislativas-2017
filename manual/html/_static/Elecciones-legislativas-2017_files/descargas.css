@@ -1,0 +1,179 @@
+#contenido{
+	margin-left:10%;
+	width:80%;
+}
+	
+/* #banner {
+    box-shadow: 0px 0px 3px #333;
+    background-color: #0E3F68;
+}
+#banner img {
+    max-height: 80px;
+} */
+
+#links {
+    float: right;
+    font-size: 90%;
+    padding: 2.5em 3em 0em 0em;
+}
+#links li {
+    padding-left: 1.5em;
+}
+#links li a {
+    color: #FFF;
+}
+#links li a:hover {
+    text-decoration: underline;
+}
+#links #recargar {
+    background: url("../imagenes/recargar.png") no-repeat;
+}
+#titulo{
+	border-bottom: 2px solid #6c6c6c;
+    border-top: 2px solid #6c6c6c;    
+}
+.act{
+	/* color:#fff;
+	background-color:#6c6c6c; */
+	border-bottom: 3px solid #6c6c6c;
+}
+/* #menu {
+    margin-top: -12px;
+}
+#menu .boton {
+    margin: 0.2em;
+    padding: 0.4em;
+    background-color: #FFF;
+    box-shadow: 0px 0px 3px #3C465F;
+    color: #08456C;
+    font-weight: normal;
+    border-radius: 5px;
+}
+#menu li:hover .boton {
+    background-color: #2096D3;
+    color: #FFF;
+}
+#menubotones {
+    text-align: center;
+}
+#menubotones li {
+    display: inline;
+}
+ */
+/* #pagina {
+    width: 85%;
+    margin: 1em auto 5em auto;
+} */
+
+/* #titulo {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 3px #BBB;
+    background-color: #2096D3;
+    margin-bottom: 0.5em;
+}
+#titulo p {
+    padding: 0.3em 0;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: bold;
+} */
+
+/* #datos {
+    padding-left: 1em;
+    font-size: 95%;
+}
+#datos p {
+    padding: 0.3em 0em;
+} */
+
+#datos #txtitulo {
+    margin: 1em 0 0.2em 0;
+    color: #2096D3;
+    font-weight: bold;
+}
+
+#datos ul {
+    margin: 0 0 0.5em 2em;
+    list-style: disc;
+}
+#datos ul#listaficheros {
+    list-style: none;
+}
+#datos ul#listaficheros li a {
+    background: url("../imagenes/flecha-azul.png") no-repeat left center;
+    padding-left: 1em;
+}
+#datos ul#listaficheros li.verde a.bbaa {
+    background: url("../imagenes/flecha-verde.png") no-repeat left center;
+    padding-left: 1em;
+}
+#datos ul#listaficheros li a:hover {
+    color: #2096D3;
+}
+
+#datos ul#listaficheros li.verde a.bbaa:hover {
+    color: #adc22f;
+}
+#datos .fichero {    
+    margin: 2em 0 0 1em;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0px 0px 3px #DDD;
+}
+#datos .fichero table {
+    width: 100%;
+}
+#datos .fichero table td,
+#datos .fichero table th {
+    padding: 0.1em;
+}
+#datos .fichero table tbody tr {
+    border-bottom: 1px solid #CFCFCF;
+}
+#datos .fichero table tbody tr:hover {
+    background-color: #D7E4FF;
+    color: #08456C;
+}
+#datos .fichero table tbody th {
+    text-align: left;
+    padding-left: 1em;
+    font-weight: normal;
+}
+#datos .fichero table tbody th.subtabla {
+    padding-left: 2em;
+}
+#datos .fichero table tbody td {
+    text-align: right;
+    padding-right: 1em;
+}
+#datos .fichero table tbody ul {
+    padding-top: 0.5em;
+}
+
+#datos .fichero thead th {
+    background-color: #fafafa;
+}
+#datos .fichero thead .titulo th {
+    color: #08456C;
+}
+#datos .fichero thead .nombre th,
+#datos .fichero thead .descripcion th {
+    font-weight: normal;
+}
+#datos .fichero thead .cabecera th {
+    text-align: left;
+    padding: 0.2em 0 0.2em 1em;
+    background-color: #FFF;
+    border-top: 1px solid #CFCFCF;
+    border-bottom: 2px solid #CFCFCF;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+	#menubotones {
+		display: block;
+	}
+}

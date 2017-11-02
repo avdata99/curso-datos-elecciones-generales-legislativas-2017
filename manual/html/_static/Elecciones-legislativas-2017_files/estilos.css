@@ -1,0 +1,2343 @@
+
+body {
+	font-size: 90%;
+	/* -------------------- SERVICIO EN PRUEBAS -------------------- */
+	/* background: url(../imagenes/servicioenpruebas.gif) repeat center center;
+	background-size: 40%;  */
+}
+body, a {
+	color: #6c6c6c;
+}
+img {
+	border:0;
+}
+table tr {
+	height:25px;
+}
+.dch{
+	float:right;
+}
+.izq{
+	float:left;
+}
+.onlydevice{
+	display:none;
+}
+.onlymobile{
+	display:none;
+}
+.onlyWeb{
+	display:block;
+}
+.onlyWebDevice{
+	/* display:inherit; */
+}
+table.onlyWeb{
+	display:table;
+}
+.negrita {
+	font-weight: bold;
+}
+.small {
+	font-size: 85%;
+}
+
+/* -------------------- BANNER -------------------- */
+#banner {
+	/* box-shadow: 1px 1px 2px #ccc; */
+	max-height: 100px;
+	/* background: url("../imagenes/fondo.png") right no-repeat; */
+	background-color: #0091ce;
+	position:fixed;
+	top:0;
+	width: 100%;
+	/*text-align: center;*/
+}
+.logoContainer{
+	width:240px; 
+	float:left;   
+}
+.banner2 .logoContainer{
+	width:160px;
+}
+
+.menuImgContainer{
+	width:50px;
+	float:left;
+}
+#banner img {
+	margin:auto 0 0 5px;
+	max-height: 100px;
+	vertical-align: middle;
+}
+#banner.banner2{
+ /*   background-color: #b1b1b1;
+ */
+ background-image: none;
+ /* max-height: 51px; */
+ z-index: 9999999;
+}
+#banner.banner2 img {
+	max-height: 60px;
+}
+#banner img.imgHome{
+	float:right;
+	margin:60px 10px 0 0;
+}
+#banner.banner2 img.imgHome{
+	margin:20px 0 0 10px;
+}
+#banner  .bannerRestoContainer{
+	color:#f9f9f9;
+	float:right;
+	width:68%;	
+}
+#banner  .bannerResto{
+	width:100%;
+}
+#banner  .bannerAmbitoContainer{
+	width:100%;
+	float:left;
+	display:none;
+}
+#banner  .bannerElecTexto{
+	font-size:130%;
+	/* font-weight:bold; */
+	text-transform:uppercase;
+}
+#banner  .bannerAmbitoTexto{
+	font-size:150%;
+	font-weight:bold;
+}
+#banner.banner2 .bannerAmbitoContainer{
+	display:initial;
+	margin-top:5px;
+}
+#banner .buscadorContainer{
+	width:100%;
+	float: left;
+	background-color:#FFFFFF;
+	box-shadow: 0 5px 5px #ccc;
+	height:40px;
+	
+}
+#banner img.imgSearch{
+	width:24px;
+	float:right;
+	vertical-align:middle;
+}
+/* -------------------- FIN BANNER -------------------- */
+
+
+/* -------------------- MENU -------------------- */
+.menu {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.menu .boton {
+	margin: 0.2em;
+	padding: 0.4em;
+	line-height: 2.3em;
+	/*background-color: #FFF;*/
+	box-shadow: 1px 1px 2px #ccc;
+	font-weight: bold;
+	/* border-radius: 2px; */
+}
+
+.menudesplegableProv, .menudesplegableElec {
+	display: none;
+}
+.I .menudesplegableProv, .I .menudesplegableElec {
+	display: block;
+	text-align: center;
+}
+
+#menubotones {
+	text-align: center;
+}
+.menu li {
+	display: inline-block;
+	margin-bottom: 1em;
+}
+.botonjs {
+	display: none;
+}
+.js .botonjs {
+	display: inline;
+}
+.js .botonnojs {
+	display: none;
+}
+
+/* -------------------- FIN MENU -------------------- */
+
+
+
+/* -------------------- PAGINA -------------------- */
+#pagina{
+	/*margin-top:80px;*/
+}
+
+/* -------------------- INDICES -------------------- */
+#indicesmunicipios {
+	width: 240px;
+	float: left;
+	border-right: 2px dotted #c1c1c1;
+	/*box-shadow: 0px 0px 5px #CCC;*/
+	background-color: #f9f9f9;
+	/* margin-bottom: 1em; */
+	overflow-y: auto;
+	padding-top:5px;
+}
+#interiorindicesmunicipios {
+	/* margin: 0.5em 0.2em 0.5em 1em; */
+	/* min-height:1850px; */
+	width:100%;
+}
+.escrutado #interiorindicesmunicipios, .C #interiorindicesmunicipios {
+	/* min-height:1300px;	 */
+}
+
+#interiorindicesmunicipios span {
+	display: none;
+	padding: 0 0.4em;
+	cursor: pointer;
+}
+.js #interiorindicesmunicipios span {
+	display: inline-block;
+}
+.js .linkmuninojs, .js .linkcandnojs {
+	display: none;
+}
+#interiorindicesmunicipios .indices li:hover,
+#interiorindicesmunicipios .indices li.act {
+	/*background-color: #909090;*/
+	background-color: #dfe8ed;
+}
+
+#interiorindicesmunicipios .candidaturas.hidden{
+	display: none;
+}
+#interiorindicesmunicipios .candidaturas{
+	padding-left: 1em;
+	background-color: #ffffff;
+	/* border-bottom: 1px solid #ddd; */
+	/* font-weight: bold; */
+	
+}
+#interiorindicesmunicipios .candidaturas:hover{
+	font-weight:bold;
+}
+#interiorindicesmunicipios .candidaturas.act{
+	font-weight:bold;
+}
+#interiorindicesmunicipios .municipios {
+	padding-left: 1em;
+	background-color: #FFF;
+	max-height: 200px;
+	overflow-y: scroll;
+}
+#indiceselecciones {
+	display: none;
+	background-color: #FFF;
+}
+#interiorindiceselecciones {
+	margin: 0.5em 0.2em 0.5em 0.5em;
+	width:100%;
+}
+.indices li {
+	/* border-bottom: 1px solid #DDD; */
+	line-height:25px;
+}
+.indices li a {
+	display: inline-block;
+	padding: 0.2em;
+	
+}
+.indices li:hover > span,
+.indices li:hover > a,
+.indices li.act > a,
+.indices li.act > span {
+    font-weight:bold;	
+}
+
+#interiorindiceselecciones .indices li:hover > span,
+#interiorindiceselecciones .indices li:hover > a,
+#interiorindiceselecciones .indices li.act > a,
+#interiorindiceselecciones .indices li.act > span {    
+	color:#fff;
+}
+
+#interiorindicesmunicipios .municipios li:hover,
+#interiorindicesmunicipios .municipios li.act {
+	background-color: #FFF;
+}
+#interiorindicesmunicipios .municipios li a{
+	border-left: 5px solid #FFF;
+}
+#interiorindicesmunicipios .municipios li:hover a,
+#interiorindicesmunicipios .municipios li.act a {
+	color: #08456C;
+	border-left-color: #dfe8ed;
+}
+
+.indices .municipios li a:hover {
+	color: #2096D3;
+}
+.total {
+	font-weight: bold;
+}
+#interiorindicesmunicipios li .ambitos {
+	text-align: center;
+	background-color: #F3F3F3;
+	border-bottom: 1px solid #DDD;
+}
+#interiorindicesmunicipios li .ambitos span {
+	padding: 0 0.6em;
+}
+#interiorindicesmunicipios li .ambitos span.act {
+	border-bottom: 5px solid #909090;
+}
+#interiorindicesmunicipios li.mun {
+	display: none;
+}
+
+.I #pagina {
+	width: 100%;
+}
+.I #indicesnojs ul li {
+	display: inline-block;
+}
+.I #indicesnojs {
+	margin: 1em auto;
+}
+.I a:hover {
+	color: #2096D3;
+}
+
+.IE #indicesnojs {
+	width: 90%;
+}
+.IE #indicesnojs ul {
+	text-align: center;
+}
+.IE #indicesnojs ul li a {
+	display: inline-block;
+	margin: 0.3em;
+}
+.IE #indicesnojs ul li a:hover {
+	text-decoration: underline;
+}
+
+.IM #indicesnojs {
+	width: 95%;
+}
+.IM #indicesnojs li.prov {
+	display: block;
+	margin-bottom: 0.5em;
+}
+.IM #indicesnojs a.prov {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #000;    
+}
+.IM #indicesnojs a.muni {
+	margin: 0.2em;
+}
+.IM #indicesnojs a.muni:hover {
+	text-decoration: underline;
+}
+.IM p.tit {
+	margin: 0.2em 0 0 1em;
+	text-decoration: underline;
+}
+.cerrar{
+	/*border-bottom: 1px dotted #b1b1b1;*/
+	font-size: 115%;
+	font-weight: bold;
+	text-align: right;
+	height: 30px;
+	/* margin-right: 10px; */
+	cursor: pointer;
+}
+.indices li.cerrar:hover > span.cerrar,
+.indices li.cerrar:hover > a.cerrar,
+.indices li.cerrar.act > a.cerrar,
+.indices li.cerrar.act > span.cerrar{
+	cursor: pointer;
+	color:#4c4c4c;
+}
+.imgCerrar{
+	height: 25px;
+	float:right;
+}
+.inicio{
+	/*border-top: 1px solid  #cfcfcf;*/
+	/* border-bottom: 1px solid  #cfcfcf; */
+	height: 25px;
+	font-weight: bold;
+	line-height: 25px;
+	font-synthesis: 120%;
+	padding: 0.2em;
+
+}
+.inicio.act{
+	background-color:#dfe8ed;
+}
+.inicio:hover{
+	background-color:#dfe8ed;
+}
+/* -------------------- FIN INDICES -------------------- */
+
+
+
+
+/* -------------------- CONTENIDO -------------------- */
+#contenido {
+	margin-left: 240px;
+	/* font-size: 80%; */
+	margin-top: 137px;
+	padding-top: 12px;
+	height:auto;
+	overflow:hidden;
+	min-height:1200px;
+}
+#interiorcontenido {
+	width: 98%;
+	margin: auto;
+	padding-left: 1%;
+    padding-right: 1%;
+	
+}
+/* -------------------- CABECERA -------------------- */
+#cabecera {
+	margin-bottom: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+#ambito{
+	font-size: 150%;
+	font-weight: bold;
+	border-bottom: 2px dotted #c1c1c1;
+	margin-bottom: 5px;
+	/*height: 40px;*/
+	overflow: hidden;
+
+}
+#titulo {
+	width: 100%;
+	text-align: center;
+	/*box-shadow: 0px 0px 3px #BBB;*/
+	margin-bottom: 0.5em;
+}
+#titulo p {
+	padding: 0.3em 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#subtitulo {
+	margin-bottom: 0.5em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #CFCFCF;
+	overflow: hidden;
+}
+#literalsubtitulo {
+	width: 60%;
+	float: left;
+	height:25px;
+}
+#literalsubtitulo p {
+	padding: 0 1em;
+	font-weight: bold;
+}
+#horafecha {
+	width: 40%;
+	margin-left: 60%;
+	text-align: right;
+	font-size: 85%;
+}
+#fechacorta {
+	display: none;
+}
+.participacion, .mesasEscrutadas {
+	width: 49%;
+	/* margin-bottom: 1em; */
+	overflow:hidden;
+}
+.participacion p, .mesasEscrutadas p {
+	margin-left: 1em;
+	padding-left: 0.5em;
+	font-size: 85%;
+}
+
+.participacion span, .mesasEscrutadas span{
+	font-weight: bold;
+}
+/* -------------------- FIN CABECERA -------------------- */
+
+
+/*----------------Inicio - Menú botones para cargos----------*/
+#menuBotonesCargos{
+	width: 99%;
+    clear: right;
+    margin-left: 0.5%;
+	text-align:left;
+}
+#menuBotonesCargos li {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+#menuBotonesCargos .boton {
+    box-shadow: 1px 1px 2px #ccc;
+    font-weight: bold;
+    line-height: 2.3em;
+    margin: 0.2em;
+    padding: 0.4em;
+}
+#menuBotonesCargos .act .boton,  #menuBotonesCargos  a.boton:hover {   
+	border-bottom: 3px solid #6c6c6c;
+}
+/*----------------Fin - Menú botones para cargos----------*/
+
+
+
+
+
+
+
+/* -------------------- DATOS -------------------- */
+#datos {
+	width: 100%;
+}
+#datosmesasygraficos {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+#buscadorDatos{
+	width: 49%;
+	display: inline-block;
+	float: left;
+	padding-left:1%;
+	/* margin-top: 30px; */
+	
+}
+
+/* ---------- MESAS ---------- */
+.previos #datosmesas {
+	float: none;
+	margin: auto;
+	width: 100%;
+}
+#datosmesas {
+	text-align: center;
+	width: 35%;
+	float: left;
+}
+.previos #tablamesashabilitadas {
+	float: left;
+	margin-left: 5%;
+	width: 40%;
+}
+.previos #tablamesasescrutadas {
+	width: 40%;
+}
+#tablamesashabilitadas {
+	text-align: right;
+	box-shadow: 1px 1px 2px #ccc;
+	width: 90%;
+	max-width: 25em;
+	margin: 0 auto 1em auto;
+	border: 1px solid #DDD;
+}
+#tablamesasescrutadas {
+	text-align: right;
+	box-shadow: 1px 1px 2px #ccc;
+	width: 90%;
+	max-width: 25em;
+	margin: 0 auto 1em auto;
+	border: 1px solid #DDD;
+}
+#datosmesas thead .literal {
+	text-align: center;
+}
+#datosmesas th,
+#datosmesas td {
+	padding: 0.2em 0.5em;
+	border-bottom: 1px solid #DDD;
+}
+
+#datosmesas th {
+	text-align: center;
+}
+#datosmesas tbody .literal {
+	text-align: left;
+}
+/* -------------------------------- FIN MESAS ---------------------------------------------------- */
+
+
+
+
+/* -------------------------------- GRÁFICO BARRAS ----------------------------------------------- */
+.previos #datosgraficobarras {
+	display: none;
+}
+#datosgraficobarras {
+	text-align: center;	
+}
+
+#tablagraficobarras {
+	font-size: 90%;
+	width: 100%;	
+	margin: 0 auto 1em auto;
+}
+
+#tablagraficobarras .denom {
+	text-align: left;
+	font-weight:bold;
+}
+
+#tablagraficobarras .pvot {
+	font-size:150%;
+}
+
+#tablagraficobarras tr {
+	min-height: 40px;
+}
+
+#tablagraficobarras td {
+	padding: 0.2em 0.5em;
+	border-bottom: 1px solid #DDD;
+}
+
+#tablagraficobarras .barpar {
+	box-shadow: 1px 1px 2px #ccc;
+}
+
+#datosgraficobarrasEnfrentadas {
+	text-align: center;
+	/*width: 65%;*/
+	/*max-width: 1000px;*/
+}
+
+#tablagraficobarrasEnfrentadas {
+	font-size: 90%;
+	width: 100%;
+	margin: 0 auto 1em auto;
+}
+
+#tablagraficobarrasEnfrentadas .denom {
+	text-align: left;
+}
+
+#tablagraficobarrasEnfrentadas td {
+	padding: 0.2em 0.5em;
+	border-bottom: 1px solid #DDD;
+	height: 40px;
+}
+
+#tablagraficobarrasEnfrentadas .pvot {
+	font-size:150%;
+}
+
+#tablagraficobarrasEnfrentadas .barpar {
+	box-shadow: 1px 1px 2px #ccc;
+}
+.imgPeon{
+	width:20px;
+}
+.imgPeonSmall{
+	width:15px;
+}
+/* ------------------------------------------------------ FIN GRAFICO BARRAS ------------------------------------------------------- */
+
+/* ---------- CARGELE ---------- */
+#cargele {
+	width: 100%;
+	margin: 0px auto 0.5em;
+}
+#cargele p {
+	text-align: center;
+}
+#cargele p span {
+	font-weight: bold;
+}
+/* ---------- FIN CARGELE ---------- */
+
+/* --------------------------------------------- AGRUPACIONES ------------------------------------------------- */
+#datosagrupaciones {
+	text-align: center;	
+}
+
+#tablaagrupaciones {
+	font-size: 90%;
+	width: 100%;
+	margin: auto;
+	text-align: left;
+}
+#tablaagrupaciones .agrup {
+	font-weight: bold;
+	border-top:1px solid #ddd;
+}
+
+#tablaagrupaciones .lista {
+	font-size: 85%;
+}
+
+#tablaagrupaciones .carg {
+	text-align: center;
+}
+#tablaagrupaciones .lista .denom {
+	padding-left: 2em;
+	font-style: italic;
+}
+#tablaagrupaciones .lista .vot,
+#tablaagrupaciones .lista .pvot {
+	font-style: italic;
+}
+#tablaagrupaciones th {
+	text-align: center;
+}
+#tablaagrupaciones th,
+#tablaagrupaciones td {
+	padding: 1em 0.5em;
+}
+#tablaagrupaciones .vot,
+#tablaagrupaciones .pvot {
+	text-align: right;
+}
+
+#tablaagrupaciones .minibar{
+	border-bottom: 10px solid;
+	box-shadow: 1px 1px 2px #ccc;
+	display: block;
+	margin-top: 0.2em;
+}
+
+/* ------------------------------------------------- FIN AGRUPACIONES ------------------------------------------------------------ */
+
+/* --------------------------------- VOTOS EN TABLA DE DATOS GENERALES --------------------------------------------- */
+#datosvotos {
+	text-align: center;
+	margin-bottom: 2em;
+}
+#tablavotos {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+    font-size: 90%;
+}
+#tablavotos thead .literal {
+	text-align: center;
+}
+#tablavotos th,
+#tablavotos td {
+	padding: 0.2em 0.5em;
+	border-bottom: 1px solid #DDD;
+}
+#tablavotos td.ident {
+	padding-left: 1.5em;
+}
+
+#tablavotos .vot,
+#tablavotos .pvot {
+	text-align: right;
+}
+/* -------------------------------------------- FIN VOTOS EN TABLA DE DATOS GENERALES ---------------------------------------- */
+
+/*---------------------------------------------TABLA de PAGINA de Participación----------------------------------------------------*/
+
+#tablaParticipacion {
+	font-size: 90%;
+	width: 100%;
+	margin: auto;
+	text-align: left;  
+}
+#tablaParticipacion tr{
+	line-height:35px;
+}
+#tablaParticipacion .header{
+	cursor:pointer;
+}
+#tablaParticipacion th, #tablaParticipacion td {
+	padding: 0.2em 0.5em;
+	border-bottom: 1px solid #DDD;
+	text-align:left;
+}
+#tablaParticipacion td.prov{
+	font-weight: bold;
+}
+/*--------------------------------------------FIN TABLA ESCRUTADOS----------------------------------------*/
+
+/* ---------- INICIO RESUMEN (no existe en primarias 2017) ---------- */
+/* #datosresumen {
+	margin: 1em 0em 2.5em 0em;
+}
+#toggleresumen {
+	width: 95%;
+	margin: 0 auto 0.6em auto;
+	text-align: center;
+}
+#toggleresumen {
+	display: none;
+}
+.js #toggleresumen {
+	display: block;
+}
+#toggleresumen div {
+	display: inline-block;
+	margin: 0 1em;
+	padding: 0.2em 0.8em;
+	border: 1px solid #CCC;
+	box-shadow: 0px 0px 2px #a1a1a1;
+	cursor: pointer;
+}
+#toggleresumen .act {
+	background-color: #909090;
+	color: #FFF;
+	font-weight: bold;
+}
+#toggleresumen .none {
+	display: none;
+}
+#tablaresumen {
+	font-size: 90%;
+	width: 98%;
+	max-width: 1400px;
+	margin: auto;
+	box-shadow: 2px 2px 6px #a1a1a1;
+}
+.js #tablaresumen .reg {
+	display: none;
+}
+#tablaresumen th,
+#tablaresumen td {
+	padding: 0.2em 0.5em;
+	border: 1px solid #DDD;
+}
+#tablaresumen th.literal {
+	padding: 0.5em 0;
+}
+#tablaresumen th.denom {
+	text-align: left;
+	padding-left: 1em;
+}
+#tablaresumen .vot,
+#tablaresumen .pvot {
+	text-align: right;
+} */
+
+/* ---------- FIN RESUMEN (no existe en primarias 2017) ---------- */
+
+
+
+/* --------------------------------- INICIO MAPAS -------------------------------------- */
+
+
+/*----------------Inicio - Menú botones para mapas de participación----------*/
+#menubotonesMapa{
+	width: 99%;
+    clear: right;
+    margin-left: 0.5%;
+	text-align:left;
+}
+#menubotonesMapa li {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+#menubotonesMapa .boton {
+    box-shadow: 1px 1px 2px #ccc;
+    font-weight: bold;
+    line-height: 2.3em;
+    margin: 0.2em;
+    padding: 0.4em;
+	/* border-radius:2px; */
+}
+#menubotonesMapa .act .boton,  #menubotonesMapa  a.boton:hover {
+   /*  background-color: #6c6c6c; */
+	border-bottom: 3px solid #6c6c6c;
+    /* color: #fff; */
+}
+/*----------------Fin - Menú botones para mapas de participación----------*/
+
+#datosmapa,
+#datosmaparesumen,
+.js.ie7 #datosmapa,
+.js.ie7 #datosmaparesumen,
+.js.ie8 #datosmapa,
+.js.ie8 #datosmaparesumen {
+	display: none;
+}
+.js.blackberry #datosmapa,
+.js.blackberry #datosmaparesumen {
+	display: none;
+}
+.js #datosmapa,
+.js #datosmaparesumen {
+	display: block;
+}
+
+.js #datosmaparesumen {
+	margin: auto;
+	padding-bottom: 1.5em;
+	width: 95%;
+	/* overflow: hidden; */
+	max-width: 100em;
+}
+
+.js #interiormaparesumen {
+	float: left;
+	width: 50%;
+}
+
+.js #maparesumen {
+	height: 350px;
+	max-width:350px;
+	width: 80%;
+	padding: 1em 0;
+	margin:auto;
+}
+.js #datosleyendaresumen {
+	width: 50%;
+	height: 100%;
+	margin-left: 50%;
+}
+
+.js #interiorleyendaresumen {
+	width: 95%;
+	margin: auto;
+	margin-top: 1em;
+}
+.js #datosleyendaresumen p {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+.js #inforesumen {
+	margin-top: 4em;
+	padding: 0.5em 0;
+	box-shadow: 1px 1px 2px #ccc;
+}
+.js #datosleyendaresumen #opcionesresumen {
+	text-align: center;
+	font-size: 0;
+}
+.js #datosleyendaresumen #opcionesresumen li {
+	box-shadow: 1px 1px 2px #ccc;
+	font-size: 14px;
+	width: 10%;
+	display: inline-block;
+	padding: 0.6em 1em;
+	margin: 0;
+	text-align: center;
+	background-color: #F9F9F9;
+	cursor: pointer;
+	-webkit-transition: background-color 0.4s ease, color 0.4s ease;
+	-moz-transition: background-color 0.4s ease, color 0.4s ease;
+	-o-transition: background-color 0.4s ease, color 0.4s ease;
+	-ms-transition: background-color 0.4s ease, color 0.4s ease;
+	transition: background-color 0.4s ease, color 0.4s ease;
+}
+.js #datosleyendaresumen #opcionesresumen li.act {
+	font-weight: bold;
+}
+.js #datosleyendaresumen #opcionesresumen li.reg {
+	display: none;   
+}
+.js #datosleyendaresumen #leyendaresumen {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.js #datosleyendaresumen #leyendaresumen li {
+	padding-left: 0.5em;
+	margin: 0.2em 0.7em 0.2em 0.2em;
+	border-left: 35px solid;
+	display: inline-block;
+	white-space: nowrap;
+	line-height: 10px;
+}
+.js #tituloMapaResumenCand{
+	text-align:center;
+	font-weight:bold;
+}
+.js #hemi {
+	margin: auto;
+	height: 10em;
+}
+.js .escrutado.p99 #datosmapa {
+	width: 30%;
+	float: left;
+	margin-bottom: 2em;
+	margin-left:5%;
+}
+.js .escrutado.p99 #datosmapa #mapa {
+	height: 500px;
+}
+.js .escrutado.p99 #datosmapa #mapa path,
+.js .escrutado.p99 #datosmapa #mapa circle,
+.js .R #maparesumen path,
+.js .R #maparesumen circle {
+	cursor: pointer;
+}
+.js .p99.escrutado #leyendamapa {
+	display: none;
+}
+.js .escrutado.p99 #datosagrupaciones,
+.js .escrutado.p99 #datosmesasygraficos{
+	width: 70%;
+	margin-left: 30%;
+}
+.js .escrutado.p99 #datosmesas {
+	float: none;
+	margin: auto;
+	width: 100%;
+}
+.js .escrutado.p99 #datosmapa #mapa path[data-code="99"],
+.js .escrutado.p99 #datosmapa #mapa path[data-code="_1"],
+.js .escrutado.p99 #datosmapa #mapa path[data-code="_0"],
+.js .R.p99 #datosmaparesumen #maparesumen path[data-code="99"],
+.js .R.p99 #datosmaparesumen #maparesumen path[data-code="_1"],
+.js .R.p99 #datosmaparesumen #maparesumen path[data-code="_0"] {
+	stroke: #CDCDCD;
+	stroke-width: 2;
+}
+.jvectormap-label {
+	position: absolute;
+	display: none;
+	border: solid 1px #CDCDCD;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #FFF;
+	color: #555;
+	font-size: 90%;
+	padding: 5px 7px;
+	box-shadow: 1px 1px 2px #ccc;
+	text-align: center;
+}
+.jvectormap-zoomin, .jvectormap-zoomout {
+	position: absolute;
+	left: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #FFF;
+	padding: 5px;
+	color: #2A2A2A;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	line-height: 10px;
+	text-align: center;
+	border: 1px solid #CCC;
+}
+.jvectormap-zoomin {
+	top: 10px;
+}
+.jvectormap-zoomout {
+	top: 35px;
+}
+.jvectormap-zoomin:hover, 
+.jvectormap-zoomout:hover {
+	background-color: #ededed;
+}
+.escrutado .jvectormap-marker,
+.R .jvectormap-marker {
+	stroke: #FFF;
+	stroke-width: 1;
+}
+.R .jvectormap-region {
+	stroke: #FFF;
+	stroke-width: 2;
+}
+.escrutado .jvectormap-region,
+.R.p99 .jvectormap-region {
+	stroke: #FFF;
+	stroke-width: 5;
+}
+.escrutado.previos .jvectormap-marker,
+.R.previos .jvectormap-marker {
+	stroke: #CDCDCD;
+	stroke-width: 1;
+}
+.escrutado.previos .jvectormap-region,
+.R.previos .jvectormap-region {
+	stroke: #CDCDCD;
+	stroke-width: 2;
+}
+.PN .jvectormap-region {
+	stroke-width: 0;
+}
+.PN.previos .jvectormap-region {
+	stroke: #C0C0C0;
+	stroke-width: 0.05;
+}
+#titmapa {
+	text-align: center;
+}
+#titmapa p {
+	margin: 0.5em auto;
+	font-size: 80%;
+}
+#titleyenda p {
+	text-align: center;
+	font-size: 80%;
+	margin-top: 0.5em;
+}
+#leyendaescrutado {
+	width: 95%;
+	text-align: center;
+}
+#leyendaescrutado p {
+	display: inline-block;
+	width: 4%;
+	font-size: 80%;
+}
+#leyendaescrutado .min {
+	text-align: right;
+	padding-right: 5px;
+}
+#leyendaescrutado .max {
+	text-align: left;
+}
+#leyendaescrutado .barra {
+	border: 1px solid #AAA;
+	display: inline-block;
+	width: 80%;
+	height: 5px;
+	position: relative;
+	background: -webkit-linear-gradient(left, #e4e6e6, #6d7777); 
+	background: -o-linear-gradient(left, #e4e6e6, #6d7777); 
+	background: -moz-linear-gradient(left, #e4e6e6, #6d7777); 
+	background: linear-gradient(to right, #e4e6e6, #6d7777);
+}
+.DN #leyendaescrutado .barra {
+	background: -webkit-linear-gradient(left, #D2C9E9, #c57ec5); 
+	background: -o-linear-gradient(left, #D2C9E9, #c57ec5); 
+	background: -moz-linear-gradient(left, #D2C9E9, #c57ec5); 
+	background: linear-gradient(to right, #D2C9E9, #c57ec5);
+}
+.DP #leyendaescrutado .barra {
+	background: -webkit-linear-gradient(left, #D2C9E9, #29A3A3); 
+	background: -o-linear-gradient(left, #D2C9E9, #29A3A3); 
+	background: -moz-linear-gradient(left, #D2C9E9, #29A3A3); 
+	background: linear-gradient(to right, #D2C9E9, #29A3A3);
+}
+.SN #leyendaescrutado .barra {
+	background: -webkit-linear-gradient(left, #D2C9E9, #f58d74); 
+	background: -o-linear-gradient(left, #D2C9E9, #f58d74); 
+	background: -moz-linear-gradient(left, #D2C9E9, #f58d74); 
+	background: linear-gradient(to right, #D2C9E9, #f58d74);
+}
+.SP #leyendaescrutado .barra {
+	background: -webkit-linear-gradient(left, #D2C9E9, #4E7A90); 
+	background: -o-linear-gradient(left, #D2C9E9, #4E7A90); 
+	background: -moz-linear-gradient(left, #D2C9E9, #4E7A90); 
+	background: linear-gradient(to right, #D2C9E9, #4E7A90);
+}
+#leyendaescrutado .barra .marca {
+	margin-top: -5px;
+	border-right: 1px solid #000;
+	height: 15px;
+	position: absolute;
+}
+/* ---------------------------------------- FIN MAPAS ------------------------------------------ */
+.leyendaExtraEscrutado{
+	margin-top:25px;
+}
+
+/* ---------- GRÁFICO ESCRUTADO (no se usa en 2017)---------- */
+#escrutadototal {
+	margin: 0.1em auto;
+}
+#escrutadototal p {
+	font-weight: bold;
+	text-align: center;
+}
+.PR #escrutadototal p {
+	color: #2096D3;
+}
+.PN #escrutadototal p {
+	color: #CCA37A;
+}
+#barraescrutadototal {
+	margin: 0.2em auto;
+	width: 60%;
+	height: 20px;
+	background-color: #FFF;
+	box-shadow: 1px 1px 2px #ccc;
+	/* border-radius: 2px; */
+	border: 1px solid #DDD;
+}
+#barraescrutadototal span {
+	height: 0px;
+	float: left;
+	border-bottom-width: 20px;
+	border-bottom-style: solid;
+}
+#titleyenda p {
+	text-align: center;
+	margin: 1em auto 0.2em auto;
+	font-size: 80%;
+}
+#leyendaescrutado {
+	width: 85%;
+	text-align: center;
+	margin: 0em auto 0.2em auto;
+}
+#leyendaescrutado p {
+	display: inline-block;
+	width: 4%;
+	font-size: 80%;
+}
+#leyendaescrutado .min {
+	text-align: right;
+}
+#leyendaescrutado .max {
+	text-align: left;
+}
+#leyendaescrutado .barra {
+	border: 1px solid #AAA;
+	display: inline-block;
+	width: 80%;
+	height: 5px;
+	position: relative;
+}
+#leyendaescrutado .barra .marca {
+	margin-top: -5px;
+	border-right: 1px solid #000;
+	height: 15px;
+	position: absolute;
+}
+#grafleyenda p {
+	text-align: center;
+	font-size: 80%;
+	margin: 0.5em auto 0.1em auto;
+}
+#graficoescrutado {
+	margin: 0 auto 1em auto;
+	width: 90%;
+	height: 400px;
+	position: relative;
+}
+#graficoescrutado .node {
+	position: absolute;
+	border: 1px solid #CCC;
+	box-shadow: 1px 1px 2px #ccc;
+	background-color: #eee;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 85%
+}
+#graficoescrutado .node p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-top: 0.4em;
+}
+#graficoescrutado .node .escrutpr {
+	display: none;
+}
+#graficoescrutado .node:hover {
+	background-color: #FDFFDE !important;
+	color: #4C4C4C !important;
+}
+#graficoescrutado .node .tooltip {
+	display: none;
+	margin-left: -150px;
+	margin-top: 10px;
+	padding: 0.5em;
+	border-radius: 10px;
+	position: absolute;
+	min-width: 175px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	box-shadow: 1px 1px 2px #ccc;
+	z-index: 1000;
+	text-align: left;
+	color: #4C4C4C;
+}
+#graficoescrutado #n02 .tooltip,
+#graficoescrutado #n04 .tooltip {
+	margin-top: 60px;
+	margin-left: 20px;
+}
+#graficoescrutado .node:hover .tooltip {
+	display: block;
+}
+#graficoescrutado .node .tooltip table {
+	width: 100%;
+}
+#graficoescrutado .node .tooltip .nombre {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 0.2em;
+	margin-bottom: 0.3em;
+}
+#graficoescrutado .node .tooltip .mestot,
+#graficoescrutado .node .tooltip .mesesc,
+#graficoescrutado .node .tooltip .pmesesc {
+	text-align: right;
+}
+#graficoescrutado .node .tooltip .pmesesc {
+	font-weight: bold;
+}
+
+#n01 {left: 45.75%; top: 29.88%; width: 12.1%; height: 62.75%;}
+#n02 {left: 0%; top: 0%;  width: 36.5%; height: 93%;}
+#n03 {left: 83.3%; top: 68.75%;  width: 7.2%; height: 12.75%;}
+#n04 {left: 36.5%; top: 0%; width: 9.2%; height: 93%;}   
+#n05 {left: 83.8%; top: 15.75%; width: 8.5%; height: 28.7%; }
+#n06 {left: 72%; top: 0%; width: 11.65%; height: 22.8%;}     
+#n07 {left: 88.75%; top: 44.5%; width: 9.3%; height: 12.45%;} 
+#n08 {left: 57.8%; top: 52.75%; width: 14.1%; height: 19.25%;}
+#n09 {left: 83.8%; top: 44.5%; width: 4.86%; height: 23.75%;} 
+#n10 {left: 72%; top: 56.25%; width: 11.65%; height: 12.25%;} 
+#n11 {left: 89.8%; top: 68.75%;  width: 8.2%; height: 10%;}   
+#n12 {left: 83.3%; top: 81.5%;  width: 7.2%; height: 11.2%;}  
+#n13 {left: 72%; top: 22.8%; width: 11.65%; height: 20.21%;}  
+#n14 {left: 83.8%; top: 0%; width: 14.2%; height: 15.75%; }   
+#n15 {left: 77.7%; top: 68.75%; width: 5.65%; height: 23.9%;} 
+#n16 {left: 72%; top: 68.75%; width: 5.65%; height: 23.9%;}   
+#n17 {left: 57.8%; top: 72.15%; width:  14.1%; height: 20.5%;} 
+#n18 {left: 72%; top: 43.25%; width: 11.65%; height: 12.75%;}  
+#n19 {left: 88.75%; top: 57.35%; width: 9.3%; height: 10.91%;} 
+#n20 {left: 89.8%; top: 79%;  width: 5.9%; height: 14%;}       
+#n21 {left: 45.75%; top: 0%; width: 26.2%; height: 29.75%;}    
+#n22 {left: 91.25%; top: 15.75%; width: 6.8%; height: 28.7%; } 
+#n23 {left: 57.8%; top: 29.88%; width: 14.1%; height: 22.5%;}  
+#n24 {left: 95.7%; top: 79%;  width: 2.3%; height: 14%;}       
+
+/* -------------------------------- FIN GRÄFICO ESCRUTADO (no se usa en 2017) ----------------------- */
+
+/* -------------------- FIN DATOS -------------------- */
+
+/* -------------------- PIE -------------------- */
+#pie {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 1em;
+	background-color: #0091ce;
+	max-height: 50px;
+	box-shadow: 1px 1px 2px #ccc;
+}
+#literalpie {
+	width: 55%;
+	float: left;
+	padding-top:10px;
+	vertical-align: middle;
+}
+#literalpie p {
+	font-size: 75%;
+	text-align: center;
+	color:#fff;
+}
+#literalpie p.footerMedium {
+	font-size: 85%;
+	font-weight:bold;
+	
+}
+#logopie {
+	float:right;
+	width: 300px;
+}
+#logopie img {
+	width: 100%;
+	margin-top:10px;
+}
+/* ------------------------------------------ FIN PIE ------------------------------------------ */
+/* -------------------- FIN CONTENIDO -------------------- */
+/* -------------------- FIN PAGINA -------------------- */
+
+/* -------------------------------------------INICIO CONTENEDORES------------------------------------*/
+.bgContainer {
+	border: 1px solid #e1e1e1;
+	/* border-radius: 2px; */
+	box-shadow: 1px 1px 2px #ccc;
+	margin-bottom:20px;
+	overflow: hidden;	
+}
+.bgContainerSmall {
+	margin-left: 15%;
+	width: 70%;
+}
+.bgContainer50 {
+	margin-left: 40%;
+	width: 59%;
+}
+.bgContainerBig {
+	width: 80%;
+	margin-left: 10%;
+}
+.headerContainer{
+	min-height:35px;
+	/* background-color: #dfe8ed; */
+	font-weight: bold;
+	line-height: 35px;
+	margin-bottom: 5px;
+	text-align: center;
+	box-shadow: 1px 1px 2px #ccc;
+
+}
+.footerContainer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+	border-top: 1px dotted #567fa0;
+}
+
+/* ------------------------------------------FIN CONTENEDORES---------------------------------------*/
+.cab50{
+	width:49.5%;
+	float:left
+}
+
+@media only screen and (max-width: 1000px) {
+	.onlydevice{
+		display:block;
+	}	
+	.onlyWeb{
+		display:none;
+	}
+	table.onlyWeb{
+		display:none;
+	}
+	/* #banner{
+		background-image: none;
+	} */
+	
+	#pagina{
+		margin-top:100px;
+	}
+	.js #links {
+		display: none;
+	}
+	
+	#banner{
+		/* background-image: none;
+		background-color: #dfe8ed; */
+		max-height: 50px;
+	}
+	#banner img {
+		width: 70%;
+	}
+	#banner img.imgLogo{
+		/* margin-top: 8px; */
+		width: auto;
+		height:50px;		
+	}
+	#banner img.imgSearch{
+		width:24px;		
+	}
+	.banner2 .logoContainer, .logoContainer{
+		width:120px;
+	}
+	#banner .bannerElecTexto{
+		font-size:95%;
+	}
+	#banner .bannerAmbitoTexto{
+		font-size: 95%;
+	}
+	#banner.banner2 .bannerAmbitoContainer{
+		margin-top: 5px;
+	}
+/* 	.menudesplegableProv li{
+		margin-top:10px;
+	} */
+	
+	
+	
+	#menubotones {
+		display: none;
+	}
+	.menudesplegableProv,  .menudesplegableElec {
+		display: block;
+		text-align: center;
+		float:right;
+	}
+	.menudesplegableElec li {
+		margin: 0;
+	}
+	.menudesplegableProv li{
+		/* margin-right: 5px; */
+		/* margin-top:40px; */
+	}
+	.menudesplegableProv li:hover .boton, .menudesplegableElec li:hover .boton {
+		background-color: #909090;
+		color: #FFF;
+	}
+	#contenido {
+		width: 100%;
+		margin: auto;
+		overflow:hidden;
+	}
+	#indicesmunicipios, #indiceselecciones {
+		position: absolute;
+		z-index: 1000;
+		display: block;
+		opacity: 0;
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		overflow: hidden;
+		/* margin-bottom: -99999px;
+		padding-bottom: 99999px; */
+	}
+	#indicesmunicipios {
+		left: -50%;
+		overflow: auto;
+	}
+	#indiceselecciones {
+		right: -50%;
+	}
+	.onlyWeb{
+		display:none;
+	}
+	.onlymobileDevice{
+		display:block;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.onlyWebDevice{
+		display:none;
+	}
+	
+	.onlymobile{
+		display:block;
+	}
+	#contenido{
+		padding-top: 34px;
+	}
+	
+	#pagina{
+		margin-top:65px;
+	}
+
+	#fechalarga {
+		display: none;
+	}
+	#fechacorta {
+		display: block;
+	}
+	#literalsubtitulo{
+		width:65%;
+	}
+	#horafecha{
+		width:35%;
+		margin-left:65%;
+	}
+	#literalsubtitulo p{
+		padding-left:0;
+	}
+	#ambito{
+		font-size:120%;
+	}
+	#datosmesasygraficos .muestra {
+		display: initial;
+	}
+	#datosmesasygraficos .nomuestra {
+		display: none;
+	}
+	#datosmesas {
+		width: 100%;
+		float: none;
+		display: table-footer-group;
+	}
+	.previos #tablamesashabilitadas,
+	#tablamesashabilitadas,
+	.previos #tablamesasescrutadas,
+	#tablamesasescrutadas {
+		width: 90%;
+		margin: 0 auto 1em auto;
+		float: none;
+	}
+	
+	#tablaresumen {
+		box-shadow: none;
+	}
+	#tablaresumen thead, 
+	#tablaresumen th {
+		display: none;
+	}
+	#tablaresumen tr,
+	#tablaresumen td {
+		display: block;
+	}
+	#tablaresumen tr {
+		margin-bottom: 2em;
+		box-shadow: 1px 1px 2px #ccc;
+	}
+	#tablaresumen .denom {
+		text-align: center;
+		background-color: #E9E9E9;
+		padding: 0.3em 0;
+	}
+   
+	#tablaresumen td {
+		background-color: #FFF;
+		padding-right: 1em;
+	}
+	#tablaresumen td.vot {
+		padding-right: 3em;
+	}
+	#tablaresumen td:before {
+		position: absolute;
+		left: 7%;
+	}
+	#tablaresumen td.pr.vot:before {
+		content: 'Presidente - Votos';
+	}
+	#tablaresumen td.pr.pvot:before {
+		content: 'Presidente - %';
+	}
+	#tablaresumen td.pn.vot:before {
+		content: 'Parlasur Nacional - Votos';
+	}
+	#tablaresumen td.pn.pvot:before {
+		content: 'Parlasur Nacional - %';
+	}
+	#tablaresumen td.sn.vot:before {
+		content: 'Senador Nacional - Votos';
+	}
+	#tablaresumen td.sn.pvot:before {
+		content: 'Senador Nacional - %';
+	}
+	#tablaresumen td.dn.vot:before {
+		content: 'Diputado Nacional - Votos';
+	}
+	#tablaresumen td.dn.pvot:before {
+		content: 'Diputado Nacional - %';
+	}
+	#tablaresumen td.pp.vot:before {
+		content: 'Parlasur Regional - Votos';
+	}
+	#tablaresumen td.pp.pvot:before {
+		content: 'Parlasur Regional - %';
+	}
+	#tablaresumen td.go.vot:before {
+		content: 'Gobernador - Votos';
+	}
+	#tablaresumen td.go.pvot:before {
+		content: 'Gobernador - %';
+	}
+	#tablaresumen td.sp.vot:before {
+		content: 'Senador Provincial - Votos';
+	}
+	#tablaresumen td.sp.pvot:before {
+		content: 'Senador Provincial - %';
+	}
+	.p18 #tablaresumen td.sp.vot:before {
+		content: 'Diputado Proporcional - Votos';
+	}
+	.p18 #tablaresumen td.sp.pvot:before {
+		content: 'Diputado Proporcional - %';
+	}
+	#tablaresumen td.dp.vot:before {
+		content: 'Diputado Provincial - Votos';
+	}
+	#tablaresumen td.dp.pvot:before {
+		content: 'Diputado Provincial - %';
+	}
+	.p18 #tablaresumen td.dp.vot:before {
+		content: 'Diputado Departamental - Votos';
+	}
+	.p18 #tablaresumen td.dp.pvot:before {
+		content: 'Diputado Departamental - %';
+	}
+    
+	.bgContainerSmall {
+		margin-left: 0;
+		width: 99%;
+	}
+	.bgContainerBig {
+		margin-left: 0;
+		width: 99%;
+	}
+	.bgContainer50{
+		margin-left: 0;
+		width: 99.6%;
+	}
+	.bgContainerSmall.izq, .bgContainerSmall.dch {
+		float: initial;
+	}
+	.boxContainerSmallCenter {
+		margin-left: 0;
+	}
+	.datosGeneralesContainer {
+	}
+	.boxContainerSmall {
+		overflow: hidden;
+		width: 45%;
+	}
+	.boxContainer {
+		overflow: hidden;
+		width: 100%;
+	}
+	.participacion p, .mesasEscrutadas p {
+		margin-left: 0;
+	}
+	.js .escrutado.p99 #datosmapa{
+		margin-left:10%;
+		width:80%;
+	}
+	#pie{
+		max-height:100px;
+		margin-top:0;
+	}
+	#literalpie{
+		width:100%;	
+		margin-bottom:0;			
+	}
+	#logopie{
+		width:100%;	
+		text-align:center;
+	}
+	#logopie img{
+		width:270px;
+		margin-top:5px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	
+	#literalsubtitulo {
+		width: 100%;
+		float: none;
+		display:none;
+	}
+	#horafecha {
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+	.participacion p, .mesasEscrutadas p {
+		font-size: 75%;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {	
+	
+	#fechacorta {
+		margin-left: 0;
+	}
+	
+}
+
+@media only screen and (max-width: 400px) {	
+	
+	#banner .bannerElecTexto {
+		font-size: 78%;
+	}
+	#banner .bannerAmbitoTexto {
+		font-size: 78%;
+	}
+	#banner img.imgLogo{
+		height: 40px;
+	}
+	#banner img.imgSearch{
+		width:24px;
+	}
+	.banner2 .logoContainer, .logoContainer{
+		width:100px;
+	}
+	
+}
+
+/* ----------------------------------------------------- COLORES ------------------------------------------------------------------------------ */
+.CO .headerContainer{
+	/* background-color: #ADC22F; */
+	border-bottom:3px solid #ADC22F;	
+}
+.R .headerContainer{
+	/* background-color: #FDFFDE; */
+	border-bottom:3px solid #FDFFDE;
+}
+.SN .headerContainer{
+	/* background-color: #f58d74; */
+	border-bottom:3px solid #f58d74;
+}
+.DN .headerContainer{
+	/* background-color: #7E6AAF; */
+	border-bottom:3px solid #7E6AAF;
+}
+.GO .headerContainer {
+	/* background-color: #63A163; */
+	border-bottom:3px solid #63A163;
+}
+.SP .headerContainer {
+	/* background-color: #4E7A90; */
+	border-bottom:3px solid #4E7A90;
+}
+.DP .headerContainer {
+	/* background-color: #29A3A3; */
+	border-bottom:3px solid #29A3A3;
+}
+.PN .headerContainer {
+	/* background-color: #F5EDE4; */
+	border-bottom:3px solid #F5EDE4;
+}
+.PM .headerContainer {
+	/* background-color: #E8E8FA; */
+	border-bottom:3px solid #E8E8FA;
+}
+.menu .INI:hover .boton {
+	background-color: #909090;
+	color: #FFF;
+}
+
+.menu .R:hover .boton,
+.menu .R.act .boton {
+	background-color: #909090;
+	color: #FFF;
+}
+#indiceselecciones .R:hover,
+#indiceselecciones .R.act {
+	background-color: #909090;
+	color: #FFF;
+}
+
+
+
+.R #titulo {
+	border-bottom: 5px solid #909090;
+	border-top: 5px solid #909090;
+	color: #909090;
+  
+}
+.R #datosresumen .r1 {
+	background-color: #E9E9E9;
+}
+.R .participacion p, .R .mesasEscrutadas p {
+	border-left: 8px solid #909090;
+}
+.R .participacion span, .R .mesasEscrutadas span {
+	color: #909090;
+}
+.R  a.linkColor{
+	color: #909090;
+}
+
+
+
+.menu .CO:hover .boton,
+.menu .CO.act .boton {
+	border-bottom:3px solid #ADC22F;
+	/* background-color: #ADC22F;
+	color: #FFF; */
+}
+#indiceselecciones .CO:hover,
+#indiceselecciones .CO.act {
+	background-color: #ADC22F;
+	color: #FFF;
+}
+.CO #titulo {   
+    border-bottom: 5px solid #ADC22F;
+    border-top: 5px solid #ADC22F;
+	color: #ADC22F;
+}
+
+.CO .participacion p , .CO .mesasEscrutadas p{
+	border-left: 8px solid #ADC22F;
+}
+.CO .participacion span, .CO .mesasEscrutadas span {
+	color: #ADC22F;
+}
+.CO table thead  {
+	border-bottom:3px solid #ADC22F;
+}
+.CO table thead .literal {
+	/* color: #2096D3; */
+	text-transform: uppercase;
+}
+.CO #tablaagrupaciones .r1 {
+	background-color: #fcfcfc;
+}
+.CO 	a.linkColor{
+	color: #ADC22F;
+}
+
+
+
+
+.menu .PR:hover .boton,
+.menu .PR.act .boton {
+	border-bottom:3px solid #2096D3;
+	/* background-color: #2096D3;
+	color: #FFF; */
+}
+#indiceselecciones .PR:hover,
+#indiceselecciones .PR.act {
+	background-color: #2096D3;
+	color: #FFF;
+}
+.PR #titulo {   
+    border-bottom: 5px solid #2096D3;
+    border-top: 5px solid #2096D3;
+	color: #2096D3;
+}
+
+.PR .participacion p , .PR .mesasEscrutadas p{
+	border-left: 8px solid #2096D3;
+}
+.PR .participacion span, .PR .mesasEscrutadas span {
+	color: #2096D3;
+}
+.PR table thead .literal {
+	/* color: #2096D3; */
+	text-transform: uppercase;
+}
+.PR table thead  {
+	border-bottom:3px solid #2096D3;
+}
+.PR #tablaagrupaciones .r1 {
+	background-color: #E3F3FC;
+}
+.PR 	a.linkColor{
+	color: #2096D3;
+}
+
+
+
+
+.menu .SN:hover .boton,
+.menu .SN.act .boton {
+	border-bottom:3px solid #f58d74;
+	/* background-color: #f58d74;
+	color: #FFF; */
+}
+#indiceselecciones .SN:hover,
+#indiceselecciones .SN.act {
+	background-color: #f58d74;
+	color: #FFF;
+}
+.SN #titulo {
+    /*background-color: #f58d74;
+    color: #FFF;*/
+    border-bottom: 2px solid #f58d74;
+    border-top: 2px solid #f58d74;
+	color: #f58d74;
+}
+.SN .participacion p, .SN .mesasEscrutadas p {
+	border-left: 8px solid #f58d74;
+}
+.SN .participacion span, .SN .mesasEscrutadas span {
+	color: #f58d74;
+}
+.SN #cargele p span {
+	color: #f58d74;
+}
+.SN table thead .literal {
+	/* color: #f58d74; */
+	text-transform: uppercase;
+}
+.SN table thead  {
+	/* background-color: #FFCEC3; */
+	border-bottom:3px solid #f58d74;
+}
+.SN  a.linkColor{
+	color: #f58d74;
+}
+
+
+
+
+
+
+.menu .DN:hover .boton,
+.menu .DN.act .boton{
+	/* background-color: #7E6AAF; */
+	border-bottom:3px solid #7E6AAF;
+	/* color: #FFF; */
+}
+#indiceselecciones .DN:hover,
+#indiceselecciones .DN.act {
+	background-color: #7E6AAF;
+	color: #FFF;
+}
+.DN #titulo {
+    
+    border-bottom: 2px solid #7E6AAF;
+    border-top: 2px solid #7E6AAF;
+	color: #7E6AAF;
+}
+.DN .participacion p, .DN .mesasEscrutadas p{
+	border-left: 8px solid #7E6AAF;
+}
+.DN .participacion span, .DN .mesasEscrutadas span {
+	color: #7E6AAF;
+}
+.DN #cargele p span {
+	color: #7E6AAF;
+}
+.DN table thead .literal {
+	/* color: #7E6AAF; */
+	text-transform: uppercase;	
+}
+.DN table thead  {
+	/* background-color: #efecf9; */
+	border-bottom:3px solid #7E6AAF;
+}
+.DN 	a.linkColor{
+	color: #7E6AAF;
+}
+
+
+
+
+.menu .GO:hover .boton,
+.menu .GO.act .boton {
+	border-bottom:3px solid #63A163;
+	/* background-color: #63A163;
+	color: #FFF; */
+}
+#indiceselecciones .GO:hover,
+#indiceselecciones .GO.act {
+	background-color: #63A163;
+	color: #FFF;
+}
+.GO #titulo {
+    border-bottom: 2px solid #63A163;
+    border-top: 2px solid #63A163;
+	color: #63A163;
+}
+.GO .participacion p, .GO .mesasEscrutadas p {
+	border-left: 8px solid #63A163;
+}
+.GO .participacion span, .GO .mesasEscrutadas span {
+	color: #63A163;
+}
+.GO table thead .literal {
+	/* color: #63A163; */
+	text-transform: uppercase;
+}
+.GO table thead  {
+	/* background-color: #E9F9E9; */
+	border-bottom:3px solid #63A163;
+}
+.GO 	a.linkColor {
+	color: #63A163;
+}
+
+
+
+
+.menu .SP:hover .boton,
+.menu .SP.act .boton {
+	border-bottom:3px solid #4E7A90;
+	/* background-color: #4E7A90;
+	color: #FFF; */
+}
+#indiceselecciones .SP:hover,
+#indiceselecciones .SP.act {
+	background-color: #4E7A90;
+	color: #FFF;
+}
+.SP #titulo {
+   border-bottom: 2px solid #4E7A90;
+   border-top: 2px solid #4E7A90;
+   color: #4E7A90;
+}
+.SP .participacion p, .SP .mesasEscrutadas p {
+	border-left: 8px solid #4E7A90;
+}
+.SP .participacion span, .SP .mesasEscrutadas span {
+	color: #4E7A90;
+}
+.SP #cargele p span {
+	color: #4E7A90;
+}
+.SP table thead .literal {
+	/* color: #4E7A90; */
+	text-transform: uppercase;
+}
+.SP table thead  {
+	/* background-color: #DCE4E9; */
+	border-bottom:3px solid #4E7A90;
+}
+.SP  a.linkColor{
+	color: #4E7A90;
+}
+
+
+
+.menu .DP:hover .boton,
+.menu .DP.act .boton {
+	border-bottom:3px solid #29A3A3;
+	/* background-color: #29A3A3;
+	color: #FFF; */
+}
+#indiceselecciones .DP:hover,
+#indiceselecciones .DP.act {
+	background-color: #29A3A3;
+	color: #FFF;
+}
+.DP #titulo {
+    color: #29A3A3;
+    border-bottom: 2px solid #29A3A3;
+    border-top: 2px solid #29A3A3;
+}
+.DP .participacion p, .DP .mesasEscrutadas p {
+	border-left: 8px solid #29A3A3;
+}
+.DP .participacion span, .DP .mesasEscrutadas span {
+	color: #29A3A3;
+}
+.DP #cargele p span {
+	color: #29A3A3;
+}
+.DP table thead .literal {
+	/* color: #29A3A3; */
+	text-transform: uppercase;
+}
+.DP table thead  {
+	/* background-color: #DDF1F1; */
+	border-bottom:3px solid #29A3A3;
+}
+.DP a.linkColor {
+	color: #29A3A3;
+}
+
+
+.menu .PN:hover .boton,
+.menu .PN.act .boton {
+	border-bottom:3px solid #CCA37A;
+	/* background-color: #CCA37A;
+	color: #FFF; */
+}
+#indiceselecciones .PN:hover,
+#indiceselecciones .PN.act {
+	background-color: #CCA37A;
+	color: #FFF;
+}
+.PN #titulo {
+   color: #CCA37A;
+   border-bottom: 2px solid #CCA37A;
+   border-top: 2px solid #CCA37A;
+}
+.PN .participacion p, .PN .mesasEscrutadas p {
+	border-left: 8px solid #CCA37A;
+}
+.PN .participacion span, .PN .mesasEscrutadas span {
+	color: #CCA37A;
+}
+.PN #cargele p span {
+	color: #CCA37A;
+}
+.PN table thead .literal {
+	/* color: #CCA37A; */
+	text-transform: uppercase;
+}
+.PN table thead  {
+	/* background-color: #F5EDE4; */
+	border-bottom:3px solid #CCA37A;
+}
+.PN  a.linkColor {
+	color: #CCA37A;
+}
+
+
+.menu .PM:hover .boton,
+.menu .PM.act .boton {
+	border-bottom:3px solid #8A8AE6;
+	/* background-color: #8A8AE6;
+	color: #FFF; */
+}
+#indiceselecciones .PM:hover,
+#indiceselecciones .PM.act {
+	background-color: #8A8AE6;
+	color: #FFF;
+}
+.PM #titulo {
+   border-bottom: 2px solid #8A8AE6;
+   border-top: 2px solid #8A8AE6;
+   color: #8A8AE6;
+}
+.PM .participacion p, .PM .mesasEscrutadas p {
+	border-left: 8px solid #8A8AE6;
+}
+.PM .participacion span, .PM .mesasEscrutadas span{
+	color: #8A8AE6;
+}
+.PM #cargele p span {
+	color: #8A8AE6;
+}
+.PM table thead .literal {
+	/* color: #8A8AE6; */
+	text-transform: uppercase;
+}
+.PM table thead  {
+	/* background-color: #E8E8FA; */
+	border-bottom:3px solid #8A8AE6;
+}
+
+
+
+
+
+/*******************************************INICIO PRUEBA GRAFICOS ******************************************************************/
+#tablagraficobarras .small .denom {
+	text-indent: 10px;
+	font-style: italic; 
+	font-weight: bold;   
+}
+
+#tablagraficobarras  td{
+	border-bottom: 0px solid #cfcfcf;
+}
+
+#tablagraficobarras .small td{
+	border-bottom: 1px solid #cfcfcf;
+}
+
+#tablagraficobarras .small tr{
+	height: 25px;
+	border-bottom: none;
+}
+
+/****************************************FIN PRUEBA GRAFICOS ************************************************************************/
+
+
+/*************************************************************************INICIO BÚSQUEDA LIBRE*************************************************************************************/
+/* #caja_BusquedaLibre, #busquedaLibre, #busquedaLibre1 {
+    float: right;
+    top: 3.7em;
+	width:300px;
+}
+  
+#busquedaLibre, #busquedaLibre1 {
+  margin-right: 1.6%;
+  float: right;
+  width: 28em;
+  height: 2.3em;
+  display: none;
+}
+#sel_BusquedaLibre {
+  right: .2%;
+  display: none;
+}
+#mensajeBusq {
+  font-weight: bold;
+}
+
+@media only screen and (max-width:980px) {
+  #busquedaLibre, #busquedaLibre1 {
+    margin-right: 2%;
+    right: 0;
+    top: 4.24em;
+    position: absolute;
+  }
+  .select2-selection__choice {
+    font-size: 95%;
+  }
+}
+@media only screen and (max-width:640px) {
+  #caja_BusquedaLibre {
+    position: absolute;
+    width: 19em;
+  }
+  #busquedaLibre, #busquedaLibre1 {
+    height: 2em;
+    top: 3.7em;
+    width: 19em;
+  }
+  
+}
+@media only screen and (max-width:380px) {
+  
+  #busquedaLibre, #busquedaLibre1 {
+    position: absolute;
+    top: 3.7em;
+    margin-right: 2%;
+  }
+  #caja_BusquedaLibre, #busquedaLibre, #busquedaLibre1 {
+    width: 13em;
+  }
+  
+} */
+#busquedaLibre {
+	margin-top:5px;
+	margin-right: 5px;
+	float: right;
+	width: 19em;
+	height: 2.3em;
+}
+#sel_BusquedaLibre {
+  right: .2%;
+  display: none;
+}
+#pesquisa {
+  font-weight: bold;
+}
+@media only screen and (max-width:980px) {  
+  .select2-selection__choice {
+    font-size: 95%;
+  }
+}
+
+/* @media only screen and (max-width:640px) {
+  #caja_BusquedaLibre {
+    width: 19em;
+  }
+} */
+
+
+@media only screen and (max-width:400px) {
+  
+  #busquedaLibre {
+    /* position: absolute; */
+    /* top: 3.7em; */
+   /*  margin-right: 5px; */
+  }
+  .imgSearch{
+	  display:none;
+  }
+  #caja_BusquedaLibre, #busquedaLibre {
+    width: 17em;
+	margin-right:0;
+  }
+  .menuImgContainer{
+	  width:40px;
+  }
+  .imgMenu{
+		width: 36px;
+		margin-left: 0;
+  }
+  
+}
+
+
+
+
+#busquedaLibre1, #caja_BusquedaLibre {
+  height: inherit;
+}
+
+
+  
+  
+  
+  
+
+
+/*************************************************************************FIN BÚSQUEDA LIBRE*************************************************************************************/
+	
+.muestra{
+	display:inherit;
+}
+.nomuestra{
+	display:none;
+}	
+	
+.contenidoSinDatos{
+	width:100%;
+	font-size:150%;
+	font-weight:bold;
+	text-align: center;
+    margin-top: 100px;
+}	

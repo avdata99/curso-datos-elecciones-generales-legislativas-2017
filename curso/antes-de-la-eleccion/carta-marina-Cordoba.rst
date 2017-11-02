@@ -1,9 +1,9 @@
 ¿Que es una carta marina?
 =========================
 Antes de cualquier elección la justicia electoral se encarga de confeccionar una lista 
-de los centros donde se desarrollará la votación. Además se disribuyen las mesas y los electores. 
+de los centros donde se desarrollará la votación. Además se disribuyen las mesas y los electores. En general en Argentina se la llama *Guía Electoral*.
 
-¿Por que se llama *Carta Marina*? 
+¿Por que en Córdoba se la llama *Carta Marina*? 
 
 .. figure:: /img/porque-marina.png
   :alt: explicación de Perez corti

@@ -10,20 +10,15 @@ necesario manifestarlo por email a Yanina Sandra Martinez
 ymartinez@mininterior.gob.ar. Esta es la forma que el Ministerio del
 Interior provee esta información.
 
-Para las elecciones 2017 todos estos datos se compartieron
-`aquí <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md>`__.
+Para las elecciones 2017 todos estos datos se compartieron vía email: `muestra </static/Elecciones-legislativas-2017.html>`__ 
+(`version PASO <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md>`__).
 
-.. figure:: /img/repo-mininterior.png
-   :alt: repo-mininterior
-
-   repo-mininterior
+.. figure:: /img/muestra-mininterior-explicacion.png
+   :alt: Datos informados por el ministerio del interior
 
 El documento indica cuales y en que formatos están los documentos. El
 proceso a continuación es el uso de estos datos para construir resumenes
 y visualizaciones útiles.
-
-Para procecar estos daton abrimos una planilla de cálculo nueva de
-Google Drive.
 
 Archivos incluidos
 ~~~~~~~~~~~~~~~~~~
@@ -270,14 +265,5 @@ y pasarlo a Google Drive.
 
 Cómo se ve todavía el dato no está erminado y son datos de prueba.
 
-Trabajo terminado abierto
--------------------------
-
-Finalmente todo este proceso `esta libre y disponible en Google
-Drive <https://docs.google.com/spreadsheets/d/1k8fHbUGyQo5NzW46C2RD1N_Jk9QRcUJHRf8Dh_gP5Do/edit?usp=sharing>`__.
-
-.. toctree::
-  :maxdepth: 2
-  :includehidden:
-
-  analizar-datos-ministerio-interior
+Para procesar estos daton abrimos una planilla de cálculo nueva de
+Google Drive.
