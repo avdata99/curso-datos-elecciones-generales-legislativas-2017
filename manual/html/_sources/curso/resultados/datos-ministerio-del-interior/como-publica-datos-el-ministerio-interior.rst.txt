@@ -10,64 +10,53 @@ necesario manifestarlo por email a Yanina Sandra Martinez
 ymartinez@mininterior.gob.ar. Esta es la forma que el Ministerio del
 Interior provee esta información.
 
-Para las elecciones 2017 todos estos datos se compartieron vía email: `muestra </static/Elecciones-legislativas-2017.html>`__ 
+Para las elecciones 2017 todos estos datos se compartieron vía email: `muestra 2017 <https://avdata99.github.io/datos-indra-dia-eleccion-paso-2017-AR/generales-2017/Elecciones%20legislativas%202017.html>`__ 
 (`version PASO <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md>`__).
 
 .. figure:: /img/muestra-mininterior-explicacion.png
    :alt: Datos informados por el ministerio del interior
 
-El documento indica cuales y en que formatos están los documentos. El
-proceso a continuación es el uso de estos datos para construir resumenes
-y visualizaciones útiles.
+El documento indica cuales y en que formatos están los documentos. El proceso a continuación es el uso de estos datos para construir resumenes y visualizaciones útiles.
 
-Archivos incluidos
+Datos y incluidos
 ~~~~~~~~~~~~~~~~~~
 
 Tipos de elección
 ^^^^^^^^^^^^^^^^^
 
-| El primer dato es la lista de códigos para los cargos electivos. No
-  esta en un CSV, es un texto suelto.
-| Copiamos el texto y lo pegamos en la planilla.
+El primer dato es la lista de códigos para los cargos electivos. No esta en un CSV, es un texto suelto. Copiamos el texto y lo pegamos en la planilla.
 
 .. figure:: /img/dato-texto-01-indra.png
    :alt: dato-texto-01-indra
 
-   dato-texto-01-indra
-
-Luego seleccionamos las celdas con texto y usamos la funcionalidad de
-*Dividir texto en columnas* (en el menú *datos*) con el separador " = "
-(espacio, signo igual, espacio). Además le agregamos encabezado a las
+Luego seleccionamos las celdas con texto y usamos la funcionalidad de *Dividir texto en columnas* (en el menú *datos*) con el separador " = " (espacio, signo igual, espacio). Además le agregamos encabezado a las
 columnas.
 
 .. figure:: /img/dato-texto-02-indra.png
    :alt: dato-texto-02-indra
 
-   dato-texto-02-indra
+Se incluyen dos archivos de interés para analizar la elección. Uno es estático y el segundo cambia cada 5 minutos e incluye los resultados parciales la noche de entrega de resultados. 
 
-**Nota para todos los datos:** El código 999 se refiere a totales
-provinciales.
+El archivo estático se llama `generales_00.tar.gz <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00.tar.gz?raw=true>`__
+
+Este incluye datos que no varían durante la elección:
 
 Ámbitos electorales
 ^^^^^^^^^^^^^^^^^^^
 
-El alcance máximo de estos datos son las secciones electorales (en
-Córdoba, Departamentos). La lista de estos departamentos esta en el
-archivo
-`*ambitos\_00.csv* <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/generales_00/ambitos_00.csv>`__.
+`Ámbitos <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/ambitos_00.csv?raw=true>`__: Lista de las secciones electorales. Vale destacar que en cuanto a las zonas las elecciones nacionales se dividen en distrito (provincias) + seccion (departamentos) + circuito (ciudades en general).
 
-Tip: Este archivo en este caso está en la plataforma *GitHub* (la más
-usadas por los programadores para compartir código y datos). Para poder
-ver esto en su formato real y descargarlo o copiarlo le agregamos
-*?raw=true* al final de link en el navegador.
+El alcance máximo de estos datos son las secciones electorales (en Córdoba, Departamentos). La lista de estos departamentos esta en el archivo
 
-Tip II: Notó que separa los campos con *punto y coma*? Es *Excel
-Friendly*.
+Tip: ¿Notó que separa los campos con *punto y coma*? Es para comodidad de los usaurios de *Excel* que por defecto usar punto y coma en lugar de la coma estandar. 
 
-.. figure:: /img/raw-true.png
-   :alt: raw-true
 
-   raw-true
+`Agrupaciones <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/agrupaciones_00.csv?raw=true>`__: Alianzas y partidos políticos que participan de la elección.
+
+**Nota para todos los datos:** El código 999 se refiere a totales provinciales.
+
+
+
 
 Allí el texto se podrá mostrar tal cual es. Lo copiamos y pegamos en una
 **hoja nueva** de nuestra planilla de drive. Será necesario nuevamente

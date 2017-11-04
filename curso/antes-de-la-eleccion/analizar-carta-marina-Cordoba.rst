@@ -67,3 +67,10 @@ A los fines de usar Tabula en casos efectivos pueden tomarse dos ejemplos relaci
 
 * `NÓMINA DE AUTORIDADES DE MESA -ELECCIONES BALOTAJE 2015 <https://www.pjn.gov.ar/cne/secelec/document/otros/4-04_web_am181115_20h40m.pdf>`__
 * `Integración de Alianzas 2015 <https://www.pjn.gov.ar/cne/secelec/document/otros/4-INTEGRACION%20DE%20ALIANZAS%202015%20ELECCIONES%20PASO.pdf>`__
+
+
+Archivo final
+^^^^^^^^^^^^^
+
+Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde `aquí <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marinaescuelas-elecciones-2015-cordoba.csv>`__.
+

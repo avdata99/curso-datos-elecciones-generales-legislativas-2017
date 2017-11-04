@@ -90,7 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Datos que publica el Ministerio del Interior</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Como publica los datos el Ministerio del Interior</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#archivos-incluidos">Archivos incluidos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#datos-y-incluidos">Datos y incluidos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tipos-de-eleccion">Tipos de elección</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ambitos-electorales">Ámbitos electorales</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#totales">Totales</a></li>
@@ -161,54 +161,36 @@ entregan en formatos reutilizables.</p>
 necesario manifestarlo por email a Yanina Sandra Martinez
 <a class="reference external" href="mailto:ymartinez&#37;&#52;&#48;mininterior&#46;gob&#46;ar">ymartinez<span>&#64;</span>mininterior<span>&#46;</span>gob<span>&#46;</span>ar</a>. Esta es la forma que el Ministerio del
 Interior provee esta información.</p>
-<p>Para las elecciones 2017 todos estos datos se compartieron vía email: <a class="reference external" href="/static/Elecciones-legislativas-2017.html">muestra</a>
+<p>Para las elecciones 2017 todos estos datos se compartieron vía email: <a class="reference external" href="https://avdata99.github.io/datos-indra-dia-eleccion-paso-2017-AR/generales-2017/Elecciones%20legislativas%202017.html">muestra 2017</a>
 (<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/info-previa-DINE.md">version PASO</a>).</p>
 <div class="figure">
 <img alt="Datos informados por el ministerio del interior" src="../../../_images/muestra-mininterior-explicacion.png" />
 </div>
-<p>El documento indica cuales y en que formatos están los documentos. El
-proceso a continuación es el uso de estos datos para construir resumenes
-y visualizaciones útiles.</p>
-<div class="section" id="archivos-incluidos">
-<h2>Archivos incluidos<a class="headerlink" href="#archivos-incluidos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El documento indica cuales y en que formatos están los documentos. El proceso a continuación es el uso de estos datos para construir resumenes y visualizaciones útiles.</p>
+<div class="section" id="datos-y-incluidos">
+<h2>Datos y incluidos<a class="headerlink" href="#datos-y-incluidos" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="tipos-de-eleccion">
 <h3>Tipos de elección<a class="headerlink" href="#tipos-de-eleccion" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="line-block">
-<div class="line">El primer dato es la lista de códigos para los cargos electivos. No
-esta en un CSV, es un texto suelto.</div>
-<div class="line">Copiamos el texto y lo pegamos en la planilla.</div>
-</div>
-<div class="figure" id="id1">
+<p>El primer dato es la lista de códigos para los cargos electivos. No esta en un CSV, es un texto suelto. Copiamos el texto y lo pegamos en la planilla.</p>
+<div class="figure">
 <img alt="dato-texto-01-indra" src="../../../_images/dato-texto-01-indra.png" />
-<p class="caption"><span class="caption-text">dato-texto-01-indra</span></p>
 </div>
-<p>Luego seleccionamos las celdas con texto y usamos la funcionalidad de
-<em>Dividir texto en columnas</em> (en el menú <em>datos</em>) con el separador &#8221; = &#8221;
-(espacio, signo igual, espacio). Además le agregamos encabezado a las
+<p>Luego seleccionamos las celdas con texto y usamos la funcionalidad de <em>Dividir texto en columnas</em> (en el menú <em>datos</em>) con el separador &#8221; = &#8221; (espacio, signo igual, espacio). Además le agregamos encabezado a las
 columnas.</p>
-<div class="figure" id="id2">
+<div class="figure">
 <img alt="dato-texto-02-indra" src="../../../_images/dato-texto-02-indra.png" />
-<p class="caption"><span class="caption-text">dato-texto-02-indra</span></p>
 </div>
-<p><strong>Nota para todos los datos:</strong> El código 999 se refiere a totales
-provinciales.</p>
+<p>Se incluyen dos archivos de interés para analizar la elección. Uno es estático y el segundo cambia cada 5 minutos e incluye los resultados parciales la noche de entrega de resultados.</p>
+<p>El archivo estático se llama <a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00.tar.gz?raw=true">generales_00.tar.gz</a></p>
+<p>Este incluye datos que no varían durante la elección:</p>
 </div>
 <div class="section" id="ambitos-electorales">
 <h3>Ámbitos electorales<a class="headerlink" href="#ambitos-electorales" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>El alcance máximo de estos datos son las secciones electorales (en
-Córdoba, Departamentos). La lista de estos departamentos esta en el
-archivo
-<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/generales_00/ambitos_00.csv">*ambitos_00.csv*</a>.</p>
-<p>Tip: Este archivo en este caso está en la plataforma <em>GitHub</em> (la más
-usadas por los programadores para compartir código y datos). Para poder
-ver esto en su formato real y descargarlo o copiarlo le agregamos
-<em>?raw=true</em> al final de link en el navegador.</p>
-<p>Tip II: Notó que separa los campos con <em>punto y coma</em>? Es <em>Excel
-Friendly</em>.</p>
-<div class="figure" id="id3">
-<img alt="raw-true" src="../../../_images/raw-true.png" />
-<p class="caption"><span class="caption-text">raw-true</span></p>
-</div>
+<p><a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/ambitos_00.csv?raw=true">Ámbitos</a>: Lista de las secciones electorales. Vale destacar que en cuanto a las zonas las elecciones nacionales se dividen en distrito (provincias) + seccion (departamentos) + circuito (ciudades en general).</p>
+<p>El alcance máximo de estos datos son las secciones electorales (en Córdoba, Departamentos). La lista de estos departamentos esta en el archivo</p>
+<p>Tip: ¿Notó que separa los campos con <em>punto y coma</em>? Es para comodidad de los usaurios de <em>Excel</em> que por defecto usar punto y coma en lugar de la coma estandar.</p>
+<p><a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/agrupaciones_00.csv?raw=true">Agrupaciones</a>: Alianzas y partidos políticos que participan de la elección.</p>
+<p><strong>Nota para todos los datos:</strong> El código 999 se refiere a totales provinciales.</p>
 <p>Allí el texto se podrá mostrar tal cual es. Lo copiamos y pegamos en una
 <strong>hoja nueva</strong> de nuestra planilla de drive. Será necesario nuevamente
 <em>dividir el texto en columnas</em>. Esta vez el separador es el punto y
@@ -336,7 +318,7 @@ copiar la tabla, pegarla Google Drive, volver a copiarla y hacer el
 pegado especial que se llama <em>Pegado con transposición de datos</em>. Esto
 transforma filas en columnas.</p>
 <p>Debería verse así:</p>
-<div class="figure" id="id4">
+<div class="figure" id="id1">
 <img alt="totales-04-indra" src="../../../_images/totales-04-indra.png" />
 <p class="caption"><span class="caption-text">totales-04-indra</span></p>
 </div>
@@ -425,7 +407,7 @@ lista</td>
 <p>Haciendo el mismo proceso con el archivo de <a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totaleslistas_04.csv">*totales por listas* para
 Córdoba</a>
 se debe llegar a esta lista:</p>
-<div class="figure" id="id5">
+<div class="figure" id="id2">
 <img alt="totales-listas-04-indra" src="../../../_images/totales-listas-04-indra.png" />
 <p class="caption"><span class="caption-text">totales-listas-04-indra</span></p>
 </div>
@@ -446,7 +428,7 @@ y pasarlo a Google Drive.</p>
 y Denominación</em>.</div>
 <div class="line">Debe quedar así:</div>
 </div>
-<div class="figure" id="id6">
+<div class="figure" id="id3">
 <img alt="listas" src="../../../_images/listas.png" />
 <p class="caption"><span class="caption-text">listas</span></p>
 </div>

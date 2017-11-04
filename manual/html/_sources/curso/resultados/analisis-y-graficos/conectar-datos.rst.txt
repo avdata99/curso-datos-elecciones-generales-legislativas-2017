@@ -16,7 +16,7 @@ circuitos <agrupar-datos.md>`__ en una hoja de nuestra planilla y la de
 A ambas hojas las ordenamos por códigos de sección y códigos de circuito
 (de modo que queden ordenadas por circuito dentro de cada *sección*).
 
-**La existencia de códigos únicos de Circuitos y Secciones nos ayana el
+**La existencia de códigos únicos de Circuitos y Secciones nos allana el
 camino**. Es importante exigir este tipo de identificadores para los
 gobiernos que liberan datos.
 

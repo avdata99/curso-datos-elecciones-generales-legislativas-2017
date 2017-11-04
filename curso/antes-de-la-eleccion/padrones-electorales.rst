@@ -6,6 +6,7 @@ Antes de cada elección la justicia electoral le entrega a los partidos polític
 En muchos casos estos padrones son entregados en papel. Esta es una muestra de un padrón en Mendiolaza
 
 .. figure:: /img/padron-mendiolaza-muestra.png
+   :target: https://github.com/avdata99/padrones-electorales/blob/master/padronesListos/Mendiolaza/01-Padron-Mendiolaza-2015-Elecc-Gobernador--03-%20%2040A.PDF?raw=true
 
 Si nosotros fuéramos un partido político. **¿Que preguntas buscaríamos responder?**
 
