@@ -15,7 +15,7 @@ Algunas buenas preguntas para responder serían:
 * ¿Cual es la variación respecto del padron anterior y de donde provienen los nuevos electores?
 * ¿Cuales son los electores con domicilios no identificados (del tipo *calle publica s/n*)?
 
-Lo cierto es que con un padron en papel esto no es posible de responder sin un granesfuerzo. En otros casos se entrega un disco o sistema informático donde es posible buscar de a uno a los electores. En este caso tampoco es posible hacer análisis masivos de datos útiles para responder las preguntas antes planteadas.
+Lo cierto es que con un padron en papel esto no es posible de responder sin un gran esfuerzo. En otros casos se entrega un disco o sistema informático donde es posible buscar de a uno a los electores. En este caso tampoco es posible hacer análisis masivos de datos útiles para responder las preguntas antes planteadas.
 
 **Uno de los grandes problemas del periodismo de datos hoy es el formato en el que se reciben los datos. El caso de los archivos PDFs es uno de los males comunes del periodismos de datos.**
 

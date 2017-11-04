@@ -42,5 +42,6 @@ Película donde un equipo de investigación periodística analiza múltiples cas
 Candidatos 2017
 ----------------
 
-ORIGINAL: `Lista de candidatos 2017 sin genero en Excel </datos-a-usar/candidatos/CandidatosGenerales2017-ORIGINAL.xlsx>`__
-MEJORADO: `Lista de candidatos 2017 con genero en CSV </datos-a-usar/candidatos/candidatos-2017-con-genero.csv>`__
+| ORIGINAL: `Lista de candidatos 2017 sin genero en Excel </datos-a-usar/candidatos/CandidatosGenerales2017-ORIGINAL.xlsx>`__.
+| MEJORADO: `Lista de candidatos 2017 con genero en CSV </datos-a-usar/candidatos/candidatos-2017-con-genero.csv>`__
+

@@ -6,8 +6,8 @@ Antes de la elección
 
   padrones-electorales
   formatos-de-archivo
+  lista-de-candidatos
   carta-marina-Cordoba
   analizar-carta-marina-Cordoba
-  lista-de-candidatos
   recursos
   
