@@ -144,8 +144,7 @@ Ahora Carto no requiere interferir la geolocalizazión y detecta a la
 primera las columnas que representan las coordenadas. Con este archivo
 se puede hacer un nuevo mapa en Carto con resultados muy superiores.
 
-Finalmente queda así: `Ver
-mapa <https://hudson.carto.com/builder/9f30c071-f758-4286-b408-8f8fa2db5c10/embed>`__.
+Finalmente queda así: `Ver mapa <https://hudson.carto.com/builder/e9399cd4-f421-40ce-b5e1-3190ab9d90dc/embed>`__. 
 
 .. figure:: /img/carto2-ok.png
    :alt: Mapa OK carto
@@ -154,10 +153,11 @@ Código para embeber:
 
 ::
 
-    <iframe width="100%" height="520" 
-        frameborder="0" 
-        src="https://hudson.carto.com/builder/9f30c071-f758-4286-b408-8f8fa2db5c10/embed" 
-        allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+    <iframe 
+      width="100%" height="520" frameborder="0" 
+      src="https://hudson.carto.com/builder/e9399cd4-f421-40ce-b5e1-3190ab9d90dc/embed" 
+      allowfullscreen webkitallowfullscreen 
+      mozallowfullscreen oallowfullscreen msallowfullscreen>
     </iframe>
 
 Usar este CSV con latitud y longitud incluida agiliza la carga en Google
@@ -174,3 +174,6 @@ necesarios.
 Otra posibilidad con mayor complejidad técnica es seguir los pasos que describió Manuel Aristarán para cruzar estos datos con la base de datos de escuelas argentinas realizada en 2013. Con esta aplicación `Donde voto? <https://github.com/jazzido/dondevoto>`__ es posible hacer match entre los nombres de las escuelas oficiales y los establecimientos de una carta marina. Si bien no es perfecto supera la efectividad en la geolocalización de otros métodos.
 
 En base a este trabajo quedo disponible tambien `otro resumen de datos de las escuelas argentinas <https://github.com/avdata99/escuelas-argentinas>`__ con mapas incluidos.
+
+.. figure:: /img/primarias-por-sector.png
+
