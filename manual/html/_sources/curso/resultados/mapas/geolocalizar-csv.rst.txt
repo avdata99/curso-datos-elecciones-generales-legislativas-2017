@@ -1,14 +1,6 @@
 Procesar CSV para Geolocalizar
 ==============================
 
-| Tomar el CSV con los datos de la carta marina y subirlo a Google
-  Drive.
-| Una vez subido darle click derecho y elegir *abrir con* y luego *hoja
-  de calculo de Google*.
-| Esto nos dará un entorno de planilla de cálculo online para mejorar
-  los datos antes de su geolocalización.
-| |csv en drive|
-
 Nótese que una de las columnas incluye más de un dato. Esto es un
 *error* (a veces intencional) que dificulta el análisis de datos. La
 columna *Escuela* incluye: - El nombre de la escuela - La dirección de

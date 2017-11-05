@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Formatos de datos espaciales</title>
+    
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="formatos-de-datos-espaciales">
+<h1>Formatos de datos espaciales</h1>
+<div class="line-block">
+<div class="line">Llamamos datos <em>espaciales</em> a aquellos que refieren a la ubicación en
+un espacio de referencia.</div>
+<div class="line">Decimos que son datos <em>georreferenciados</em> cuando esa referencia se
+establece sobre la superficie terrestre. <a class="reference external" href="https://es.wikipedia.org/wiki/Base_de_datos_espacial">Ver más en
+Wikipedia</a><span class="link-target"> [https://es.wikipedia.org/wiki/Base_de_datos_espacial]</span>.</div>
+</div>
+<p>Para representar datos georeferrenciados (en un plano de dos
+dimensiones) usamos tres tipos de objetos: - <strong>Puntos</strong>: Incluye dos
+valores que representan la latitud y la longitud. No existe una forma
+única de representar estos valores. Hay cientos de formas de representar
+estos valores, estos se llaman <em>Sistemas de proyección cartográfica</em>.
+Tengamos en cuenta que nuestro planeta es una espera y para representar
+una ubicación solo con dos puntos (dimensiones) necesitamos <em>proyectar</em>
+esa esfera en un plano de dos dimensiones. - <strong>Lineas</strong>: Un conjunto de
+<em>puntos</em> conectados, por ejemplo el recorrido de una linea de transporte
+público. - <strong>Polígonos</strong>: Igual que una línea pero se entiende que el
+último se conecta al primero formando un figura cerrada. Ejemplo:
+poligono de los límites de una ciudad o estado.</p>
+<p>Con estos tres alcanza para la gran mayoría de los casos aunque hay
+casos complejos y especiales que no exceden el alcance de este apunte.</p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cartogr%C3%A1fica">Ver más sobre proyección
+cartográfica</a><span class="link-target"> [https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cartogr%C3%A1fica]</span>.</p>
+<p>Los formatos de interés para un periodista de datos o usuario de datos
+espaciales son (no en orden de importancia):</p>
+<div class="section" id="kml">
+<h2>KML</h2>
+<div class="line-block">
+<div class="line">Es un archivo de texto que usa el marcado XML. Incluye la descripcion
+de objetos espaciales con coordendas. Puede enriquecese incluyendo
+estilos gráficos (ancho y color de bordes, rellenos, íconos, etc). Es
+usado por Google MyMaps y muchos otros para exportar.</div>
+<div class="line"><a class="reference external" href="https://es.wikipedia.org/wiki/KML">Ver más en Wikipedia</a><span class="link-target"> [https://es.wikipedia.org/wiki/KML]</span>.</div>
+</div>
+<div class="figure" id="id1">
+<img alt="kml-sample" src="../../../_images/kml-sample.png" />
+<p class="caption"><span class="caption-text">kml-sample</span></p>
+</div>
+</div>
+<div class="section" id="wkt-para-csv">
+<h2>WKT (para CSV)</h2>
+<div class="line-block">
+<div class="line">Es una forma de texto muy simple para describir objetos espaciales. Es
+útil para combinar como columna extra en CSV. Es compatible con muchas
+herramientas de mapeo.</div>
+<div class="line"><a class="reference external" href="https://es.wikipedia.org/wiki/Well_Known_Text">Ver más en
+Wikipedia</a><span class="link-target"> [https://es.wikipedia.org/wiki/Well_Known_Text]</span>
+<img alt="CSV-WKT-sample" src="../../../_images/CSV-WKT-sample.png" /></div>
+</div>
+</div>
+<div class="section" id="shp">
+<h2>SHP</h2>
+<p>Es un formato de archivo propietario de datos espaciales desarrollado
+por la compañía ESRI. En realidad son múltiples archivos (uno para las
+corrdenadas, otros para los datos y otro para los índices) que suelen
+incluirse en uno final comprimido. Es usado en los entornos más técnicos
+de cartógrafos y afines. hay mucho material interesante en este formato.
+Se puede pasar a formatos más <em>amigables</em> con productos como QGis u
+Ogr2ogr.</p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/Shapefile">Ver más en Wikipedia</a><span class="link-target"> [https://es.wikipedia.org/wiki/Shapefile]</span></p>
+</div>
+<div class="section" id="geojson">
+<h2>GeoJSON</h2>
+<div class="line-block">
+<div class="line">Es un archivo de texto que cumple con las normas JSON pero que incluye
+datos espaciales.</div>
+<div class="line"><a class="reference external" href="http://geojson.org/">Ver más sobre GeoJSON</a><span class="link-target"> [http://geojson.org/]</span>.</div>
+<div class="line"><img alt="json-sample" src="../../../_images/json-sample.png" /></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

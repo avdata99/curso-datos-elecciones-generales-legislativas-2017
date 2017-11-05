@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Curso Elecciones Legislativas 2017 en Córdoba</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint57" playOrder="1">
+      <navLabel>
+        <text>Curso Legislativas Córdoba 2017</text>
+      </navLabel>
+      <content src="index.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint58" playOrder="2">
+      <navLabel>
+        <text>Antes de la elección</text>
+      </navLabel>
+      <content src="curso/antes-de-la-eleccion/index.xhtml" />
+      <navPoint id="navPoint59" playOrder="2">
+        <navLabel>
+          <text>Antes de la elección</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/index.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint60" playOrder="3">
+        <navLabel>
+          <text>Padrones electorales</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/padrones-electorales.xhtml" />
+        <navPoint id="navPoint61" playOrder="3">
+          <navLabel>
+            <text>Padrones electorales</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/padrones-electorales.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint62" playOrder="4">
+          <navLabel>
+            <text>Algunos ejemplos</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/padrones-electorales.xhtml#algunos-ejemplos" />
+        </navPoint>
+        <navPoint id="navPoint63" playOrder="5">
+          <navLabel>
+            <text>Ejemplo periodístico de la vida real</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/padrones-electorales.xhtml#ejemplo-periodistico-de-la-vida-real" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint64" playOrder="6">
+        <navLabel>
+          <text>Formatos de archivos</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/formatos-de-archivo.xhtml" />
+        <navPoint id="navPoint65" playOrder="6">
+          <navLabel>
+            <text>Formatos de archivos</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/formatos-de-archivo.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint66" playOrder="7">
+          <navLabel>
+            <text>PDF</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/formatos-de-archivo.xhtml#pdf" />
+        </navPoint>
+        <navPoint id="navPoint67" playOrder="8">
+          <navLabel>
+            <text>XLS (Excel)</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/formatos-de-archivo.xhtml#xls-excel" />
+        </navPoint>
+        <navPoint id="navPoint68" playOrder="9">
+          <navLabel>
+            <text>CSV</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/formatos-de-archivo.xhtml#csv" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint69" playOrder="10">
+        <navLabel>
+          <text>Lista de candidatos</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/lista-de-candidatos.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint70" playOrder="11">
+        <navLabel>
+          <text>¿Que es una carta marina?</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/carta-marina-Cordoba.xhtml" />
+        <navPoint id="navPoint71" playOrder="11">
+          <navLabel>
+            <text>¿Que es una carta marina?</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/carta-marina-Cordoba.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint72" playOrder="12">
+          <navLabel>
+            <text>Otros usos periodísticos</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/carta-marina-Cordoba.xhtml#otros-usos-periodisticos" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint73" playOrder="13">
+        <navLabel>
+          <text>Procesar la carta marina Córdoba 2015</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/analizar-carta-marina-Cordoba.xhtml" />
+        <navPoint id="navPoint74" playOrder="13">
+          <navLabel>
+            <text>Procesar la carta marina Córdoba 2015</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/analizar-carta-marina-Cordoba.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint75" playOrder="14">
+          <navLabel>
+            <text>Tip de búsqueda</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/analizar-carta-marina-Cordoba.xhtml#tip-de-busqueda" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint76" playOrder="15">
+        <navLabel>
+          <text>Recursos y ejemplos</text>
+        </navLabel>
+        <content src="curso/antes-de-la-eleccion/recursos.xhtml" />
+        <navPoint id="navPoint77" playOrder="15">
+          <navLabel>
+            <text>Recursos y ejemplos</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/recursos.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint78" playOrder="16">
+          <navLabel>
+            <text>Guías electorales de Argentina</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/recursos.xhtml#guias-electorales-de-argentina" />
+        </navPoint>
+        <navPoint id="navPoint79" playOrder="17">
+          <navLabel>
+            <text>Cartas marinas públicas de Córdoba</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/recursos.xhtml#cartas-marinas-publicas-de-cordoba" />
+        </navPoint>
+        <navPoint id="navPoint80" playOrder="18">
+          <navLabel>
+            <text>Datos de electores por circuito electoral 2007 - 2017</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/recursos.xhtml#datos-de-electores-por-circuito-electoral-2007-2017" />
+        </navPoint>
+        <navPoint id="navPoint81" playOrder="19">
+          <navLabel>
+            <text>Spotlight (En primera plana)</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/recursos.xhtml#spotlight-en-primera-plana" />
+        </navPoint>
+        <navPoint id="navPoint82" playOrder="20">
+          <navLabel>
+            <text>Candidatos 2017</text>
+          </navLabel>
+          <content src="curso/antes-de-la-eleccion/recursos.xhtml#candidatos-2017" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint83" playOrder="21">
+      <navLabel>
+        <text>Datos que publica el Ministerio del Interior</text>
+      </navLabel>
+      <content src="curso/resultados/datos-ministerio-del-interior/index.xhtml" />
+      <navPoint id="navPoint84" playOrder="21">
+        <navLabel>
+          <text>Datos que publica el Ministerio del Interior</text>
+        </navLabel>
+        <content src="curso/resultados/datos-ministerio-del-interior/index.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint85" playOrder="22">
+        <navLabel>
+          <text>Como publica los datos el Ministerio del Interior</text>
+        </navLabel>
+        <content src="curso/resultados/datos-ministerio-del-interior/como-publica-datos-el-ministerio-interior.xhtml" />
+        <navPoint id="navPoint86" playOrder="22">
+          <navLabel>
+            <text>Como publica los datos el Ministerio del Interior</text>
+          </navLabel>
+          <content src="curso/resultados/datos-ministerio-del-interior/como-publica-datos-el-ministerio-interior.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint87" playOrder="23">
+          <navLabel>
+            <text>Archivos incluidos</text>
+          </navLabel>
+          <content src="curso/resultados/datos-ministerio-del-interior/como-publica-datos-el-ministerio-interior.xhtml#archivos-incluidos" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint88" playOrder="24">
+        <navLabel>
+          <text>Google Sheets</text>
+        </navLabel>
+        <content src="curso/resultados/datos-ministerio-del-interior/google-sheets.xhtml" />
+        <navPoint id="navPoint89" playOrder="24">
+          <navLabel>
+            <text>Google Sheets</text>
+          </navLabel>
+          <content src="curso/resultados/datos-ministerio-del-interior/google-sheets.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint90" playOrder="25">
+          <navLabel>
+            <text>Trabajo terminado abierto</text>
+          </navLabel>
+          <content src="curso/resultados/datos-ministerio-del-interior/google-sheets.xhtml#trabajo-terminado-abierto" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint91" playOrder="26">
+        <navLabel>
+          <text>Analizando los datos del ministerio del interior</text>
+        </navLabel>
+        <content src="curso/resultados/datos-ministerio-del-interior/analizar-datos-ministerio-interior.xhtml" />
+        <navPoint id="navPoint92" playOrder="26">
+          <navLabel>
+            <text>Analizando los datos del ministerio del interior</text>
+          </navLabel>
+          <content src="curso/resultados/datos-ministerio-del-interior/analizar-datos-ministerio-interior.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint93" playOrder="27">
+          <navLabel>
+            <text>Resultados totales provincia por lista</text>
+          </navLabel>
+          <content src="curso/resultados/datos-ministerio-del-interior/analizar-datos-ministerio-interior.xhtml#resultados-totales-provincia-por-lista" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint94" playOrder="28">
+      <navLabel>
+        <text>Analizando resultados electorales</text>
+      </navLabel>
+      <content src="curso/resultados/analisis-y-graficos/index.xhtml" />
+      <navPoint id="navPoint95" playOrder="28">
+        <navLabel>
+          <text>Analizando resultados electorales</text>
+        </navLabel>
+        <content src="curso/resultados/analisis-y-graficos/index.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint96" playOrder="29">
+        <navLabel>
+          <text>Agrupar datos</text>
+        </navLabel>
+        <content src="curso/resultados/analisis-y-graficos/agrupar-datos.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint97" playOrder="30">
+        <navLabel>
+          <text>Conectar datos de planillas distintas</text>
+        </navLabel>
+        <content src="curso/resultados/analisis-y-graficos/conectar-datos.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint98" playOrder="31">
+        <navLabel>
+          <text>D&#39;Hont</text>
+        </navLabel>
+        <content src="curso/resultados/analisis-y-graficos/dhont.xhtml" />
+        <navPoint id="navPoint99" playOrder="31">
+          <navLabel>
+            <text>D&#39;Hont</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/dhont.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint100" playOrder="32">
+          <navLabel>
+            <text>Totales de bancas por agrupación</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/dhont.xhtml#totales-de-bancas-por-agrupacion" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint101" playOrder="33">
+        <navLabel>
+          <text>Publicar tablas y gráficos</text>
+        </navLabel>
+        <content src="curso/resultados/analisis-y-graficos/publicar-tablas-y-graficos.xhtml" />
+        <navPoint id="navPoint102" playOrder="33">
+          <navLabel>
+            <text>Publicar tablas y gráficos</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/publicar-tablas-y-graficos.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint103" playOrder="34">
+          <navLabel>
+            <text>Desde Google Drive</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/publicar-tablas-y-graficos.xhtml#desde-google-drive" />
+        </navPoint>
+        <navPoint id="navPoint104" playOrder="35">
+          <navLabel>
+            <text>Con DataStudio</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/publicar-tablas-y-graficos.xhtml#con-datastudio" />
+        </navPoint>
+        <navPoint id="navPoint105" playOrder="36">
+          <navLabel>
+            <text>Con Plot.ly</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/publicar-tablas-y-graficos.xhtml#con-plot-ly" />
+        </navPoint>
+        <navPoint id="navPoint106" playOrder="37">
+          <navLabel>
+            <text>Otras formas a analizar</text>
+          </navLabel>
+          <content src="curso/resultados/analisis-y-graficos/publicar-tablas-y-graficos.xhtml#otras-formas-a-analizar" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint107" playOrder="38">
+        <navLabel>
+          <text>Visualizaciones legislativas</text>
+        </navLabel>
+        <content src="curso/resultados/analisis-y-graficos/visualizaciones-legislativas.xhtml" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint108" playOrder="39">
+      <navLabel>
+        <text>Mapas de los resultados</text>
+      </navLabel>
+      <content src="curso/resultados/mapas/index.xhtml" />
+      <navPoint id="navPoint109" playOrder="39">
+        <navLabel>
+          <text>Mapas de los resultados</text>
+        </navLabel>
+        <content src="curso/resultados/mapas/index.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint110" playOrder="40">
+        <navLabel>
+          <text>Formatos de datos espaciales</text>
+        </navLabel>
+        <content src="curso/resultados/mapas/formatos-geo.xhtml" />
+        <navPoint id="navPoint111" playOrder="40">
+          <navLabel>
+            <text>Formatos de datos espaciales</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/formatos-geo.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint112" playOrder="41">
+          <navLabel>
+            <text>KML</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/formatos-geo.xhtml#kml" />
+        </navPoint>
+        <navPoint id="navPoint113" playOrder="42">
+          <navLabel>
+            <text>WKT (para CSV)</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/formatos-geo.xhtml#wkt-para-csv" />
+        </navPoint>
+        <navPoint id="navPoint114" playOrder="43">
+          <navLabel>
+            <text>SHP</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/formatos-geo.xhtml#shp" />
+        </navPoint>
+        <navPoint id="navPoint115" playOrder="44">
+          <navLabel>
+            <text>GeoJSON</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/formatos-geo.xhtml#geojson" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint116" playOrder="45">
+        <navLabel>
+          <text>Geolocalizar Circuitos fuera de la capital.</text>
+        </navLabel>
+        <content src="curso/resultados/mapas/geolocalizar-circuitos.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint117" playOrder="46">
+        <navLabel>
+          <text>Procesar CSV para Geolocalizar</text>
+        </navLabel>
+        <content src="curso/resultados/mapas/geolocalizar-csv.xhtml" />
+        <navPoint id="navPoint118" playOrder="46">
+          <navLabel>
+            <text>Procesar CSV para Geolocalizar</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/geolocalizar-csv.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint119" playOrder="47">
+          <navLabel>
+            <text>Geolocalizando en Fusion Tables</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/geolocalizar-csv.xhtml#geolocalizando-en-fusion-tables" />
+        </navPoint>
+        <navPoint id="navPoint120" playOrder="48">
+          <navLabel>
+            <text>Geolocalizando con Google MyMaps</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/geolocalizar-csv.xhtml#geolocalizando-con-google-mymaps" />
+        </navPoint>
+        <navPoint id="navPoint121" playOrder="49">
+          <navLabel>
+            <text>Geolocalizando en CartoDB</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/geolocalizar-csv.xhtml#geolocalizando-en-cartodb" />
+        </navPoint>
+        <navPoint id="navPoint122" playOrder="50">
+          <navLabel>
+            <text>Geolocalizar direcciones es complejo</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/geolocalizar-csv.xhtml#geolocalizar-direcciones-es-complejo" />
+        </navPoint>
+        <navPoint id="navPoint123" playOrder="51">
+          <navLabel>
+            <text>Ver más</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/geolocalizar-csv.xhtml#ver-mas" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint124" playOrder="52">
+        <navLabel>
+          <text>Poligonos de Secciones y Circuitos</text>
+        </navLabel>
+        <content src="curso/resultados/mapas/poligonos.xhtml" />
+        <navPoint id="navPoint125" playOrder="52">
+          <navLabel>
+            <text>Poligonos de Secciones y Circuitos</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/poligonos.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint126" playOrder="53">
+          <navLabel>
+            <text>Secciones electorales</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/poligonos.xhtml#secciones-electorales" />
+        </navPoint>
+        <navPoint id="navPoint127" playOrder="54">
+          <navLabel>
+            <text>Circuitos electorales</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/poligonos.xhtml#circuitos-electorales" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint128" playOrder="55">
+        <navLabel>
+          <text>Recursos y ejemplos</text>
+        </navLabel>
+        <content src="curso/resultados/mapas/recursos-externos-y-ejemplos.xhtml" />
+        <navPoint id="navPoint129" playOrder="55">
+          <navLabel>
+            <text>Recursos y ejemplos</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/recursos-externos-y-ejemplos.xhtml" />
+        </navPoint>
+        <navPoint id="navPoint130" playOrder="56">
+          <navLabel>
+            <text>Mapas de base para reutilizar</text>
+          </navLabel>
+          <content src="curso/resultados/mapas/recursos-externos-y-ejemplos.xhtml#mapas-de-base-para-reutilizar" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

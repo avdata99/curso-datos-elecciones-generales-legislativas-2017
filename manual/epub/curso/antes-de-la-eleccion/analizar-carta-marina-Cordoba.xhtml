@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Procesar la carta marina Córdoba 2015</title>
+    
+    <link rel="stylesheet" href="../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="procesar-la-carta-marina-cordoba-2015">
+<h1>Procesar la carta marina Córdoba 2015</h1>
+<p>Una búsqueda en Google dará con una lista de <a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/secciones/otros/otros_view.php?oID=674&amp;dID=4">recursos en el poder
+judicial de Nación sobre
+CORDOBA</a><span class="link-target"> [https://www.pjn.gov.ar/cne/secelec/secciones/otros/otros_view.php?oID=674&amp;dID=4]</span>.
+Hay de todas las provincias. Lamentablemente son PDFs difíciles de
+procesar en general.</p>
+<div class="section" id="tip-de-busqueda">
+<h2>Tip de búsqueda</h2>
+<p>Si se busca <em>&#8220;Carta Marina&#8221; Córdoba</em> y se agrega además</p>
+<ul class="simple">
+<li><em>filetype:pdf</em>: Solo archivos PDF</li>
+<li><em>filetype:csv</em>: Solo archivos CSV</li>
+<li><em>filetype:xls</em>: Solo archivos de Excel</li>
+<li><em>site:gov.ar</em>: Solo sitios de Gobierno en Argentina (sumar además el nuevo gob.ar)</li>
+</ul>
+<p>los resultados cambian sensiblemente. Google no sabe que tipo de
+archivos buscamos y si solo queremos algunos sitios específicamente (en
+este caso, datos oficiales de gobierno).</p>
+<p>Allí se encuentra la <a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/document/otros/4-Carta%20Marina%202015.pdf">Carta Marina Córdoba 2015 en
+PDF</a><span class="link-target"> [https://www.pjn.gov.ar/cne/secelec/document/otros/4-Carta%20Marina%202015.pdf]</span>.</p>
+<div class="figure">
+<img alt="carta" src="../../_images/carta-marina-pdf.png" />
+</div>
+<p>Una vez descargado se debe abrir con <a class="reference external" href="http://tabula.technology/">Tabula
+PDF</a><span class="link-target"> [http://tabula.technology/]</span>. Este producto libre y gratuito
+permite pasar tablas a formatos reutilizables de datos.</p>
+<p>Como primera prueba se puede seleccionar directamente una parte de la
+tabla para analizar si el resultado es útil.</p>
+<div class="figure">
+<img alt="marca" src="../../_images/marcando-zona-en-tabula.png" />
+</div>
+<p>Luego del proceso se ven los resultados pasados a una tabla de datos
+reutilizable.</p>
+<div class="figure">
+<img alt="intento" src="../../_images/primer-intento-tabula.png" />
+</div>
+<p>Se ve que no tomo correctamente las celdas como uno podría imaginar. Se
+requiere que cada dato esté en una celda individual. El que construyo el
+PDF no lo hizo construyendo una tabla ordenadamente sino que dejo varias
+líneas de texto en cada <em>celda</em>.</p>
+<p>Como prueba adicional se puede usar el detector automático de tablas en
+Tabula y ver los resultados.</p>
+<div class="figure">
+<img alt="prueba2" src="../../_images/prueba-2-tabula.png" />
+</div>
+<p>Como se ve, la falla es la misma. Este PDF no es procesable de manera que entregue resultados listos para usar. En estos casos las opciones son:</p>
+<ul class="simple">
+<li>Si el PDF no es muy largo, tomar estos resultados (o copiar el texto del PDF y pasarlos a un editor de texto) para limpiarlos a mano.</li>
+<li>Si el PDF es muy largo se puede contar con la colaboración de algún programador que procese automáticamente y obtenga el resultado deseado.</li>
+<li>Si se tienen contactos con algún partido político o con funcionarios de la junta electoral se puede solicitar una versión más amigable (Excel, CSV o similares).</li>
+</ul>
+<p>En la sección de <a class="reference external" href="recursos">recursos</a> se dejaron referencias a Cartas Marinas en formato original y procesado.</p>
+<p>A los fines de usar Tabula en casos efectivos pueden tomarse dos ejemplos relacionados en casos donde el PDF sí se puede transformar:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/document/otros/4-04_web_am181115_20h40m.pdf">NÓMINA DE AUTORIDADES DE MESA -ELECCIONES BALOTAJE 2015</a><span class="link-target"> [https://www.pjn.gov.ar/cne/secelec/document/otros/4-04_web_am181115_20h40m.pdf]</span></li>
+<li><a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/document/otros/4-INTEGRACION%20DE%20ALIANZAS%202015%20ELECCIONES%20PASO.pdf">Integración de Alianzas 2015</a><span class="link-target"> [https://www.pjn.gov.ar/cne/secelec/document/otros/4-INTEGRACION%20DE%20ALIANZAS%202015%20ELECCIONES%20PASO.pdf]</span></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

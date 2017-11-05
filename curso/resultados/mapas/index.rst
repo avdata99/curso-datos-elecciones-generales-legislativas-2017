@@ -6,6 +6,5 @@ Mapas de los resultados
 
   formatos-geo
   geolocalizar-circuitos
-  geolocalizar-csv
   poligonos
   recursos-externos-y-ejemplos

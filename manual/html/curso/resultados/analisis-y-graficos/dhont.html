@@ -90,8 +90,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../datos-ministerio-del-interior/index.html">Datos que publica el Ministerio del Interior</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Analizando resultados electorales</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="conectar-datos.html">Conectar datos de planillas distintas</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">D&#8217;Hont</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#totales-de-bancas-por-agrupacion">Totales de bancas por agrupación</a></li>
@@ -159,9 +157,8 @@ combinando fórmulas de Google Drive.</div>
 <div class="line">El primer paso es replicar (igualar) en una nueva hoja de nuestro
 documento los votos finales y el nombre de cada agrupación:</div>
 </div>
-<div class="figure" id="id1">
+<div class="figure">
 <img alt="dhont-01" src="../../../_images/dhont-01.png" />
-<p class="caption"><span class="caption-text">dhont-01</span></p>
 </div>
 <div class="line-block">
 <div class="line">En segunda instancia, aplicando la metodología del sistema <em>D&#8217;Hont</em>
@@ -172,9 +169,8 @@ obtenemos los cocientes.</div>
 <div class="highlight-default"><div class="highlight"><pre><span></span>=$A2/C$1
 </pre></div>
 </div>
-<div class="figure" id="id2">
+<div class="figure">
 <img alt="dhont-02" src="../../../_images/dhont-02.png" />
-<p class="caption"><span class="caption-text">dhont-02</span></p>
 </div>
 <p>A continuación vamos a hacer algo extraño pero que: - evitar necesitar
 un programador para el cálculo - se va a entener mejor en los próximos
@@ -186,9 +182,8 @@ agrupaciones 9 veces hacia abajo.</div>
 columnas.</div>
 </div>
 <p>Se verá así (los colores no son necesarios, solo explicativos).</p>
-<div class="figure" id="id3">
+<div class="figure">
 <img alt="dhont-03" src="../../../_images/dhont-03.png" />
-<p class="caption"><span class="caption-text">dhont-03</span></p>
 </div>
 <p>Ahora agregamos nuestra tabla de resumen a la derecha donde quedarán
 listadas las agrupaciones en posición de obtener la banca.</p>
@@ -198,7 +193,7 @@ necesitamos</p>
 </pre></div>
 </div>
 <p>Note los signos <em>$</em> y luego estire la funcion hasta la novena banca.</p>
-<div class="figure" id="id4">
+<div class="figure" id="id1">
 <img alt="dhont-04" src="../../../_images/dhont-04.png" />
 <p class="caption"><span class="caption-text">dhont-04</span></p>
 </div>
@@ -209,7 +204,7 @@ corresponde un coeficiente.</p>
 </pre></div>
 </div>
 <p>Note los signos <em>$</em> y luego estire la funcion hasta la novena banca.</p>
-<div class="figure" id="id5">
+<div class="figure" id="id2">
 <img alt="dhont-05" src="../../../_images/dhont-05.png" />
 <p class="caption"><span class="caption-text">dhont-05</span></p>
 </div>
@@ -225,7 +220,7 @@ parámetro es el rango, el segundo el valor buscado.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>=countif(N$2:N$10;M14)
 </pre></div>
 </div>
-<div class="figure" id="id6">
+<div class="figure" id="id3">
 <img alt="dhont-06" src="../../../_images/dhont-06.png" />
 <p class="caption"><span class="caption-text">dhont-06</span></p>
 </div>

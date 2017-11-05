@@ -1,0 +1,441 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Procesar CSV para Geolocalizar &mdash; documentación de Curso Elecciones Legislativas 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../search.html"/>
+    <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/>
+        <link rel="up" title="Antes de la elección" href="index.html"/>
+        <link rel="next" title="Recursos y ejemplos" href="recursos.html"/>
+        <link rel="prev" title="Agrupar datos" href="agrupar-datos.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Curso Elecciones Legislativas 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Antes de la elección</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="padrones-electorales.html">Padrones electorales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lista-de-candidatos.html">Lista de candidatos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="carta-marina-Cordoba.html">¿Que es una carta marina?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analizar-carta-marina-Cordoba.html">Procesar la carta marina Córdoba 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google-sheets.html">Planillas de cálculo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Procesar CSV para Geolocalizar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#geolocalizando-en-fusion-tables">Geolocalizando en Fusion Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geolocalizando-con-google-mymaps">Geolocalizando con Google MyMaps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geolocalizando-en-cartodb">Geolocalizando en CartoDB</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#geolocalizar-con-el-api-de-google-sin-ser-desarrollador">Geolocalizar con el API de Google sin ser desarrollador</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#geolocalizar-direcciones-es-complejo">Geolocalizar direcciones es complejo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ver-mas">Ver más</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="recursos.html">Recursos y ejemplos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../resultados/datos-ministerio-del-interior/index.html">Datos que publica el Ministerio del Interior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resultados/analisis-y-graficos/index.html">Analizando resultados electorales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resultados/mapas/index.html">Mapas de los resultados</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Curso Elecciones Legislativas 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Antes de la elección</a> &raquo;</li>
+      
+    <li>Procesar CSV para Geolocalizar</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/curso/antes-de-la-eleccion/geolocalizar-carta-marina.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="procesar-csv-para-geolocalizar">
+<h1>Procesar CSV para Geolocalizar<a class="headerlink" href="#procesar-csv-para-geolocalizar" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Nótese que una de las columnas incluye más de un dato. Esto es un
+<em>error</em> (a veces intencional) que dificulta el análisis de datos. La
+columna <em>Escuela</em> incluye: - El nombre de la escuela - La dirección de
+la escuela - En algunos casos el barrio</p>
+<p>Google Sheets (la planilla de cálculo incluida en Google Drive) incluye
+una herramienta para estos casos. Excel y LibreOffice ofrecen
+posibilidades similares en este sentido.</p>
+<p>Como vamos a procesar la columna <em>Escuela</em> no es mala idea hacer una
+copia de ella para referencias futuras en la medición de la efectividad
+de los procesos que vamos a usar.</p>
+<p>Hacemos un click en el encabezado de la columna <em>Escuela</em> para
+seleccionarla. En el menú <em>datos</em> elegimos la opción <em>dividir texto en
+columnas</em>. Nos ofrecera como <em>separador</em> predeterminado la coma.</p>
+<div class="figure" id="id1">
+<img alt="dividir" src="../../_images/dividir-texto-en-col.png" />
+<p class="caption"><span class="caption-text">dividir</span></p>
+</div>
+<div class="line-block">
+<div class="line">Nosotros cambiamos eso por un separador <em>personalizado</em>. Elegimos <em>&#8221; -
+&#8220;</em> (espacio, guión, espacio) que es el que detectamosmirando los
+datos.</div>
+<div class="line">Se requiere una segunda división sobre la segunda columna resultante
+ya que algunas dirección es incluyen el barrio (que no ayuda a la
+geolocalización) con el prefijo <em>&#8220;B°&#8221;</em>. Dividir entonces esta columna
+con el separador <em>&#8220;B°&#8221;</em>.</div>
+</div>
+<p>Agregar en la planilla de cálculo las columnas <em>Ciudad</em>, <em>Provincia</em> y
+<em>Pais</em>. A la columna Ciudad igualarla a la columna. Si bien no siembre
+es necesario la provincia y el país ya que algunos entornos de
+geolocalización permiten especificarlo nunca está de más.</p>
+<p>La columna Ciudad no es tan facil de llenar. En Córdoba los circuitos
+son localidades. Esto ayuda en general salvo en la Ciudad de Córdoba
+donde los circuitos electorales tienen nombres no formales vinculados
+algunas veces al barrio pero no son útiles a los fines de la
+geolocalización. Todas las escuelas de la seccional 1, sin importar el
+circuito, deben decir Córdoba en la columna <em>Ciudad</em>.</p>
+<p>En definitiva, la columna <em>Ciudad</em> debe decir <em>Córdoba</em> para la
+seccional <em>&#8220;Capital&#8221;</em> y copiar la columna <em>Circuito Nombre</em> en todos los
+otros casos. Esto se puede programar con la función:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="k">if</span><span class="p">(</span><span class="n">B2</span><span class="o">=</span><span class="s2">&quot;CAPITAL&quot;</span><span class="p">;</span><span class="s2">&quot;Córdoba&quot;</span><span class="p">;</span><span class="n">D2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para algunos sitios se requiere que todos los datos de una
+geolocalización este en una sola columna. Es util por esto agregar una
+columna más al final que se llame por ejemplo <em>Geo</em> y que agrupe a las
+columnas - Direccion - Ciudad - Provincia - País - NO USAR BARRIO salvo
+que algún entorno mejore la geolocalización, en general esto no sucede</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">CONCATENATE</span><span class="p">(</span><span class="n">F2</span><span class="p">;</span><span class="s2">&quot;, &quot;</span><span class="p">;</span><span class="n">H2</span><span class="p">;</span><span class="s2">&quot;, &quot;</span><span class="p">;</span><span class="n">I2</span><span class="p">;</span><span class="s2">&quot;, &quot;</span><span class="p">;</span><span class="n">J2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Descargar esta planilla como CSV para llevar a alguna plataforma de
+geolozalización.</div>
+<div class="line">Descargar trabajo hecho: <a class="reference external" href="../recursos/escuelas-elecciones-2015-cordoba-FINAL-PARA-GEO.csv">csv para
+geo</a>.</div>
+</div>
+<div class="section" id="geolocalizando-en-fusion-tables">
+<h2>Geolocalizando en Fusion Tables<a class="headerlink" href="#geolocalizando-en-fusion-tables" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Desde Google Drive se puede crear un nuevo archivo de Fusion Tables.
+Este requiere que se suba un archivo CSV o directamente se le indique
+una planilla de Google (la que hicimos recién sirve).</p>
+<div class="line-block">
+<div class="line">Una vez subido se debe dar click derecho a la columna con todos los
+datos geográficos juntos (la última que se hizo con la función
+<em>contatenate</em>) para indicar que es de tipo geográfico.</div>
+<div class="line">Esto hará que se pinte de amarillo y nos permitirá inciar la
+geolocalización (para estas 1186 escuelas demorará una o más horas).</div>
+</div>
+<p>Finalmente queda así: <a class="reference external" href="https://fusiontables.google.com/embedviz?q=select+col11+from+1Se7MLXEFxIPOExxpSfEUNoMmY2p3Kh-AV3jWQS-e&amp;viz=MAP&amp;h=false&amp;lat=-32.730273776177484&amp;lng=-61.927968202880834&amp;t=1&amp;z=6&amp;l=col11&amp;y=3&amp;tmplt=5&amp;hml=GEOCODABLE">Ver
+Mapa</a>.</p>
+<div class="figure" id="id2">
+<img alt="mapa-fusion" src="../../_images/mapa-fusion-tables.png" />
+<p class="caption"><span class="caption-text">mapa-fusion</span></p>
+</div>
+<p><strong>Pros</strong>: - Permite otros tipos de gráficos además de mapas. - Estos
+gráficos se pueden publicar y embeber en ortos sitios.</p>
+<p><strong>Problemas</strong>: - No permite exportar coordenadas - Muy limitada
+capacidad de estilos según datos. - La herramienta no recibe
+actualizaciones hace mucho. Pareciera que Google no la va a continuar</p>
+</div>
+<div class="section" id="geolocalizando-con-google-mymaps">
+<h2>Geolocalizando con Google MyMaps<a class="headerlink" href="#geolocalizando-con-google-mymaps" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Con <a class="reference external" href="https://www.google.com/maps/d/">Google MyMpas</a> se pueden
+construir mapas gráficamente superadores de Fusion Tables y el entorno
+colaborativo es interesante (con la misma lógica que Google Drive).</p>
+<p>Al igual que Fusion Tables permite GeoLocalización automática sin
+coordenadas y solo con datos de texto. La geolocalización aparenta ser
+bastante más rápida que Fusion Tables.</p>
+<p>Finalmente queda así: <a class="reference external" href="https://www.google.com/maps/d/view?mid=1zKL3m91IkHFJBXvDcE1kaVQJvfo&amp;ll=-31.861778787428463%2C-63.61520641928098&amp;z=7">Ver
+mapa</a></p>
+<div class="figure" id="id3">
+<img alt="mymaps" src="../../_images/mapa-google-mymaps.png" />
+<p class="caption"><span class="caption-text">mymaps</span></p>
+</div>
+<p><strong>Pros</strong>: - Permite iconos variados según algún campo. - La edición
+colaborativa es muy interesante. - Permite múltiples capas de datos
+geográficos.</p>
+<p><strong>Problemas</strong>: - No permite exportar coordenadas.</p>
+</div>
+<div class="section" id="geolocalizando-en-cartodb">
+<h2>Geolocalizando en CartoDB<a class="headerlink" href="#geolocalizando-en-cartodb" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Carto genera mapas más elegantes y mucho más potentes a la hora de dar
+estilos por valores de la tabla. Permite trabajar gratis con un límite
+interesante en general pero mas limitado en lo que hace a la geo
+referenciación. Teniendo las coordenadas (que aún no tenemos ni pudimos
+exportar de las otras dos plataformas) es la solución mas completa para
+visualizar mapas de este tipo.</p>
+<p>Finalmente queda así: <a class="reference external" href="https://hudson.carto.com/builder/170fae5b-d302-4482-aa4d-13b67df9209b/embed">Ver
+mapa</a></p>
+<div class="figure" id="id4">
+<img alt="mymaps" src="../../_images/mapa-carto.png" />
+<p class="caption"><span class="caption-text">mymaps</span></p>
+</div>
+<p><strong>Pros</strong>: - Amplias posibilidades para dar estilos a los puntos segun
+variables. - Si ya se cuentan con las coordenadas es muy potente. -
+Permite múltiples capas de datos geográficos.</p>
+<p><strong>Problemas</strong>: - Servicio de Geolocalización pago. Límite gratuito muy
+bajo. - La geolocalización funcionó muy pobremente a pesar del límite.</p>
+<div class="section" id="geolocalizar-con-el-api-de-google-sin-ser-desarrollador">
+<h3>Geolocalizar con el API de Google sin ser desarrollador<a class="headerlink" href="#geolocalizar-con-el-api-de-google-sin-ser-desarrollador" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="line-block">
+<div class="line">Una solución intermedia es usar un script (similar a los macros de
+Excel) en Google Sheets que permite hasta 1000 Geolocalizaciones por
+día. Es muy útil y funciona. Más info
+<a class="reference external" href="https://www.datavizforall.org/transform/geocode/">aquí</a>.</div>
+<div class="line">Este metodo es un pequeño programa que se puede anexar a cualquier
+planilla de Google Drive. Para agregarlo desde el menú <em>Herramientas</em>
+se elige <em>Editor de secuencia de comandos</em> y se copia el texto del
+archivo geolocalizar.gs del <a class="reference external" href="https://github.com/ModernizacionMuniCBA/muni-google-util-app-scripts/tree/master/geolocalizar%20desde%20direccion">repositorio de la Municipalidad de
+Córdoba</a>.</div>
+<div class="line">Puede copiarse directamente desde
+<a class="reference external" href="https://raw.githubusercontent.com/ModernizacionMuniCBA/muni-google-util-app-scripts/master/geolocalizar%20desde%20direccion/geolocalizar.gs">aquí</a>.</div>
+</div>
+<div class="line-block">
+<div class="line">Una vez grabado, aparecerá un nuevo menú en la planilla de Google.</div>
+<div class="line">Para usar este nuevo menú se requieren cinco columnas en blanco a la
+derecha de la que incluye nuestro campo completo (direccion, ciudad,
+provincia, país) ya que este programa completará en esos espacios.
+Además de la latitud y la longitud se entregan algunos datos útiles
+más.</div>
+</div>
+<div class="figure" id="id5">
+<img alt="gf" src="../../_images/google-sheets-geocoder-census-geographies.gif" />
+<p class="caption"><span class="caption-text">gf</span></p>
+</div>
+<div class="line-block">
+<div class="line">La efectividad no es excelente pero es bastante buena. En los casos en
+que no es exacta, lo indica. De esta forma se puede entonces pasar por
+un proceso manual solo para los casos en los que sea necesario.</div>
+<div class="line">Finalemente de esta forma se pudieron obtener la gran mayoría de las
+geolocalizaciones.</div>
+<div class="line"><a class="reference external" href="../recursos/escuelas-elecciones-2015-cordoba-FINAL-CON-GEO.csv">CSV FINAL CON
+COORDENADAS</a>.</div>
+</div>
+<div class="line-block">
+<div class="line">Antes de descargar el archivo asegurarse de usar la configuración
+regional de <em>Estados Unidos</em> ya que CartoDB <em>prefiere</em> los numeros con
+separación decimal de punto. Para esto en la planilla de Google Drive
+se va al menú <em>Archivo</em> -&gt; <em>Configuración del documento</em>.</div>
+<div class="line">Es importante conocer cuales son las diferencias en la configuraciones
+regionales ya que son motivo de numerosos dolores de cabeza.</div>
+</div>
+<p>Ahora Carto no requiere interferir la geolocalizazión y detecta a la
+primera las columnas que representan las coordenadas. Con este archivo
+se puede hacer un nuevo mapa en Carto con resultados muy superiores.</p>
+<p>Finalmente queda así: <a class="reference external" href="https://hudson.carto.com/builder/9f30c071-f758-4286-b408-8f8fa2db5c10/embed">Ver
+mapa</a>.</p>
+<div class="figure" id="id6">
+<img alt="Mapa OK carto" src="../../_images/carto2-ok.png" />
+<p class="caption"><span class="caption-text">Mapa OK carto</span></p>
+</div>
+<p>Código para embeber:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">iframe</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;100%&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s2">&quot;520&quot;</span>
+    <span class="n">frameborder</span><span class="o">=</span><span class="s2">&quot;0&quot;</span>
+    <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://hudson.carto.com/builder/9f30c071-f758-4286-b408-8f8fa2db5c10/embed&quot;</span>
+    <span class="n">allowfullscreen</span> <span class="n">webkitallowfullscreen</span> <span class="n">mozallowfullscreen</span> <span class="n">oallowfullscreen</span> <span class="n">msallowfullscreen</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Usar este CSV con latitud y longitud incluida agiliza la carga en Google
+MyMaps o cualquier otra plataforma ya que no será necesario mapear las
+direcciones.</p>
+</div>
+</div>
+<div class="section" id="geolocalizar-direcciones-es-complejo">
+<h2>Geolocalizar direcciones es complejo<a class="headerlink" href="#geolocalizar-direcciones-es-complejo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para desarrolladores se recomiendan usar los webservices de Google u
+OpenStreetMaps con scripts que gradualmente releven los datos
+necesarios.</p>
+<div class="line-block">
+<div class="line">Otra posibilidad con mayor complejidad técnica es seguir los pasos que
+describió Manuel Aristarán para cruzar estos datos con la base de
+datos de escuelas argentinas realizada en 2013. Con esta aplicación
+<a class="reference external" href="https://github.com/jazzido/dondevoto">Donde voto?</a> es posible
+hacer match entre los nombres de las escuelas oficiales y los
+establecimientos de una carta marina. Si bien no es perfecto supera la
+efectividad en la geolocalización de otros métodos.</div>
+<div class="line">En base a este trabajo quedo disponible tambien <a class="reference external" href="https://github.com/avdata99/escuelas-argentinas">otro resumen de datos
+de las escuelas
+argentinas</a> con
+mapas incluidos.</div>
+</div>
+</div>
+<div class="section" id="ver-mas">
+<h2>Ver más<a class="headerlink" href="#ver-mas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Ver <a class="reference external" href="recursos-externos-y-ejemplos.md">recursos externos y ejemplos</a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="recursos.html" class="btn btn-neutral float-right" title="Recursos y ejemplos" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="agrupar-datos.html" class="btn btn-neutral" title="Agrupar datos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

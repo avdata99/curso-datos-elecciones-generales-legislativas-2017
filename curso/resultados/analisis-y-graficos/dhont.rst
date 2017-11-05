@@ -13,8 +13,6 @@ momento de ordenar estos datos y visualizarlos.
 .. figure:: /img/dhont-01.png
    :alt: dhont-01
 
-   dhont-01
-
 | En segunda instancia, aplicando la metodología del sistema *D'Hont*
   obtenemos los cocientes.
 | Nótese nuevamente el signo *$* para extender la fórmula horizontal
@@ -26,8 +24,6 @@ momento de ordenar estos datos y visualizarlos.
 
 .. figure:: /img/dhont-02.png
    :alt: dhont-02
-
-   dhont-02
 
 A continuación vamos a hacer algo extraño pero que: - evitar necesitar
 un programador para el cálculo - se va a entener mejor en los próximos
@@ -42,8 +38,6 @@ Se verá así (los colores no son necesarios, solo explicativos).
 
 .. figure:: /img/dhont-03.png
    :alt: dhont-03
-
-   dhont-03
 
 Ahora agregamos nuestra tabla de resumen a la derecha donde quedarán
 listadas las agrupaciones en posición de obtener la banca.

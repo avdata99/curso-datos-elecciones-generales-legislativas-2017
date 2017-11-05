@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Geolocalizar Circuitos fuera de la capital.</title>
+    
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="geolocalizar-circuitos-fuera-de-la-capital">
+<h1>Geolocalizar Circuitos fuera de la capital.</h1>
+<p>Fuera de la capital la realidad de Córdoba es compleja en cuanto a
+polígonos de límites de ciudades. Más del 80% del territorio provincia
+no pertenece a ningún municipio y los territorios que si pertenecen se
+encuentran en disputas actualmente.</p>
+<p><a class="reference external" href="https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/">Ver más
+info</a><span class="link-target"> [https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/]</span>
+<img alt="municipios-de-cordoba" src="https://andresvazquez.com.ar/blog/wp-content/uploads/2014/05/Selection_034.png" /></p>
+<p>La forma posibles es el uso de <em>localidades censales</em> descriptos en <a class="reference external" href="poligonos.md">el
+capítulo de recursos greográficos</a>.</p>
+<div class="line-block">
+<div class="line">Antes de eso tomamos nuesra lista de Circuitos trabajados en base a la
+carta marina 2015.</div>
+<div class="line"><a class="reference external" href="../recursos/circuitos-y-electores-2007-2017.csv">Circuitos y electores 2007 -
+2017</a>.</div>
+<div class="line">Este recurso incluye a todos los circuitos vía carta marina a
+excepción de la Capital que fue unificada como una única ciudad.</div>
+</div>
+<div class="figure" id="id1">
+<img alt="muestra-2007-2017" src="../../../_images/muestra-2007-2017.png" />
+<p class="caption"><span class="caption-text">muestra-2007-2017</span></p>
+</div>
+<p><a class="reference external" href="../recursos/Capa-provincial-Cordoba-Localidades-Censales-2010-SHP.zip">Localidades censales en
+SHP</a>.</p>
+<div class="line-block">
+<div class="line">Añadir como capa vectorial con QGis.</div>
+<div class="line"><img alt="anadir-capa-vectorial" src="../../../_images/anadir-capa-vectorial.png" /></div>
+</div>
+<div class="figure" id="id2">
+<img alt="qgis-abierto" src="../../../_images/qgis-abierto.png" />
+<p class="caption"><span class="caption-text">qgis-abierto</span></p>
+</div>
+<div class="line-block">
+<div class="line">Probar si la proyección esta bien poniendo un mapa real de fondo.</div>
+<div class="line"><img alt="qgis-con-gmaps" src="../../../_images/qgis-con-gmaps.png" /></div>
+</div>
+<p>Exportar a CSV con datos espaciales.</p>
+<div class="figure" id="id3">
+<img alt="qgis-exportando-01" src="../../../_images/qgis-exportando-01.png" />
+<p class="caption"><span class="caption-text">qgis-exportando-01</span></p>
+</div>
+<div class="figure" id="id4">
+<img alt="qgis-exportando-02" src="../../../_images/qgis-exportando-02.png" />
+<p class="caption"><span class="caption-text">qgis-exportando-02</span></p>
+</div>
+<div class="line-block">
+<div class="line">Proyección <em>Posgar 94 EPSG:22184</em> se usa muchas veces en datos
+producidos en Argentina. En este caso es la del SHP de origen.</div>
+<div class="line">Proyección <em>Pseido Mercator EPSG:4326</em>, recomendada para exportar
+siempre, es la que usamos para exportar.</div>
+</div>
+<p><a class="reference external" href="../recursos/localidades-censales-2010.csv">Localidades censales en CSV desde el
+SHP</a>.</p>
+<p>Ahora tenemos un CSV con campos espaciales junto a los datos de cada
+localidad censal usada en 2010 con motivo del censo. Son 522 registros
+(mas que las localidades reales de la Provincia de Córdoba).</p>
+<p>Es necesario conectarlas de modo de contar con una lista unificada de
+datos útiles (electores o diferencias entre ellos) y la geolocalización
+de cada uno. Esto es posible con un proceso complejo que sería mucho más
+simples <strong>si fuera norma usar identificadores únicos para todos los
+datos liberados por los gobiernos</strong>. Esto no sucede y tenemos que
+conectar datos por textos escritos de diferentes formas.</p>
+<p>Una forma de hacerlo sin desarrollar software o usar algoritmos para
+esto es tomar ambas listas y ordenar cada una por <em>departamento/sección</em>
+y en segundo lugar por nombre de la <em>ciudad/circuito</em>. Esto es mejor que
+hacerlo simplemente por circuito ya que hay nombres similares que se
+repiten.</p>
+<p>Una vez ordenadas ambas listas se pegan ambas en una nueva planilla en
+columnas consecutivas.</p>
+<p>A continuación deberán acomodarse las filas (el proceso tiene su
+complejidad pero no debería llevar mucho tiempo).</p>
+<div class="figure" id="id5">
+<img alt="csv-mezclados" src="../../../_images/csv-mezclados.png" />
+<p class="caption"><span class="caption-text">csv-mezclados</span></p>
+</div>
+<p><a class="reference external" href="../recursos/circuitos-geolocalizados-segun-localidades-censales-2010.csv">CSV
+terminado</a>.</p>
+<p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1fYJhzRYtZ_U3tj1tY9IspOQ24HGTzCoad1NfWj1Eb7I">Todo junto en Google
+Drive</a><span class="link-target"> [https://docs.google.com/spreadsheets/d/1fYJhzRYtZ_U3tj1tY9IspOQ24HGTzCoad1NfWj1Eb7I]</span>.</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

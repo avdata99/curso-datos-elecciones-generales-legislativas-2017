@@ -72,5 +72,5 @@ A los fines de usar Tabula en casos efectivos pueden tomarse dos ejemplos relaci
 Archivo final
 ^^^^^^^^^^^^^
 
-Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde `aquí <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marinaescuelas-elecciones-2015-cordoba.csv>`__.
+Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde `aquí <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marina/escuelas-elecciones-2015-cordoba.csv>`__.
 

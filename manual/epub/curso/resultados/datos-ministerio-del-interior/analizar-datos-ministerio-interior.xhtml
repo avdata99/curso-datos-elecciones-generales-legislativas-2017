@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Analizando los datos del ministerio del interior</title>
+    
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="analizando-los-datos-del-ministerio-del-interior">
+<h1>Analizando los datos del ministerio del interior</h1>
+<p>Luego de <a class="reference external" href="datos-ministerio-interior-e-Indra.md">procesar los datos de la
+elección</a> es el momento de
+ordenar estos datos y visualizarlos.</p>
+<div class="section" id="resultados-totales-provincia-por-lista">
+<h2>Resultados totales provincia por lista</h2>
+<div class="line-block">
+<div class="line">Como primer análisis vamos a ver y ordenar los datos totales por
+provincia.</div>
+<div class="line">Para eso en una hoja nueva replicamos (usamos el signo igual y
+clickeamos en la celda que deseamos replicar aunque esté en otra hoja)
+la parte de los datos que nos interesan. Los datos de interés son los
+que tienen el código <em>999</em> en la hoja de <em>totales listas 04</em>.</div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Es</span> <span class="n">importante</span> <span class="n">replicar</span> <span class="n">las</span> <span class="n">celdas</span> <span class="n">y</span> <span class="n">no</span>
+<span class="n">_copiar</span> <span class="n">y</span> <span class="n">pegar_</span> <span class="n">para</span> <span class="n">que</span> <span class="n">cuando</span> <span class="n">actualicemos</span>
+<span class="n">los</span> <span class="n">datos</span> <span class="n">en</span> <span class="n">la</span> <span class="n">hoja</span> <span class="n">de</span> <span class="n">origen</span> <span class="n">todo</span> <span class="n">lo</span> <span class="n">que</span>
+<span class="n">hagamos</span> <span class="n">quede</span> <span class="n">actualziado</span> <span class="n">automáticamente</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>En un primer paso los datos deben verse así
+<img alt="viz-resultado-provincial-por-listas" src="../../../_images/viz-resultado-provincial-por-listas.png" /></p>
+<p>Una de las columnas incluye el porcentaje de la agrupación, este número
+viene sin decimales. Necesitamos hacer una nuestra con la formula que
+corresponde.</p>
+<p>La función es:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>=I2/sum(I$2:I$12) * 100
+</pre></div>
+</div>
+<p>Esa formula puede estirarse para completar hasta el final. Analizar la
+necesidad de los signos <em>$</em>.</p>
+<div class="figure" id="id1">
+<img alt="viz-resultado-provincial-por-listas-02" src="../../../_images/viz-resultado-provincial-por-listas-02.png" />
+<p class="caption"><span class="caption-text">viz-resultado-provincial-por-listas-02</span></p>
+</div>
+<p>Lo que necesitamos a continuación son los nombres de las agrupaciones.
+Si bien podemos hacerlo a mano es bueno conectarlo a la lista accesoria
+con los nombres de las agrupaciones incluidas.</p>
+<p>La función <em>VLOOKUP</em> (Vertical Lookup) permite dado un código devolver
+datos relacionados a ese mismo código en otra tabla. En este caso
+tenemos el código de la agrupación y en una tabla accesoria dos datos
+(nombre y descripción) de la agrupación.</p>
+<p>La formula para la primera fila.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>=VLOOKUP(H2;Listas!A$2:C$461;2)
+</pre></div>
+</div>
+<p><strong>Nótese</strong> nuevamente la necesidad del signo <em>$</em>.</p>
+<p>Debe quedar así:</p>
+<div class="figure" id="id2">
+<img alt="viz-resultado-provincial-por-listas-03" src="../../../_images/viz-resultado-provincial-por-listas-03.png" />
+<p class="caption"><span class="caption-text">viz-resultado-provincial-por-listas-03</span></p>
+</div>
+<p>Es necesario ordenar estos datos según la cantidad de votos que irá
+cambiando durante el día de la elección. Para es útil la función <em>sort</em>.</p>
+<p>Debajo de la lista anterior podemos poner la fórmula:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">sort</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">E12</span><span class="p">;</span><span class="mi">2</span><span class="p">;</span><span class="n">FALSE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Se generará automáticamente una nueva lista con los datos ordenados.
+Estos se actualizarán automáticamente cuando los datos cambien.</p>
+<p>Con las herramientas <a class="reference external" href="https://avdata99.github.io/Curso-practico-de-periodismo-de-datos-en-elecciones-legislativas/curso/publicar-tablas-y-graficos.html">usadas para publicar y visualizar
+planillas</a><span class="link-target"> [https://avdata99.github.io/Curso-practico-de-periodismo-de-datos-en-elecciones-legislativas/curso/publicar-tablas-y-graficos.html]</span>
+es posible publicar en tiempo real esta tabla y un gráfico.</p>
+<div class="figure" id="id3">
+<img alt="viz-resultados-01" src="../../../_images/viz-resultados-01.png" />
+<p class="caption"><span class="caption-text">viz-resultados-01</span></p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Probar</span> <span class="n">en</span> <span class="n">la</span> <span class="n">lista</span> <span class="n">original</span> <span class="n">de</span> <span class="n">resultados</span> <span class="n">y</span> <span class="n">ver</span>
+<span class="n">como</span> <span class="n">se</span> <span class="n">reordena</span> <span class="n">la</span> <span class="n">lista</span> <span class="n">y</span> <span class="n">se</span> <span class="n">actualizan</span> <span class="n">los</span> <span class="n">gráficos</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="dont.md">&gt;&gt; Continuar con el cálculo de bancas con D&#8217;Hont &gt;&gt;</a></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

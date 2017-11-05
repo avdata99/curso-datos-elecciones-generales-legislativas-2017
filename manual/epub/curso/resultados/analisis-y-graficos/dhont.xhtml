@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>D’Hont</title>
+    
+    <link rel="stylesheet" href="../../../_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="d-hont">
+<h1>D&#8217;Hont</h1>
+<p>Luego de <a class="reference external" href="analizar-datos-ministerio-interior-e-Indra.md">ordenar los datos de la
+elección</a> es el
+momento de ordenar estos datos y visualizarlos.</p>
+<div class="line-block">
+<div class="line">Podemos tener los resultados en D&#8217;Hont en tiempo real calculados solo
+combinando fórmulas de Google Drive.</div>
+<div class="line">El primer paso es replicar (igualar) en una nueva hoja de nuestro
+documento los votos finales y el nombre de cada agrupación:</div>
+</div>
+<div class="figure" id="id1">
+<img alt="dhont-01" src="../../../_images/dhont-01.png" />
+<p class="caption"><span class="caption-text">dhont-01</span></p>
+</div>
+<div class="line-block">
+<div class="line">En segunda instancia, aplicando la metodología del sistema <em>D&#8217;Hont</em>
+obtenemos los cocientes.</div>
+<div class="line">Nótese nuevamente el signo <em>$</em> para extender la fórmula horizontal
+(hasta la cantidad de bancas a cubrir) y verticalmente.</div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>=$A2/C$1
+</pre></div>
+</div>
+<div class="figure" id="id2">
+<img alt="dhont-02" src="../../../_images/dhont-02.png" />
+<p class="caption"><span class="caption-text">dhont-02</span></p>
+</div>
+<p>A continuación vamos a hacer algo extraño pero que: - evitar necesitar
+un programador para el cálculo - se va a entener mejor en los próximos
+pasos</p>
+<div class="line-block">
+<div class="line">Replicaremos (igualando) las celdas con los nombres de las
+agrupaciones 9 veces hacia abajo.</div>
+<div class="line">Tambien replicaremos (igualndo) los valores de cada una de las nueve
+columnas.</div>
+</div>
+<p>Se verá así (los colores no son necesarios, solo explicativos).</p>
+<div class="figure" id="id3">
+<img alt="dhont-03" src="../../../_images/dhont-03.png" />
+<p class="caption"><span class="caption-text">dhont-03</span></p>
+</div>
+<p>Ahora agregamos nuestra tabla de resumen a la derecha donde quedarán
+listadas las agrupaciones en posición de obtener la banca.</p>
+<p>La función <em>LARGE</em> nos da los valores máximos o mínimos en el orden que
+necesitamos</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>=large(A$2:A$100;L2)
+</pre></div>
+</div>
+<p>Note los signos <em>$</em> y luego estire la funcion hasta la novena banca.</p>
+<div class="figure" id="id4">
+<img alt="dhont-04" src="../../../_images/dhont-04.png" />
+<p class="caption"><span class="caption-text">dhont-04</span></p>
+</div>
+<p>A continuación, usando la función <em>LOOKUP</em> <strong>que sólo busca en la
+primera columna de un rango dado</strong> es posible saber a que partido le
+corresponde un coeficiente.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>=VLOOKUP(M2-0;A$2:B$100;2;FALSE)
+</pre></div>
+</div>
+<p>Note los signos <em>$</em> y luego estire la funcion hasta la novena banca.</p>
+<div class="figure" id="id5">
+<img alt="dhont-05" src="../../../_images/dhont-05.png" />
+<p class="caption"><span class="caption-text">dhont-05</span></p>
+</div>
+<div class="section" id="totales-de-bancas-por-agrupacion">
+<h2>Totales de bancas por agrupación</h2>
+<p>Finalmente podemos saber el total de bancas por agrupación podemos en
+una hoja nueva. Para esto replicamos (siempre igualando) la lista de
+agrupaciones en una columna.</p>
+<p>En una columna lateral <em>total de bancas</em> usamos la función <em>COUNTIF</em> que
+permite <strong>contar</strong> elementos que se repiten en una lista. El primer
+parámetro es el rango, el segundo el valor buscado.</p>
+<p>Note y comprenda la necesidad del signo <em>$</em>.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>=countif(N$2:N$10;M14)
+</pre></div>
+</div>
+<div class="figure" id="id6">
+<img alt="dhont-06" src="../../../_images/dhont-06.png" />
+<p class="caption"><span class="caption-text">dhont-06</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

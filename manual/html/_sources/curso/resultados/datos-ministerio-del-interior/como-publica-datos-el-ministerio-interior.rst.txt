@@ -78,9 +78,6 @@ Totales
 | En este caso, el de Córdoba es
   `*totales\_04.csv* <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totales_04.csv>`__.
 
-Al igual que el anterior agregamos *?raw=true* al final para poder
-llevarlo a una nueva hoja en la planilla de Google Drive.
-
 ::
 
     3;04;001;03254;00790;02428;01109229;00228008;02056;08472;00269120;02426;00197652;08669;00172862;07581;00024790;01087;00011052;00485;00019304;00847;07;29;14;15;
