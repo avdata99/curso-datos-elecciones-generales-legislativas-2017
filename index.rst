@@ -37,7 +37,14 @@ Datos a conocer y usar
    curso/resultados/datos-ministerio-del-interior/index
    curso/resultados/analisis-y-graficos/index
    curso/resultados/mapas/index
-   
+
+Sobre el curso
+~~~~~~~~~~~~~~
+
+Este curso esta abierto a sugerencias y modificaciones en un [repositorio abierto en GitHub](https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017).
+
+Tambien se reciben consultas, opiniones o críticas por email a [andres@data99.com.ar](mailto:andres@data99.com.ar).
+
 
 Indices and tables
 ==================
