@@ -8,19 +8,10 @@ ordenar estos datos y visualizarlos.
 Resultados totales provincia por lista
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| Como primer análisis vamos a ver y ordenar los datos totales por
-  provincia.
-| Para eso en una hoja nueva replicamos (usamos el signo igual y
-  clickeamos en la celda que deseamos replicar aunque esté en otra hoja)
-  la parte de los datos que nos interesan. Los datos de interés son los
-  que tienen el código *999* en la hoja de *totales listas 04*.
+Como primer análisis vamos a ver y ordenar los datos totales por provincia.
+Para eso en una hoja nueva replicamos (usamos el signo igual y clickeamos en la celda que deseamos replicar aunque esté en otra hoja) la parte de los datos que nos interesan. Los datos de interés son los que tienen el código *999* en la hoja de *totales agrupaciones 04*.
 
-::
-
-    Es importante replicar las celdas y no 
-    _copiar y pegar_ para que cuando actualicemos 
-    los datos en la hoja de origen todo lo que 
-    hagamos quede actualziado automáticamente.  
+Es importante replicar igualando las celdas y no *copiar y pegar* para que cuando actualicemos los datos en la hoja de origen todo lo que hagamos quede actualziado automáticamente.  
 
 En un primer paso los datos deben verse así
 |viz-resultado-provincial-por-listas|

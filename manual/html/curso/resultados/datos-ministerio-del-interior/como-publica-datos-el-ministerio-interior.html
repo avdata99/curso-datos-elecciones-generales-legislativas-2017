@@ -35,7 +35,7 @@
         <link rel="search" title="Búsqueda" href="../../../search.html"/>
     <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../../index.html"/>
         <link rel="up" title="Datos que publica el Ministerio del Interior" href="index.html"/>
-        <link rel="next" title="Google Sheets" href="google-sheets.html"/>
+        <link rel="next" title="Analizando los datos del ministerio del interior" href="analizar-datos-ministerio-interior.html"/>
         <link rel="prev" title="Datos que publica el Ministerio del Interior" href="index.html"/> 
 
   
@@ -93,14 +93,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#datos-y-incluidos">Datos y incluidos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#tipos-de-eleccion">Tipos de elección</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ambitos-electorales">Ámbitos electorales</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#agrupaciones">Agrupaciones</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#totales">Totales</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#totales-por-listas">Totales por listas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#listas-participantes">Listas participantes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#totales-por-agrupaciones">Totales por agrupaciones</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="google-sheets.html">Google Sheets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analizar-datos-ministerio-interior.html">Analizando los datos del ministerio del interior</a></li>
 </ul>
 </li>
@@ -169,6 +168,7 @@ Interior provee esta información.</p>
 <p>El documento indica cuales y en que formatos están los documentos. El proceso a continuación es el uso de estos datos para construir resumenes y visualizaciones útiles.</p>
 <div class="section" id="datos-y-incluidos">
 <h2>Datos y incluidos<a class="headerlink" href="#datos-y-incluidos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para procesar estos daton abrimos una planilla de cálculo nueva de Google Drive en donde vamos a ir colocando copia de cada tabla.</p>
 <div class="section" id="tipos-de-eleccion">
 <h3>Tipos de elección<a class="headerlink" href="#tipos-de-eleccion" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El primer dato es la lista de códigos para los cargos electivos. No esta en un CSV, es un texto suelto. Copiamos el texto y lo pegamos en la planilla.</p>
@@ -189,37 +189,33 @@ columnas.</p>
 <p><a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/ambitos_00.csv?raw=true">Ámbitos</a>: Lista de las secciones electorales. Vale destacar que en cuanto a las zonas las elecciones nacionales se dividen en distrito (provincias) + seccion (departamentos) + circuito (ciudades en general).</p>
 <p>El alcance máximo de estos datos son las secciones electorales (en Córdoba, Departamentos). La lista de estos departamentos esta en el archivo</p>
 <p>Tip: ¿Notó que separa los campos con <em>punto y coma</em>? Es para comodidad de los usaurios de <em>Excel</em> que por defecto usar punto y coma en lugar de la coma estandar.</p>
+</div>
+<div class="section" id="agrupaciones">
+<h3>Agrupaciones<a class="headerlink" href="#agrupaciones" title="Enlazar permanentemente con este título">¶</a></h3>
 <p><a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/agrupaciones_00.csv?raw=true">Agrupaciones</a>: Alianzas y partidos políticos que participan de la elección.</p>
+<div class="figure">
+<img alt="listas" src="../../../_images/listas.png" />
+</div>
 <p><strong>Nota para todos los datos:</strong> El código 999 se refiere a totales provinciales.</p>
 <p>Allí el texto se podrá mostrar tal cual es. Lo copiamos y pegamos en una
 <strong>hoja nueva</strong> de nuestra planilla de drive. Será necesario nuevamente
 <em>dividir el texto en columnas</em>. Esta vez el separador es el punto y
 coma.</p>
-<div class="line-block">
-<div class="line">Hay que agregar los nombres de las columnas: Provincia, Sección y
-Nombre Sección.</div>
-<div class="line">Aquí uno puede <em>adivinar</em> que Córdoba es la número 4, este dato nos va
-a servir para los datos a continuación.</div>
-</div>
+<p>Hay que agregar los nombres de las columnas (en la fila 1): Provincia, Sección y Nombre Sección.
+Aquí uno puede <em>adivinar</em> que Córdoba es la número 4, este dato nos va a servir para los datos a continuación.</p>
 </div>
 <div class="section" id="totales">
 <h3>Totales<a class="headerlink" href="#totales" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="line-block">
-<div class="line">Hay un archivo de totales por cada provincia. Con <em>totales</em> se refiere
-a datos generales de cada departamento, a los votos generales
-(positivos, válidos, en blanco, etc), no a los votos que recibió cada
-lista.</div>
-<div class="line">En este caso, el de Córdoba es
-<a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totales_04.csv">*totales_04.csv*</a>.</div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">03254</span><span class="p">;</span><span class="mi">00790</span><span class="p">;</span><span class="mi">02428</span><span class="p">;</span><span class="mi">01109229</span><span class="p">;</span><span class="mi">00228008</span><span class="p">;</span><span class="mi">02056</span><span class="p">;</span><span class="mi">08472</span><span class="p">;</span><span class="mi">00269120</span><span class="p">;</span><span class="mi">02426</span><span class="p">;</span><span class="mi">00197652</span><span class="p">;</span><span class="mi">08669</span><span class="p">;</span><span class="mi">00172862</span><span class="p">;</span><span class="mi">07581</span><span class="p">;</span><span class="mi">00024790</span><span class="p">;</span><span class="mi">01087</span><span class="p">;</span><span class="mi">00011052</span><span class="p">;</span><span class="mi">00485</span><span class="p">;</span><span class="mi">00019304</span><span class="p">;</span><span class="mi">00847</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">15</span><span class="p">;</span>
-<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">002</span><span class="p">;</span><span class="mi">00163</span><span class="p">;</span><span class="mi">00113</span><span class="p">;</span><span class="mi">06933</span><span class="p">;</span><span class="mi">00051517</span><span class="p">;</span><span class="mi">00029735</span><span class="p">;</span><span class="mi">05772</span><span class="p">;</span><span class="mi">08481</span><span class="p">;</span><span class="mi">00035062</span><span class="p">;</span><span class="mi">06806</span><span class="p">;</span><span class="mi">00025773</span><span class="p">;</span><span class="mi">08668</span><span class="p">;</span><span class="mi">00022539</span><span class="p">;</span><span class="mi">07580</span><span class="p">;</span><span class="mi">00003234</span><span class="p">;</span><span class="mi">01088</span><span class="p">;</span><span class="mi">00001438</span><span class="p">;</span><span class="mi">00484</span><span class="p">;</span><span class="mi">00002524</span><span class="p">;</span><span class="mi">00849</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">15</span><span class="p">;</span>
-<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">003</span><span class="p">;</span><span class="mi">00653</span><span class="p">;</span><span class="mi">00289</span><span class="p">;</span><span class="mi">04426</span><span class="p">;</span><span class="mi">00222846</span><span class="p">;</span><span class="mi">00083426</span><span class="p">;</span><span class="mi">03744</span><span class="p">;</span><span class="mi">08491</span><span class="p">;</span><span class="mi">00098250</span><span class="p">;</span><span class="mi">04409</span><span class="p">;</span><span class="mi">00072380</span><span class="p">;</span><span class="mi">08676</span><span class="p">;</span><span class="mi">00063305</span><span class="p">;</span><span class="mi">07588</span><span class="p">;</span><span class="mi">00009075</span><span class="p">;</span><span class="mi">01088</span><span class="p">;</span><span class="mi">00004044</span><span class="p">;</span><span class="mi">00485</span><span class="p">;</span><span class="mi">00007002</span><span class="p">;</span><span class="mi">00839</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span>
-<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">004</span><span class="p">;</span><span class="mi">00159</span><span class="p">;</span><span class="mi">00101</span><span class="p">;</span><span class="mi">06352</span><span class="p">;</span><span class="mi">00049037</span><span class="p">;</span><span class="mi">00026358</span><span class="p">;</span><span class="mi">05375</span><span class="p">;</span><span class="mi">08419</span><span class="p">;</span><span class="mi">00031309</span><span class="p">;</span><span class="mi">06385</span><span class="p">;</span><span class="mi">00022837</span><span class="p">;</span><span class="mi">08664</span><span class="p">;</span><span class="mi">00019974</span><span class="p">;</span><span class="mi">07578</span><span class="p">;</span><span class="mi">00002863</span><span class="p">;</span><span class="mi">01086</span><span class="p">;</span><span class="mi">00001270</span><span class="p">;</span><span class="mi">00482</span><span class="p">;</span><span class="mi">00002251</span><span class="p">;</span><span class="mi">00854</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">14</span><span class="p">;</span><span class="mi">20</span><span class="p">;</span>
-<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">005</span><span class="p">;</span><span class="mi">00090</span><span class="p">;</span><span class="mi">00072</span><span class="p">;</span><span class="mi">08000</span><span class="p">;</span><span class="mi">00028384</span><span class="p">;</span><span class="mi">00019032</span><span class="p">;</span><span class="mi">06705</span><span class="p">;</span><span class="mi">08454</span><span class="p">;</span><span class="mi">00022512</span><span class="p">;</span><span class="mi">07931</span><span class="p">;</span><span class="mi">00016502</span><span class="p">;</span><span class="mi">08671</span><span class="p">;</span><span class="mi">00014433</span><span class="p">;</span><span class="mi">07584</span><span class="p">;</span><span class="mi">00002069</span><span class="p">;</span><span class="mi">01087</span><span class="p">;</span><span class="mi">00000920</span><span class="p">;</span><span class="mi">00483</span><span class="p">;</span><span class="mi">00001610</span><span class="p">;</span><span class="mi">00846</span><span class="p">;</span><span class="mi">07</span><span class="p">;</span><span class="mi">29</span><span class="p">;</span><span class="mi">13</span><span class="p">;</span><span class="mi">45</span><span class="p">;</span>
+<p>Hay un archivo de totales por cada provincia. Con <em>totales</em> se refiere a datos generales de cada departamento, a los votos generales (positivos, válidos, en blanco, etc), no a los votos que recibió cada lista.
+En este caso, el de Córdoba es <a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/DATOS_41776329/totales_04.csv?raw=true">totales_04.csv</a>.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">03254</span><span class="p">;</span><span class="mi">03232</span><span class="p">;</span><span class="mi">09932</span><span class="p">;</span><span class="mi">01109206</span><span class="p">;</span><span class="mi">00797369</span><span class="p">;</span><span class="mi">07237</span><span class="p">;</span><span class="mi">01101751</span><span class="p">;</span><span class="mi">09933</span><span class="p">;</span><span class="mi">00777601</span><span class="p">;</span><span class="mi">09752</span><span class="p">;</span><span class="mi">00006138</span><span class="p">;</span><span class="mi">00077</span><span class="p">;</span><span class="mi">00013242</span><span class="p">;</span><span class="mi">00166</span><span class="p">;</span><span class="mi">00000388</span><span class="p">;</span><span class="mi">00005</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">002</span><span class="p">;</span><span class="mi">00163</span><span class="p">;</span><span class="mi">00163</span><span class="p">;</span><span class="mi">10000</span><span class="p">;</span><span class="mi">00051517</span><span class="p">;</span><span class="mi">00038500</span><span class="p">;</span><span class="mi">07473</span><span class="p">;</span><span class="mi">00051517</span><span class="p">;</span><span class="mi">10000</span><span class="p">;</span><span class="mi">00037288</span><span class="p">;</span><span class="mi">09685</span><span class="p">;</span><span class="mi">00000449</span><span class="p">;</span><span class="mi">00117</span><span class="p">;</span><span class="mi">00000734</span><span class="p">;</span><span class="mi">00191</span><span class="p">;</span><span class="mi">00000029</span><span class="p">;</span><span class="mi">00008</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">01</span><span class="p">;</span><span class="mi">50</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">003</span><span class="p">;</span><span class="mi">00653</span><span class="p">;</span><span class="mi">00650</span><span class="p">;</span><span class="mi">09954</span><span class="p">;</span><span class="mi">00222858</span><span class="p">;</span><span class="mi">00162228</span><span class="p">;</span><span class="mi">07313</span><span class="p">;</span><span class="mi">00221827</span><span class="p">;</span><span class="mi">09954</span><span class="p">;</span><span class="mi">00157832</span><span class="p">;</span><span class="mi">09729</span><span class="p">;</span><span class="mi">00001335</span><span class="p">;</span><span class="mi">00082</span><span class="p">;</span><span class="mi">00002975</span><span class="p">;</span><span class="mi">00183</span><span class="p">;</span><span class="mi">00000086</span><span class="p">;</span><span class="mi">00005</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">22</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">004</span><span class="p">;</span><span class="mi">00159</span><span class="p">;</span><span class="mi">00157</span><span class="p">;</span><span class="mi">09874</span><span class="p">;</span><span class="mi">00049041</span><span class="p">;</span><span class="mi">00033097</span><span class="p">;</span><span class="mi">06830</span><span class="p">;</span><span class="mi">00048456</span><span class="p">;</span><span class="mi">09881</span><span class="p">;</span><span class="mi">00032018</span><span class="p">;</span><span class="mi">09674</span><span class="p">;</span><span class="mi">00000540</span><span class="p">;</span><span class="mi">00163</span><span class="p">;</span><span class="mi">00000527</span><span class="p">;</span><span class="mi">00159</span><span class="p">;</span><span class="mi">00000012</span><span class="p">;</span><span class="mi">00004</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">22</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">30</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">005</span><span class="p">;</span><span class="mi">00090</span><span class="p">;</span><span class="mi">00088</span><span class="p">;</span><span class="mi">09778</span><span class="p">;</span><span class="mi">00028383</span><span class="p">;</span><span class="mi">00019971</span><span class="p">;</span><span class="mi">07197</span><span class="p">;</span><span class="mi">00027748</span><span class="p">;</span><span class="mi">09776</span><span class="p">;</span><span class="mi">00019476</span><span class="p">;</span><span class="mi">09752</span><span class="p">;</span><span class="mi">00000304</span><span class="p">;</span><span class="mi">00152</span><span class="p">;</span><span class="mi">00000184</span><span class="p">;</span><span class="mi">00092</span><span class="p">;</span><span class="mi">00000007</span><span class="p">;</span><span class="mi">00004</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">22</span><span class="p">;</span><span class="mi">22</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>Según el documento se indica que los campos:</p>
+<p>Según el documento se indica que los campos (nombres de las columnas):</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="80%" />
@@ -255,47 +251,41 @@ lista.</div>
 <tr class="row-odd"><td>Total de votantes</td>
 <td>8</td>
 </tr>
-<tr class="row-even"><td>Participación sobre padrón</td>
+<tr class="row-even"><td>Participación sobre escrutado</td>
 <td>5</td>
 </tr>
-<tr class="row-odd"><td>Participación sobre escrutado</td>
-<td>5</td>
-</tr>
-<tr class="row-even"><td>Electores escrutados</td>
+<tr class="row-odd"><td>Electores escrutados</td>
 <td>8</td>
 </tr>
-<tr class="row-odd"><td>Porcentaje de electores escrutados</td>
+<tr class="row-even"><td>Porcentaje de electores escrutados</td>
 <td>5</td>
 </tr>
-<tr class="row-even"><td>Votos válidos</td>
+<tr class="row-odd"><td>Votos positivos</td>
 <td>8</td>
 </tr>
-<tr class="row-odd"><td>Porcentaje de votos válidos</td>
+<tr class="row-even"><td>Porcentaje de votos positivos</td>
 <td>5</td>
 </tr>
-<tr class="row-even"><td>Votos positivos</td>
+<tr class="row-odd"><td>Votos en blanco</td>
 <td>8</td>
 </tr>
-<tr class="row-odd"><td>Porcentaje de votos positivos</td>
+<tr class="row-even"><td>Porcentaje de votos en blanco</td>
 <td>5</td>
 </tr>
-<tr class="row-even"><td>Votos en blanco</td>
+<tr class="row-odd"><td>Votos nulos</td>
 <td>8</td>
 </tr>
-<tr class="row-odd"><td>Porcentaje de votos en blanco</td>
+<tr class="row-even"><td>Porcentaje de votos nulos</td>
 <td>5</td>
 </tr>
-<tr class="row-even"><td>Votos nulos</td>
+<tr class="row-odd"><td>Votos recurridos, impugnados y comando</td>
 <td>8</td>
 </tr>
-<tr class="row-odd"><td>Porcentaje de votos nulos</td>
+<tr class="row-even"><td>Porcentaje de votos recurridos e impugnados</td>
 <td>5</td>
 </tr>
-<tr class="row-even"><td>Votos recurridos, impugnados y comando</td>
-<td>8</td>
-</tr>
-<tr class="row-odd"><td>Porcentaje de votos recurridos e impugnados</td>
-<td>5</td>
+<tr class="row-odd"><td>Mes</td>
+<td>2</td>
 </tr>
 <tr class="row-even"><td>Día</td>
 <td>2</td>
@@ -316,18 +306,28 @@ copiar la tabla, pegarla Google Drive, volver a copiarla y hacer el
 pegado especial que se llama <em>Pegado con transposición de datos</em>. Esto
 transforma filas en columnas.</p>
 <p>Debería verse así:</p>
-<div class="figure" id="id1">
+<div class="figure">
 <img alt="totales-04-indra" src="../../../_images/totales-04-indra.png" />
-<p class="caption"><span class="caption-text">totales-04-indra</span></p>
 </div>
 </div>
-<div class="section" id="totales-por-listas">
-<h3>Totales por listas<a class="headerlink" href="#totales-por-listas" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="totales-por-agrupaciones">
+<h3>Totales por agrupaciones<a class="headerlink" href="#totales-por-agrupaciones" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Esta lista si incluye los totales de cada lista junto a las agrupaciones
 que compiten en internas. A los fines de conservar todos estos datos en
 una sola tabla simple se agregan al final tres columnas todas las veces
 que sean necesarias para mostrar las agrupaciones internas que compiten
 dentro de cada lista.</p>
+<p>Muestra de los datos:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0502</span><span class="p">;</span><span class="mi">00374100</span><span class="p">;</span><span class="mi">04811</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0578</span><span class="p">;</span><span class="mi">00192897</span><span class="p">;</span><span class="mi">02481</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0543</span><span class="p">;</span><span class="mi">00077474</span><span class="p">;</span><span class="mi">00996</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0217</span><span class="p">;</span><span class="mi">00046604</span><span class="p">;</span><span class="mi">00599</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0503</span><span class="p">;</span><span class="mi">00036652</span><span class="p">;</span><span class="mi">00471</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0201</span><span class="p">;</span><span class="mi">00031016</span><span class="p">;</span><span class="mi">00399</span><span class="p">;</span>
+<span class="mi">3</span><span class="p">;</span><span class="mi">04</span><span class="p">;</span><span class="mi">001</span><span class="p">;</span><span class="mi">10</span><span class="p">;</span><span class="mi">23</span><span class="p">;</span><span class="mi">00</span><span class="p">;</span><span class="mi">25</span><span class="p">;</span><span class="mi">0567</span><span class="p">;</span><span class="mi">00018858</span><span class="p">;</span><span class="mi">00243</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Descripción de los datos</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="56%" />
@@ -352,87 +352,41 @@ sección/
 comuna</td>
 <td>3</td>
 </tr>
-<tr class="row-odd"><td>Día</td>
+<tr class="row-odd"><td>Mes</td>
 <td>2</td>
 </tr>
-<tr class="row-even"><td>Hora</td>
+<tr class="row-even"><td>Día</td>
 <td>2</td>
 </tr>
-<tr class="row-odd"><td>Minuto</td>
+<tr class="row-odd"><td>Hora</td>
 <td>2</td>
 </tr>
-<tr class="row-even"><td>Código de la
+<tr class="row-even"><td>Minuto</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>Código de la
 agrupación
 política</td>
 <td>4</td>
 </tr>
-<tr class="row-odd"><td>Votos a la
+<tr class="row-even"><td>Votos a la
 agrupación
 política</td>
 <td>8</td>
 </tr>
-<tr class="row-even"><td>Porcentaje de
+<tr class="row-odd"><td>Porcentaje de
 votos a la
 agrupación
 política</td>
-<td>5</td>
-</tr>
-<tr class="row-odd"><td><strong>Tabla de 10
-elementos,
-correspondien
-tes
-a las listas
-propuestas
-por cada
-partido</strong></td>
-<td>&nbsp;</td>
-</tr>
-<tr class="row-even"><td>Código de
-lista</td>
-<td>4</td>
-</tr>
-<tr class="row-odd"><td>Votos al
-lista</td>
-<td>8</td>
-</tr>
-<tr class="row-even"><td>Porcentaje de
-votos a la
-lista</td>
 <td>5</td>
 </tr>
 </tbody>
 </table>
-<p>Haciendo el mismo proceso con el archivo de <a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totaleslistas_04.csv">*totales por listas* para
-Córdoba</a>
+<p>Haciendo el mismo proceso con el archivo de <a class="reference external" href="https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/DATOS_41776329/totalesagrupaciones_04.csv?raw=true">totales por listas para Córdoba</a>
 se debe llegar a esta lista:</p>
-<div class="figure" id="id2">
+<div class="figure">
 <img alt="totales-listas-04-indra" src="../../../_images/totales-listas-04-indra.png" />
-<p class="caption"><span class="caption-text">totales-listas-04-indra</span></p>
 </div>
-</div>
-<div class="section" id="listas-participantes">
-<h3>Listas participantes<a class="headerlink" href="#listas-participantes" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="line-block">
-<div class="line">Así como la de ámbitos se liberan las listas de todas las agrupaciones
-participantes.</div>
-<div class="line">Este archivo puede usarse como dato accesorio para ponerle nombre a
-los datos anteriores.</div>
-</div>
-<p>Al igual que los demas datos es necesario descargar <a class="reference external" href="https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/generales_00/listas_00.csv">este
-archivo</a>
-y pasarlo a Google Drive.</p>
-<div class="line-block">
-<div class="line">Según la documentación, las tres columnas representan <em>Codigo, Siglas
-y Denominación</em>.</div>
-<div class="line">Debe quedar así:</div>
-</div>
-<div class="figure" id="id3">
-<img alt="listas" src="../../../_images/listas.png" />
-<p class="caption"><span class="caption-text">listas</span></p>
-</div>
-<p>Cómo se ve todavía el dato no está erminado y son datos de prueba.</p>
-<p>Para procesar estos daton abrimos una planilla de cálculo nueva de
-Google Drive.</p>
 </div>
 </div>
 </div>
@@ -444,7 +398,7 @@ Google Drive.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="google-sheets.html" class="btn btn-neutral float-right" title="Google Sheets" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="analizar-datos-ministerio-interior.html" class="btn btn-neutral float-right" title="Analizando los datos del ministerio del interior" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Datos que publica el Ministerio del Interior" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

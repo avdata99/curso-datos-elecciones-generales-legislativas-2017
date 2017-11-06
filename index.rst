@@ -7,7 +7,8 @@ Objetivos
 ---------
 
 * Identificar, buscar, conocer datos de elecciones legislativas.
-* Analizar y visualizar estos datos en gráficos simples y mapas.
+* Aprender a reutilizar y visualizar datos en general (más alla del caso de las elecciones).
+* Desarrollar una visión crítica sobre los datos públicos, aprender a medir y exigir su calidad.
 
 Requisitos
 ----------

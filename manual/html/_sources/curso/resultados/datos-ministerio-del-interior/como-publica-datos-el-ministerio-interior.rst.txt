@@ -21,6 +21,8 @@ El documento indica cuales y en que formatos están los documentos. El proceso a
 Datos y incluidos
 ~~~~~~~~~~~~~~~~~~
 
+Para procesar estos daton abrimos una planilla de cálculo nueva de Google Drive en donde vamos a ir colocando copia de cada tabla.
+
 Tipos de elección
 ^^^^^^^^^^^^^^^^^
 
@@ -50,43 +52,39 @@ El alcance máximo de estos datos son las secciones electorales (en Córdoba, De
 
 Tip: ¿Notó que separa los campos con *punto y coma*? Es para comodidad de los usaurios de *Excel* que por defecto usar punto y coma en lugar de la coma estandar. 
 
+Agrupaciones
+^^^^^^^^^^^^
 
 `Agrupaciones <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/generales_00/agrupaciones_00.csv?raw=true>`__: Alianzas y partidos políticos que participan de la elección.
 
+.. figure:: /img/listas.png
+   :alt: listas
+
 **Nota para todos los datos:** El código 999 se refiere a totales provinciales.
-
-
-
 
 Allí el texto se podrá mostrar tal cual es. Lo copiamos y pegamos en una
 **hoja nueva** de nuestra planilla de drive. Será necesario nuevamente
 *dividir el texto en columnas*. Esta vez el separador es el punto y
 coma.
 
-| Hay que agregar los nombres de las columnas: Provincia, Sección y
-  Nombre Sección.
-| Aquí uno puede *adivinar* que Córdoba es la número 4, este dato nos va
-  a servir para los datos a continuación.
+Hay que agregar los nombres de las columnas (en la fila 1): Provincia, Sección y Nombre Sección.
+Aquí uno puede *adivinar* que Córdoba es la número 4, este dato nos va a servir para los datos a continuación.
 
 Totales
 ^^^^^^^
 
-| Hay un archivo de totales por cada provincia. Con *totales* se refiere
-  a datos generales de cada departamento, a los votos generales
-  (positivos, válidos, en blanco, etc), no a los votos que recibió cada
-  lista.
-| En este caso, el de Córdoba es
-  `*totales\_04.csv* <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totales_04.csv>`__.
+Hay un archivo de totales por cada provincia. Con *totales* se refiere a datos generales de cada departamento, a los votos generales (positivos, válidos, en blanco, etc), no a los votos que recibió cada lista.
+En este caso, el de Córdoba es `totales_04.csv <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/DATOS_41776329/totales_04.csv?raw=true>`__.
 
 ::
 
-    3;04;001;03254;00790;02428;01109229;00228008;02056;08472;00269120;02426;00197652;08669;00172862;07581;00024790;01087;00011052;00485;00019304;00847;07;29;14;15;
-    3;04;002;00163;00113;06933;00051517;00029735;05772;08481;00035062;06806;00025773;08668;00022539;07580;00003234;01088;00001438;00484;00002524;00849;07;29;14;15;
-    3;04;003;00653;00289;04426;00222846;00083426;03744;08491;00098250;04409;00072380;08676;00063305;07588;00009075;01088;00004044;00485;00007002;00839;07;29;14;10;
-    3;04;004;00159;00101;06352;00049037;00026358;05375;08419;00031309;06385;00022837;08664;00019974;07578;00002863;01086;00001270;00482;00002251;00854;07;29;14;20;
-    3;04;005;00090;00072;08000;00028384;00019032;06705;08454;00022512;07931;00016502;08671;00014433;07584;00002069;01087;00000920;00483;00001610;00846;07;29;13;45;
+   3;04;001;03254;03232;09932;01109206;00797369;07237;01101751;09933;00777601;09752;00006138;00077;00013242;00166;00000388;00005;10;23;00;25;
+   3;04;002;00163;00163;10000;00051517;00038500;07473;00051517;10000;00037288;09685;00000449;00117;00000734;00191;00000029;00008;10;23;01;50;
+   3;04;003;00653;00650;09954;00222858;00162228;07313;00221827;09954;00157832;09729;00001335;00082;00002975;00183;00000086;00005;10;22;23;00;
+   3;04;004;00159;00157;09874;00049041;00033097;06830;00048456;09881;00032018;09674;00000540;00163;00000527;00159;00000012;00004;10;22;23;30;
+   3;04;005;00090;00088;09778;00028383;00019971;07197;00027748;09776;00019476;09752;00000304;00152;00000184;00092;00000007;00004;10;22;22;10;
 
-Según el documento se indica que los campos:
+Según el documento se indica que los campos (nombres de las columnas):
 
 +-----------------------------------------------+------------+
 | DESCRIPCIÓN                                   | LONGITUD   |
@@ -107,17 +105,11 @@ Según el documento se indica que los campos:
 +-----------------------------------------------+------------+
 | Total de votantes                             | 8          |
 +-----------------------------------------------+------------+
-| Participación sobre padrón                    | 5          |
-+-----------------------------------------------+------------+
 | Participación sobre escrutado                 | 5          |
 +-----------------------------------------------+------------+
 | Electores escrutados                          | 8          |
 +-----------------------------------------------+------------+
 | Porcentaje de electores escrutados            | 5          |
-+-----------------------------------------------+------------+
-| Votos válidos                                 | 8          |
-+-----------------------------------------------+------------+
-| Porcentaje de votos válidos                   | 5          |
 +-----------------------------------------------+------------+
 | Votos positivos                               | 8          |
 +-----------------------------------------------+------------+
@@ -134,6 +126,8 @@ Según el documento se indica que los campos:
 | Votos recurridos, impugnados y comando        | 8          |
 +-----------------------------------------------+------------+
 | Porcentaje de votos recurridos e impugnados   | 5          |
++-----------------------------------------------+------------+
+| Mes                                           | 2          |
 +-----------------------------------------------+------------+
 | Día                                           | 2          |
 +-----------------------------------------------+------------+
@@ -156,16 +150,26 @@ Debería verse así:
 .. figure:: /img/totales-04-indra.png
    :alt: totales-04-indra
 
-   totales-04-indra
-
-Totales por listas
-^^^^^^^^^^^^^^^^^^
+Totales por agrupaciones
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Esta lista si incluye los totales de cada lista junto a las agrupaciones
 que compiten en internas. A los fines de conservar todos estos datos en
 una sola tabla simple se agregan al final tres columnas todas las veces
 que sean necesarias para mostrar las agrupaciones internas que compiten
 dentro de cada lista.
+
+Muestra de los datos::
+
+   3;04;001;10;23;00;25;0502;00374100;04811;
+   3;04;001;10;23;00;25;0578;00192897;02481;
+   3;04;001;10;23;00;25;0543;00077474;00996;
+   3;04;001;10;23;00;25;0217;00046604;00599;
+   3;04;001;10;23;00;25;0503;00036652;00471;
+   3;04;001;10;23;00;25;0201;00031016;00399;
+   3;04;001;10;23;00;25;0567;00018858;00243;
+
+Descripción de los datos
 
 +---------------+------------+
 | DESCRIPCIÓN   | LONGITUD   |
@@ -179,6 +183,8 @@ dentro de cada lista.
 | Código de     | 3          |
 | sección/      |            |
 | comuna        |            |
++---------------+------------+
+| Mes           | 2          |
 +---------------+------------+
 | Día           | 2          |
 +---------------+------------+
@@ -199,57 +205,11 @@ dentro de cada lista.
 | agrupación    |            |
 | política      |            |
 +---------------+------------+
-| **Tabla de 10 |            |
-| elementos,    |            |
-| correspondien |            |
-| tes           |            |
-| a las listas  |            |
-| propuestas    |            |
-| por cada      |            |
-| partido**     |            |
-+---------------+------------+
-| Código de     | 4          |
-| lista         |            |
-+---------------+------------+
-| Votos al      | 8          |
-| lista         |            |
-+---------------+------------+
-| Porcentaje de | 5          |
-| votos a la    |            |
-| lista         |            |
-+---------------+------------+
 
-Haciendo el mismo proceso con el archivo de `*totales por listas* para
-Córdoba <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/DATOS_89822634/totaleslistas_04.csv>`__
+Haciendo el mismo proceso con el archivo de `totales por listas para Córdoba <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017/blob/master/datos-a-usar/descargados-mininterior-elecciones-generales/DATOS_41776329/totalesagrupaciones_04.csv?raw=true>`__
 se debe llegar a esta lista:
 
 .. figure:: /img/totales-listas-04-indra.png
    :alt: totales-listas-04-indra
 
-   totales-listas-04-indra
 
-Listas participantes
-^^^^^^^^^^^^^^^^^^^^
-
-| Así como la de ámbitos se liberan las listas de todas las agrupaciones
-  participantes.
-| Este archivo puede usarse como dato accesorio para ponerle nombre a
-  los datos anteriores.
-
-Al igual que los demas datos es necesario descargar `este
-archivo <https://github.com/avdata99/datos-indra-dia-eleccion-paso-2017-AR/blob/master/recursos/DATOS-MUESTRA-2017-08-01/generales_00/listas_00.csv>`__
-y pasarlo a Google Drive.
-
-| Según la documentación, las tres columnas representan *Codigo, Siglas
-  y Denominación*.
-| Debe quedar así:
-
-.. figure:: /img/listas.png
-   :alt: listas
-
-   listas
-
-Cómo se ve todavía el dato no está erminado y son datos de prueba.
-
-Para procesar estos daton abrimos una planilla de cálculo nueva de
-Google Drive.
