@@ -44,3 +44,4 @@ Tambien se reciben consultas, opiniones o críticas por email a `andres@data99.c
    curso/resultados/datos-ministerio-del-interior/index
    curso/resultados/analisis-y-graficos/index
    curso/resultados/mapas/index
+   curso/mi-sitio-web/index
