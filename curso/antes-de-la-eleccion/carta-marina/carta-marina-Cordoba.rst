@@ -1,5 +1,6 @@
 ¿Que es una carta marina?
-=========================
+-------------------------
+
 Antes de cualquier elección la justicia electoral se encarga de confeccionar una lista 
 de los centros donde se desarrollará la votación. Además se disribuyen las mesas y los electores. En general en Argentina se la llama *Guía Electoral*.
 

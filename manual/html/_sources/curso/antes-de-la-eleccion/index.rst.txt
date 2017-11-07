@@ -14,5 +14,6 @@ Antes de la elección
   carta-marina/primeras-visualizaciones
   carta-marina/agrupar-datos
   carta-marina/geolocalizar-carta-marina
+  mapas/ejercicios-de-mapa-colaborativo
   recursos
   

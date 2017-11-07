@@ -1,5 +1,5 @@
 Procesar CSV para Geolocalizar
-==============================
+------------------------------
 
 Nótese que una de las columnas incluye más de un dato. Esto es un
 *error* (que a veces podemos suponer intencional) que dificulta el análisis de datos. La
@@ -30,7 +30,7 @@ Nosotros cambiamos eso por un separador *personalizado*. Elegimos " - " (espacio
 Al hacer esta división se **pisarán** los datos que estén a la derecha de la columna *recortada*. Revisar el espacio que necesita (e insertar las columnas que se necesiten) y realizar el recorte sin pérdida de datos. 
 
 Preparar los datos para geolocalizar
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Las herramientas para geolocalizar son variadas y pueden requerir los datos de base de diferentes formas. Es por esto que conviene tener los datos completos.
 
@@ -66,7 +66,7 @@ columnas - Direccion - Ciudad - Provincia - País (separadas por comas).
 Descargar esta planilla como CSV (menú *Archivo*, opción *descargar como* => CSV) para llevar a alguna plataforma de geolozalización.
 
 Geolocalizando con Google MyMaps
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Con `Google MyMpas <https://www.google.com/maps/d/>`__ se pueden
 construir mapas gráficamente en un entorno
@@ -92,7 +92,7 @@ Finalmente queda así: `Ver mapa <https://drive.google.com/open?id=17s7amCm2daY6
 * No permite exportar coordenadas.
 
 Geolocalizando en CartoDB
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Carto genera mapas más elegantes y mucho más potentes a la hora de dar
 estilos por valores de la tabla. Permite trabajar gratis con un límite
@@ -119,7 +119,7 @@ mapa <https://hudson.carto.com/builder/170fae5b-d302-4482-aa4d-13b67df9209b/embe
 * La geolocalización funcionó muy pobremente a pesar del límite.
 
 Geolocalizar con el API de Google sin ser desarrollador
--------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Una solución intermedia es usar un script (similar a los macros de Excel) en Google Sheets que permite hasta 1000 Geolocalizaciones por día. Es muy útil y funciona. Más info `aquí <https://www.datavizforall.org/transform/geocode/>`__.
 
@@ -165,7 +165,7 @@ MyMaps o cualquier otra plataforma ya que no será necesario mapear las
 direcciones.
 
 Geolocalizar direcciones es complejo
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para desarrolladores se recomiendan usar los webservices de Google u
 OpenStreetMaps con scripts que gradualmente releven los datos

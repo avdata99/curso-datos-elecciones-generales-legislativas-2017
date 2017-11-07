@@ -11,6 +11,10 @@ Cantidad de mujeres por distrito (provincia)
 
 .. figure:: /img/candidatos-hombres-y-mujeres-por-distrito.png
 
+Dentro de Córdoba rangos de edad por partido
+
+.. figure:: /img/franjas-etarias-candidatos-cordoba.png
+
 Dentro de Córdoba rangos de edad y género por partido
 
 .. figure:: /img/edad-y-genero-candidatos-cordoba.png

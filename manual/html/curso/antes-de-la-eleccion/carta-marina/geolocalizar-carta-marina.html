@@ -100,10 +100,8 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Procesar CSV para Geolocalizar</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#preparar-los-datos-para-geolocalizar">Preparar los datos para geolocalizar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#geolocalizando-con-google-mymaps">Geolocalizando con Google MyMaps</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#geolocalizando-en-cartodb">Geolocalizando en CartoDB</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#geolocalizar-con-el-api-de-google-sin-ser-desarrollador">Geolocalizar con el API de Google sin ser desarrollador</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#geolocalizando-en-cartodb">Geolocalizando en CartoDB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geolocalizar-con-el-api-de-google-sin-ser-desarrollador">Geolocalizar con el API de Google sin ser desarrollador</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#geolocalizar-direcciones-es-complejo">Geolocalizar direcciones es complejo</a></li>
 </ul>
 </li>
@@ -257,8 +255,9 @@ mapa</a></p>
 <li>Servicio de Geolocalización pago. Límite gratuito muy bajo.</li>
 <li>La geolocalización funcionó muy pobremente a pesar del límite.</li>
 </ul>
+</div>
 <div class="section" id="geolocalizar-con-el-api-de-google-sin-ser-desarrollador">
-<h3>Geolocalizar con el API de Google sin ser desarrollador<a class="headerlink" href="#geolocalizar-con-el-api-de-google-sin-ser-desarrollador" title="Enlazar permanentemente con este título">¶</a></h3>
+<h2>Geolocalizar con el API de Google sin ser desarrollador<a class="headerlink" href="#geolocalizar-con-el-api-de-google-sin-ser-desarrollador" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una solución intermedia es usar un script (similar a los macros de Excel) en Google Sheets que permite hasta 1000 Geolocalizaciones por día. Es muy útil y funciona. Más info <a class="reference external" href="https://www.datavizforall.org/transform/geocode/">aquí</a>.</p>
 <p>Este metodo es un pequeño programa que se puede anexar a cualquier planilla de Google Drive. Para agregarlo desde el menú <em>Herramientas</em> se elige <em>Editor de secuencia de comandos</em> y se copia el texto del archivo geolocalizar.gs del <a class="reference external" href="https://github.com/ModernizacionMuniCBA/muni-google-util-app-scripts/tree/master/geolocalizar%20desde%20direccion">repositorio de la Municipalidad de Córdoba</a>.</p>
 <p>Puede copiarse directamente desde <a class="reference external" href="https://raw.githubusercontent.com/ModernizacionMuniCBA/muni-google-util-app-scripts/master/geolocalizar%20desde%20direccion/geolocalizar.gs">aquí</a>.</p>
@@ -290,7 +289,6 @@ se puede hacer un nuevo mapa en Carto con resultados muy superiores.</p>
 <p>Usar este CSV con latitud y longitud incluida agiliza la carga en Google
 MyMaps o cualquier otra plataforma ya que no será necesario mapear las
 direcciones.</p>
-</div>
 </div>
 <div class="section" id="geolocalizar-direcciones-es-complejo">
 <h2>Geolocalizar direcciones es complejo<a class="headerlink" href="#geolocalizar-direcciones-es-complejo" title="Enlazar permanentemente con este título">¶</a></h2>

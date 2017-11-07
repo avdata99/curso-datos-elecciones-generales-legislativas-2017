@@ -29,6 +29,13 @@ Datos a conocer y usar
 * Polígonos de secciones y circuitos electorales.
 * Como contexto: Padrones electorales y listas de candidatos
 
+Sobre el curso
+~~~~~~~~~~~~~~
+
+| Este curso esta abierto a sugerencias y modificaciones en un `repositorio abierto en GitHub <https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017>`__.
+| Tambien se reciben consultas, opiniones o críticas por email a `andres@data99.com.ar <mailto:andres@data99.com.ar>`__.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contenidos:
@@ -37,18 +44,3 @@ Datos a conocer y usar
    curso/resultados/datos-ministerio-del-interior/index
    curso/resultados/analisis-y-graficos/index
    curso/resultados/mapas/index
-
-Sobre el curso
-~~~~~~~~~~~~~~
-
-Este curso esta abierto a sugerencias y modificaciones en un [repositorio abierto en GitHub](https://github.com/avdata99/curso-datos-elecciones-generales-legislativas-2017).
-
-Tambien se reciben consultas, opiniones o críticas por email a [andres@data99.com.ar](mailto:andres@data99.com.ar).
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

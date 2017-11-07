@@ -1,5 +1,5 @@
 Padrones electorales
-====================
+--------------------
 
 Antes de cada elección la justicia electoral le entrega a los partidos políticos una copia del Padrón electoral. Se espera que con este documento los partidos políticos puedan hacer los controles que crean necesarios.
 
@@ -27,7 +27,7 @@ Despues de algunos procesos relativamente simples puede obtenerse en algunos cas
 Resolver este tipo de problemas es uno de los objetivos de este curso.
 
 Algunos ejemplos
-----------------
+^^^^^^^^^^^^^^^^
 
 Sobre análisis en 2015 algunos de medios de comunicación tomaron los resultados de electores por domicilio para la Ciudad de Villa Allende.
 
@@ -36,7 +36,7 @@ Sobre análisis en 2015 algunos de medios de comunicación tomaron los resultado
 .. figure:: /img/electrores-por-domicilio-lavoz.png
 
 Ejemplo periodístico de la vida real
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Spotlight (En primera plana) es una película donde un equipo de investigación periodística analiza múltiples casos de curas pederastas en Boston (USA) en el año 2003. 
 
