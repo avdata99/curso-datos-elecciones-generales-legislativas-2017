@@ -42,6 +42,17 @@ Película donde un equipo de investigación periodística analiza múltiples cas
 Candidatos 2017
 ----------------
 
-| ORIGINAL: `Lista de candidatos 2017 sin genero en Excel <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/CandidatosGenerales2017-ORIGINAL.xlsx>`__.
-| MEJORADO: `Lista de candidatos 2017 con genero en CSV <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/candidatos-2017-con-genero.csv>`__
+Excel Original `Lista de candidatos 2017 sin genero en Excel <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/CandidatosGenerales2017-ORIGINAL.xlsx>`__. 
+
+CSV mejorado `Lista de candidatos 2017 con genero en CSV <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/candidatos-2017-con-genero.csv>`__
+
+
+Manuel Aristarán en TEDxRio de la plata
+---------------------------------------
+
+La historia detrás del proyecto *Gasto público bahiense*: `Video <https://www.youtube.com/watch?v=bSBh6Cm2Hpg>`__.
+
+
+.. figure:: /img/manu-gpb.png
+   :target: https://www.youtube.com/watch?v=bSBh6Cm2Hpg
 
