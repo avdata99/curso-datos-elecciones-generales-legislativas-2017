@@ -6,38 +6,37 @@ polígonos de límites de ciudades. Más del 80% del territorio provincia
 no pertenece a ningún municipio y los territorios que si pertenecen se
 encuentran en disputas actualmente.
 
-`Ver más
-info <https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/>`__
-|municipios-de-cordoba|
+`Ver más info <https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/>`__
+
+.. figure:: /img/radios-municipales-cordoba.png
 
 La forma posibles es el uso de *localidades censales* descriptos en `el
 capítulo de recursos greográficos <poligonos.md>`__.
 
-| Antes de eso tomamos nuesra lista de Circuitos trabajados en base a la
-  carta marina 2015.
-| `Circuitos y electores 2007 -
-  2017 <../recursos/circuitos-y-electores-2007-2017.csv>`__.
-| Este recurso incluye a todos los circuitos vía carta marina a
-  excepción de la Capital que fue unificada como una única ciudad.
+Antes de eso tomamos nuesra lista de Circuitos trabajados en base a la carta marina 2015. 
+`Circuitos y electores 2007 - 2017 <../recursos/circuitos-y-electores-2007-2017.csv>`__.
+Este recurso incluye a todos los circuitos vía carta marina a excepción de la Capital que fue unificada como una única ciudad.
 
 .. figure:: /img/muestra-2007-2017.png
    :alt: muestra-2007-2017
 
-   muestra-2007-2017
 
 `Localidades censales en
 SHP <../recursos/Capa-provincial-Cordoba-Localidades-Censales-2010-SHP.zip>`__.
 
-| Añadir como capa vectorial con QGis.
-| |anadir-capa-vectorial|
+Añadir como capa vectorial con QGis.
+
+.. figure:: /img/anadir-capa-vectorial.png
+
 
 .. figure:: /img/qgis-abierto.png
    :alt: qgis-abierto
 
-   qgis-abierto
 
-| Probar si la proyección esta bien poniendo un mapa real de fondo.
-| |qgis-con-gmaps|
+Probar si la proyección esta bien poniendo un mapa real de fondo.
+
+.. figure:: /img/qgis-con-gmaps.png
+
 
 Exportar a CSV con datos espaciales.
 
@@ -51,13 +50,10 @@ Exportar a CSV con datos espaciales.
 
    qgis-exportando-02
 
-| Proyección *Posgar 94 EPSG:22184* se usa muchas veces en datos
-  producidos en Argentina. En este caso es la del SHP de origen.
-| Proyección *Pseido Mercator EPSG:4326*, recomendada para exportar
-  siempre, es la que usamos para exportar.
+Proyección *Posgar 94 EPSG:22184* se usa muchas veces en datos producidos en Argentina. En este caso es la del SHP de origen.
+Proyección *Pseido Mercator EPSG:4326*, recomendada para exportar siempre, es la que usamos para exportar.
 
-`Localidades censales en CSV desde el
-SHP <../recursos/localidades-censales-2010.csv>`__.
+`Localidades censales en CSV desde el SHP <../recursos/localidades-censales-2010.csv>`__.
 
 Ahora tenemos un CSV con campos espaciales junto a los datos de cada
 localidad censal usada en 2010 con motivo del censo. Son 522 registros
@@ -85,15 +81,10 @@ complejidad pero no debería llevar mucho tiempo).
 .. figure:: /img/csv-mezclados.png
    :alt: csv-mezclados
 
-   csv-mezclados
-
 `CSV
 terminado <../recursos/circuitos-geolocalizados-segun-localidades-censales-2010.csv>`__.
 
 `Todo junto en Google
 Drive <https://docs.google.com/spreadsheets/d/1fYJhzRYtZ_U3tj1tY9IspOQ24HGTzCoad1NfWj1Eb7I>`__.
 
-.. |municipios-de-cordoba| image:: https://andresvazquez.com.ar/blog/wp-content/uploads/2014/05/Selection_034.png
-.. |anadir-capa-vectorial| image:: /img/anadir-capa-vectorial.png
-.. |qgis-con-gmaps| image:: /img/qgis-con-gmaps.png
 

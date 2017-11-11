@@ -41,7 +41,5 @@ Tambien se reciben consultas, opiniones o críticas por email a `andres@data99.c
    :caption: Contenidos:
 
    curso/antes-de-la-eleccion/index
-   curso/resultados/datos-ministerio-del-interior/index
-   curso/resultados/analisis-y-graficos/index
-   curso/resultados/mapas/index
+   curso/resultados/index
    curso/mi-sitio-web/index

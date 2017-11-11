@@ -55,8 +55,7 @@ disponibles en formatos de polígonos en su totalidad.
 
 La Ciudad de Córdoba publica los polígonos de sus circuitos electorales
 (Córdoba es a la vez sección/departamento y una ciudad). Pueden verse y
-descargarse
-`aquí <https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/legislacion/seccionales-y-circuitos-electorales/212>`__.
+descargarse `aquí <https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/legislacion/seccionales-y-circuitos-electorales/212>`__.
 
 A diferencia de la provincia incluye un mapa online y múltiples formatos
 más simples de reutilizar por audiencias no especializadas.
@@ -65,9 +64,9 @@ La realidad del resto de la provincia de Córdoba es compleja. Más del
 80% del territorio provincia no pertenece a ningún municipio y los
 territorios que si pertenecen se encuentran en disputas actualmente.
 
-`Ver más
-info <https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/>`__
-|municipios-de-cordoba|
+`Ver más info <https://andresvazquez.com.ar/blog/los-municipios-de-cordoba-no-existen/>`__
+
+.. figure:: /img/radios-municipales-cordoba.png
 
 El recurso más aproximado que aparece son los puntos de *localidades
 censales* de 2010 que se encuentra en el mismo GeoPortal de la Provincia
@@ -82,5 +81,5 @@ Todos estos recursos son datos geoespaciales en diferentes formatos.
 Vale la pena revisar las diferencias y alcances de cada uno en la
 `siguiente sección <formatos-geo.md>`__
 
-.. |municipios-de-cordoba| image:: https://andresvazquez.com.ar/blog/wp-content/uploads/2014/05/Selection_034.png
+.. figure:: /img/radios-municipales-cordoba.png
 

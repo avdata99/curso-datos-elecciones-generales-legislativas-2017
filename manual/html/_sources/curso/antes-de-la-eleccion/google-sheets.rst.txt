@@ -1,5 +1,5 @@
 Planillas de cálculo
-====================
+--------------------
 
 Para procesar tablas con datos existen diferentes herramientas.
 Como planilla de uso local el más usado es Microsoft Excel para entornos Windows (con su contraparte LibreOffice para entornos Linux).

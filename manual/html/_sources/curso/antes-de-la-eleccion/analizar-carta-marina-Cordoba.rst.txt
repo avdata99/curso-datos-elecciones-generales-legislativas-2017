@@ -1,5 +1,5 @@
 Procesar la carta marina Córdoba 2015
-=====================================
+-------------------------------------
 
 Una búsqueda en Google dará con una lista de `recursos en el poder
 judicial de Nación sobre
@@ -22,8 +22,8 @@ los resultados cambian sensiblemente. Google no sabe que tipo de
 archivos buscamos y si solo queremos algunos sitios específicamente (en
 este caso, datos oficiales de gobierno).
 
-Allí se encuentra la `Carta Marina Córdoba 2015 en
-PDF <https://www.pjn.gov.ar/cne/secelec/document/otros/4-Carta%20Marina%202015.pdf>`__.
+Allí se encuentra la `Carta Marina Córdoba 2017 en
+PDF <https://www.pjn.gov.ar/cne/secelec/document/otros/4-CartaMarina08092017.pdf>`__.
 
 .. figure:: /img/carta-marina-pdf.png
    :alt: carta
@@ -59,9 +59,7 @@ Como se ve, la falla es la misma. Este PDF no es procesable de manera que entreg
 
 * Si el PDF no es muy largo, tomar estos resultados (o copiar el texto del PDF y pasarlos a un editor de texto) para limpiarlos a mano. 
 * Si el PDF es muy largo se puede contar con la colaboración de algún programador que procese automáticamente y obtenga el resultado deseado.
-* Si se tienen contactos con algún partido político o con funcionarios de la junta electoral se puede solicitar una versión más amigable (Excel, CSV o similares).
-
-En la sección de `recursos <recursos>`__ se dejaron referencias a Cartas Marinas en formato original y procesado. 
+* Si se tienen contactos con algún partido político o con funcionarios de la junta electoral se puede solicitar una versión más amigable (Excel, CSV o similares). 
 
 A los fines de usar Tabula en casos efectivos pueden tomarse dos ejemplos relacionados en casos donde el PDF sí se puede transformar: 
 
@@ -72,5 +70,5 @@ A los fines de usar Tabula en casos efectivos pueden tomarse dos ejemplos relaci
 Archivo final
 ^^^^^^^^^^^^^
 
-Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde `aquí <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marina/escuelas-elecciones-2015-cordoba.csv>`__.
+Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde `aquí <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marina/escuelas-elecciones-2017-cordoba-BASE.csv>`__.
 

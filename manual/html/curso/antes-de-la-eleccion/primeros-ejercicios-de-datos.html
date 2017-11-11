@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Primeros ejercicios &mdash; documentación de Curso Elecciones Legislativas 2017 en Córdoba - </title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../search.html"/>
+    <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/>
+        <link rel="up" title="Antes de la elección" href="index.html"/>
+        <link rel="next" title="Primeras visualizaciones" href="primeras-visualizaciones.html"/>
+        <link rel="prev" title="Planillas de cálculo" href="google-sheets.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Curso Elecciones Legislativas 2017 en Córdoba
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Antes de la elección</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="padrones-electorales.html">Padrones electorales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lista-de-candidatos.html">Lista de candidatos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="carta-marina-Cordoba.html">¿Que es una carta marina?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analizar-carta-marina-Cordoba.html">Procesar la carta marina Córdoba 2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google-sheets.html">Planillas de cálculo</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Primeros ejercicios</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ordenar">Ordenar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#total">Total</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#promedio-de-electores-por-escuela">Promedio de electores por escuela</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#promedio-de-electores-por-mesa">Promedio de electores por mesa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cantidad-de-escuelas-con-mas-de-5-000-electores">Cantidad de escuelas con más de 5.000 electores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filtrar">Filtrar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusiones">Conclusiones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ejericicios-opcionales">Ejericicios opcionales</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="primeras-visualizaciones.html">Primeras visualizaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-carta-marina.html">Procesar CSV para Geolocalizar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios-de-mapa-colaborativo.html">Ejercicios de mapa colaborativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos.html">Recursos y ejemplos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../resultados/datos-ministerio-del-interior/index.html">Datos que publica el Ministerio del Interior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resultados/analisis-y-graficos/index.html">Analizando resultados electorales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resultados/mapas/index.html">Mapas de los resultados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mi-sitio-web/index.html">Mi sitio web</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">Curso Elecciones Legislativas 2017 en Córdoba</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Antes de la elección</a> &raquo;</li>
+      
+    <li>Primeros ejercicios</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/curso/antes-de-la-eleccion/primeros-ejercicios-de-datos.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="primeros-ejercicios">
+<h1>Primeros ejercicios<a class="headerlink" href="#primeros-ejercicios" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Con la finalidad de familiarizarse con la lógica de esta planilla de cálculo se realizarán las siguientes tareas sobre la planilla:</p>
+<div class="section" id="ordenar">
+<h2>Ordenar<a class="headerlink" href="#ordenar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Averiguar cual es el centro de votación con más electores</p>
+<div class="figure">
+<img alt="../../_images/ordenar-sheet.png" src="../../_images/ordenar-sheet.png" />
+</div>
+</div>
+<div class="section" id="total">
+<h2>Total<a class="headerlink" href="#total" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Calcular el total de electores en la Provincia de Córdoba.
+Se debe <strong>usar siempre el signo = al inicio</strong> para indicar que una celda contendrá un calculo o <em>función</em>
+Aquí se introduce a las funciones, en este caso la función <strong>SUM</strong> (SUMA si se usa la versión en español de las funciones). Las funciones pueden usar (como en este caso) <em>rangos</em> además de celdas.</p>
+<p>Las funciones pueden tener uno o más <em>parámetros</em> según su cometido. En este caso la función <em>SUM</em> solo requiere un parámetro, el rango de celdas a sumar.</p>
+<p>Un rango se define por la celda de inicio y de final separadas por el signo de <em>dos puntos</em>. Ejemplos de rangos:</p>
+<ul class="simple">
+<li>A2:A9</li>
+<li>C3:F3 (puede ser horizontal)</li>
+<li>B15:C90 (puede tener mas de una fila o columna contenida)</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/sumar-sheet.png" src="../../_images/sumar-sheet.png" />
+</div>
+</div>
+<div class="section" id="promedio-de-electores-por-escuela">
+<h2>Promedio de electores por escuela<a class="headerlink" href="#promedio-de-electores-por-escuela" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Calcular cual es el promedio de electores por centro de votación</p>
+<div class="figure">
+<img alt="../../_images/promedio-electores.png" src="../../_images/promedio-electores.png" />
+</div>
+</div>
+<div class="section" id="promedio-de-electores-por-mesa">
+<h2>Promedio de electores por mesa<a class="headerlink" href="#promedio-de-electores-por-mesa" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Agregar una columna que indique el <em>promedio</em> de electores por mesa. Para esto es necesario conocer como funciona una planilla de cálculo.
+Cada <em>celda</em> puede usarse o llamarse desde <em>funciones</em> o calculos desde otras celdas.
+En este caso necesitamos dividir el total de electores (celda <strong>I2</strong> para el primer centro de votación) de cada centro por su total de mesas celda <strong>F2</strong>.</p>
+<div class="figure">
+<img alt="../../_images/eletores-por-mesa.png" src="../../_images/eletores-por-mesa.png" />
+</div>
+<p>Revisar la forma de <em>estirar</em> celdas calculadas para replicar un cálculo o función.</p>
+</div>
+<div class="section" id="cantidad-de-escuelas-con-mas-de-5-000-electores">
+<h2>Cantidad de escuelas con más de 5.000 electores<a class="headerlink" href="#cantidad-de-escuelas-con-mas-de-5-000-electores" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Función:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">COUNTIF</span><span class="p">(</span><span class="n">J2</span><span class="p">:</span><span class="n">J1212</span><span class="p">;</span> <span class="s2">&quot;&gt;5000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La funcion COUNTIF (<em>contar si</em> se cumple alguna condición) tiene dos parámetros. La forma de escribir funciones es <em>= (signo igual)</em> seguido del nombre de la función. Luego entre paréntesis se colocan los parámetros. Estos son los insumos para que la función realice su tarea. En este caso son dos parámetros separados por punto y coma (podría ser coma según la <em>regionalización</em> elegida)</p>
+</div>
+<div class="section" id="filtrar">
+<h2>Filtrar<a class="headerlink" href="#filtrar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Es posible elegir cuales <em>filas</em> de esta tabla mirar definiendo <em>filtros</em> basados en cualquiera de las columnas. Por ejemplo uno podría mirar los centros de votación de un circuito electoral específico y hacer análisis más particulares.
+Datos -&gt; Filtro</p>
+</div>
+<div class="section" id="conclusiones">
+<h2>Conclusiones<a class="headerlink" href="#conclusiones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Como se ve, el lenguaje de las planillas de cálculo esta enriquecido por funciones específicas que nos ayudan a obtener nueva información de los datos. Conocer la lógica de celdas de estas planillas y el alcance de las decenas de funciones existentes pueden permitir rápido y facil obtener información util de cualquier conjunto de datos.</p>
+<p>La combinación de filtros, ordenamientos, funciones y visualizaciones debe permitirle al analista encontrar la información que busca.</p>
+</div>
+<div class="section" id="ejericicios-opcionales">
+<h2>Ejericicios opcionales<a class="headerlink" href="#ejericicios-opcionales" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li>Buscar cuantas escuelas tienen la palabra <em>Sarmiento</em> incluida en su nombre.</li>
+<li>Pensar en algún análisis que pueda ser interesante basado en estos datos.</li>
+<li>Repetir los análisis hechos sobre la <a class="reference external" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/sociedad/cartas-marinas-electorales/213">Carta marina de 2015</a> a modo de comparación.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="primeras-visualizaciones.html" class="btn btn-neutral float-right" title="Primeras visualizaciones" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="google-sheets.html" class="btn btn-neutral" title="Planillas de cálculo" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Andrés Vázquez.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
