@@ -22,5 +22,11 @@ Dentro de Córdoba rangos de edad y género por partido
 Candidatos 2017
 ^^^^^^^^^^^^^^^
 
-| ORIGINAL: `Lista de candidatos 2017 sin genero en Excel <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/CandidatosGenerales2017-ORIGINAL.xlsx>`__.
-| MEJORADO: `Lista de candidatos 2017 con genero en CSV <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/candidatos-2017-con-genero.csv>`__
+Archivos:
+ - Lista de candidatos 2017 sin genero `en Excel <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/CandidatosGenerales2017-ORIGINAL.xlsx>`__.
+ - Lista de candidatos 2017 con genero `en CSV <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/candidatos/candidatos-2017-con-genero.csv>`__
+
+Importante
+^^^^^^^^^^
+
+Cada vez que el estado libera un dato que vamos a necesitar en el futuro es necesario **descargarlo y guardarlo** en algún repositorio propio y seguro. En muchos casos los datos no se sostienen en el tiempo. Google Drive, Dropbox y otras opciones similares pueden ser de utilidad. 

@@ -72,3 +72,7 @@ Archivo final
 
 Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde `aquí <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marina/escuelas-elecciones-2017-cordoba-BASE.csv>`__.
 
+Importante
+^^^^^^^^^^
+
+Cada vez que el estado libera un dato que vamos a necesitar en el futuro es necesario **descargarlo y guardarlo** en algún repositorio propio y seguro. En muchos casos los datos no se sostienen en el tiempo. Google Drive, Dropbox y otras opciones similares pueden ser de utilidad. 

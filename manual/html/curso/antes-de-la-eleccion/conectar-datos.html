@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Procesar la carta marina Córdoba 2015 &mdash; documentación de Curso Elecciones Legislativas 2017 en Córdoba - </title>
+  <title>Conectar datos de planillas distintas &mdash; documentación de Curso Elecciones Legislativas 2017 en Córdoba - </title>
   
 
   
@@ -35,8 +35,8 @@
         <link rel="search" title="Búsqueda" href="../../search.html"/>
     <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/>
         <link rel="up" title="Antes de la elección" href="index.html"/>
-        <link rel="next" title="Planillas de cálculo" href="google-sheets.html"/>
-        <link rel="prev" title="¿Que es una carta marina?" href="carta-marina-Cordoba.html"/> 
+        <link rel="next" title="Procesar CSV para Geolocalizar" href="geolocalizar-carta-marina.html"/>
+        <link rel="prev" title="Agrupar datos" href="agrupar-datos.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,18 +92,12 @@
 <li class="toctree-l2"><a class="reference internal" href="formatos-de-archivo.html">Formatos de archivos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lista-de-candidatos.html">Lista de candidatos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="carta-marina-Cordoba.html">¿Que es una carta marina?</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Procesar la carta marina Córdoba 2015</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tip-de-busqueda">Tip de búsqueda</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#archivo-final">Archivo final</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#importante">Importante</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="analizar-carta-marina-Cordoba.html">Procesar la carta marina Córdoba 2015</a></li>
 <li class="toctree-l2"><a class="reference internal" href="google-sheets.html">Planillas de cálculo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="primeros-ejercicios-de-datos.html">Primeros ejercicios</a></li>
 <li class="toctree-l2"><a class="reference internal" href="primeras-visualizaciones.html">Primeras visualizaciones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="agrupar-datos.html">Agrupar datos</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Conectar datos de planillas distintas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="geolocalizar-carta-marina.html">Procesar CSV para Geolocalizar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ejercicios-de-mapa-colaborativo.html">Ejercicios de mapa colaborativo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recursos.html">Recursos y ejemplos</a></li>
@@ -143,11 +137,11 @@
       
           <li><a href="index.html">Antes de la elección</a> &raquo;</li>
       
-    <li>Procesar la carta marina Córdoba 2015</li>
+    <li>Conectar datos de planillas distintas</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/curso/antes-de-la-eleccion/analizar-carta-marina-Cordoba.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/curso/antes-de-la-eleccion/conectar-datos.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,72 +151,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="procesar-la-carta-marina-cordoba-2015">
-<h1>Procesar la carta marina Córdoba 2015<a class="headerlink" href="#procesar-la-carta-marina-cordoba-2015" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Una búsqueda en Google dará con una lista de <a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/secciones/otros/otros_view.php?oID=674&amp;dID=4">recursos en el poder
-judicial de Nación sobre
-CORDOBA</a>.
-Hay de todas las provincias. Lamentablemente son PDFs difíciles de
-procesar en general.</p>
-<div class="section" id="tip-de-busqueda">
-<h2>Tip de búsqueda<a class="headerlink" href="#tip-de-busqueda" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Si se busca <em>&#8220;Carta Marina&#8221; Córdoba</em> y se agrega además</p>
+  <div class="section" id="conectar-datos-de-planillas-distintas">
+<h1>Conectar datos de planillas distintas<a class="headerlink" href="#conectar-datos-de-planillas-distintas" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El análisis se vuelve interesantes cuando los acumulados por circuitos
+de diferentes elecciones (vía cartas marinas en el caso de Córdoba) pueden reunirse en un solo
+documento.</p>
+<p>En este caso estamos trabajando con la carta marina 2017 y tenemos a mano, en formato reutilizable la <a class="reference external" href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marina/electoral-2007-cordoba-marina.xls">carta marina 2007 en excel</a></p>
+<p>Esta aparecía solo buscando en Google <em>&#8220;carta marina filetype:xls&#8221;</em>. Al momento de escribir estas líneas el portal de estadísticas de la provincia se rehizo completo y el link desapareció. En este repositorio se guardo una copia. <strong>Es otro ejemplo más de la necesisdad de mantener réplicas de los datos, nunca sabemos hasta cuando estarán online</strong>.</p>
+<p>Si bien <a class="reference external" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/sociedad/electores-por-circuito-en-la-provincia-de-cordoba/216">existe un analisis detallado en este sentido</a> es interesante conocer la forma en que puede realizarse.</p>
+<p>Podemos colocar nuestras planillas de electores por
+circuitos en una hoja de nuestra planilla y la de
+2007 en otra hoja.</p>
+<p>A ambas hojas las ordenamos por códigos de sección y códigos de circuito
+(de modo que queden ordenadas por circuito dentro de cada <em>sección</em>).</p>
+<p><strong>La existencia de códigos únicos de Circuitos y Secciones nos allana el
+camino</strong>. Es importante exigir este tipo de identificadores para los
+gobiernos que liberan datos.</p>
+<p>De esta forma ambas planillas estaran muy similares, cercanas a la
+posibilidad de unirse. Si bien la función VLOOKUP podría resolver mejor este caso (porque existe una clave única*) lo cierto es que en la mayoría de los casos esto no existe.</p>
+<p>Este ejercicio esta pensado para resolver casos</p>
+<p>Una forma simple de hacerlo es copiar una de las dos planillas completas
+junto a la otra en columnas libres de modo que conformen una sola
+planilla.</p>
+<p>Conviene a continuación ordenar las columnas con los nombres de los
+códigos o nombres de circuitos de modo que queden contiguas.</p>
+<p>La comparación a continuación es manual y simple. Si existieran nuevos
+circuitos simplemente deberán insertarse celdas para que la planilla
+quede <em>alineada</em>.</p>
+<div class="figure">
+<img alt="tablas-unidas" src="../../_images/tablas-unidas.png" />
+</div>
 <ul class="simple">
-<li><em>filetype:pdf</em>: Solo archivos PDF</li>
-<li><em>filetype:csv</em>: Solo archivos CSV</li>
-<li><em>filetype:xls</em>: Solo archivos de Excel</li>
-<li><em>site:gov.ar</em>: Solo sitios de Gobierno en Argentina (sumar además el nuevo gob.ar)</li>
+<li>En realidad la clave única de cada circuito es la que surge de concatenar los datos de la sección y el circuito</li>
 </ul>
-<p>los resultados cambian sensiblemente. Google no sabe que tipo de
-archivos buscamos y si solo queremos algunos sitios específicamente (en
-este caso, datos oficiales de gobierno).</p>
-<p>Allí se encuentra la <a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/document/otros/4-CartaMarina08092017.pdf">Carta Marina Córdoba 2017 en
-PDF</a>.</p>
-<div class="figure">
-<img alt="carta" src="../../_images/carta-marina-pdf.png" />
-</div>
-<p>Una vez descargado se debe abrir con <a class="reference external" href="http://tabula.technology/">Tabula
-PDF</a>. Este producto libre y gratuito
-permite pasar tablas a formatos reutilizables de datos.</p>
-<p>Como primera prueba se puede seleccionar directamente una parte de la
-tabla para analizar si el resultado es útil.</p>
-<div class="figure">
-<img alt="marca" src="../../_images/marcando-zona-en-tabula.png" />
-</div>
-<p>Luego del proceso se ven los resultados pasados a una tabla de datos
-reutilizable.</p>
-<div class="figure">
-<img alt="intento" src="../../_images/primer-intento-tabula.png" />
-</div>
-<p>Se ve que no tomo correctamente las celdas como uno podría imaginar. Se
-requiere que cada dato esté en una celda individual. El que construyo el
-PDF no lo hizo construyendo una tabla ordenadamente sino que dejo varias
-líneas de texto en cada <em>celda</em>.</p>
-<p>Como prueba adicional se puede usar el detector automático de tablas en
-Tabula y ver los resultados.</p>
-<div class="figure">
-<img alt="prueba2" src="../../_images/prueba-2-tabula.png" />
-</div>
-<p>Como se ve, la falla es la misma. Este PDF no es procesable de manera que entregue resultados listos para usar. En estos casos las opciones son:</p>
-<ul class="simple">
-<li>Si el PDF no es muy largo, tomar estos resultados (o copiar el texto del PDF y pasarlos a un editor de texto) para limpiarlos a mano.</li>
-<li>Si el PDF es muy largo se puede contar con la colaboración de algún programador que procese automáticamente y obtenga el resultado deseado.</li>
-<li>Si se tienen contactos con algún partido político o con funcionarios de la junta electoral se puede solicitar una versión más amigable (Excel, CSV o similares).</li>
-</ul>
-<p>A los fines de usar Tabula en casos efectivos pueden tomarse dos ejemplos relacionados en casos donde el PDF sí se puede transformar:</p>
-<ul class="simple">
-<li><a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/document/otros/4-04_web_am181115_20h40m.pdf">NÓMINA DE AUTORIDADES DE MESA -ELECCIONES BALOTAJE 2015</a></li>
-<li><a class="reference external" href="https://www.pjn.gov.ar/cne/secelec/document/otros/4-INTEGRACION%20DE%20ALIANZAS%202015%20ELECCIONES%20PASO.pdf">Integración de Alianzas 2015</a></li>
-</ul>
-<div class="section" id="archivo-final">
-<h3>Archivo final<a class="headerlink" href="#archivo-final" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Finalmente puede descargarse el archivo CSV para comenzar a trabajar desde <a class="reference external" href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/carta-marina/escuelas-elecciones-2017-cordoba-BASE.csv">aquí</a>.</p>
-</div>
-<div class="section" id="importante">
-<h3>Importante<a class="headerlink" href="#importante" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Cada vez que el estado libera un dato que vamos a necesitar en el futuro es necesario <strong>descargarlo y guardarlo</strong> en algún repositorio propio y seguro. En muchos casos los datos no se sostienen en el tiempo. Google Drive, Dropbox y otras opciones similares pueden ser de utilidad.</p>
-</div>
-</div>
 </div>
 
 
@@ -232,10 +193,10 @@ Tabula y ver los resultados.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="google-sheets.html" class="btn btn-neutral float-right" title="Planillas de cálculo" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="geolocalizar-carta-marina.html" class="btn btn-neutral float-right" title="Procesar CSV para Geolocalizar" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="carta-marina-Cordoba.html" class="btn btn-neutral" title="¿Que es una carta marina?" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="agrupar-datos.html" class="btn btn-neutral" title="Agrupar datos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

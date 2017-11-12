@@ -33,7 +33,10 @@
         <link rel="index" title="Índice"
               href="../../genindex.html"/>
         <link rel="search" title="Búsqueda" href="../../search.html"/>
-    <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/> 
+    <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/>
+        <link rel="up" title="Analizando resultados electorales" href="index.html"/>
+        <link rel="next" title="D’Hont" href="dhont.html"/>
+        <link rel="prev" title="Datos el Ministerio del Interior" href="como-publica-datos-el-ministerio-interior.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -83,8 +86,25 @@
             
             
                 <p class="caption"><span class="caption-text">Contenidos:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Analizando resultados electorales</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="como-publica-datos-el-ministerio-interior.html">Datos el Ministerio del Interior</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Analizando los datos del ministerio del interior</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resultados-totales-provincia-por-lista">Resultados totales provincia por lista</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prueba">Prueba</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#visualizar">Visualizar</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dhont.html">D&#8217;Hont</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publicar-tablas-y-graficos.html">Publicar tablas y gráficos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualizaciones-legislativas.html">Visualizaciones legislativas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formatos-geo.html">Formatos de datos espaciales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poligonos.html">Poligonos de Secciones y Circuitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../mi-sitio-web/index.html">Mi sitio web</a></li>
 </ul>
 
@@ -116,6 +136,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../index.html">Docs</a> &raquo;</li>
       
+          <li><a href="index.html">Analizando resultados electorales</a> &raquo;</li>
+      
     <li>Analizando los datos del ministerio del interior</li>
       <li class="wy-breadcrumbs-aside">
         
@@ -132,28 +154,40 @@
             
   <div class="section" id="analizando-los-datos-del-ministerio-del-interior">
 <h1>Analizando los datos del ministerio del interior<a class="headerlink" href="#analizando-los-datos-del-ministerio-del-interior" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Luego de <a class="reference external" href="datos-ministerio-interior-e-Indra.md">procesar los datos de la
-elección</a> es el momento de
-ordenar estos datos y visualizarlos.</p>
+<p>Luego de procesar los datos de la elección es el momento de ordenar estos datos y visualizarlos.</p>
 <div class="section" id="resultados-totales-provincia-por-lista">
 <h2>Resultados totales provincia por lista<a class="headerlink" href="#resultados-totales-provincia-por-lista" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Como primer análisis vamos a ver y ordenar los datos totales por provincia.
-Para eso en una hoja nueva replicamos (usamos el signo igual y clickeamos en la celda que deseamos replicar aunque esté en otra hoja) la parte de los datos que nos interesan. Los datos de interés son los que tienen el código <em>999</em> en la hoja de <em>totales agrupaciones 04</em>.</p>
-<p>Es importante replicar igualando las celdas y no <em>copiar y pegar</em> para que cuando actualicemos los datos en la hoja de origen todo lo que hagamos quede actualziado automáticamente.</p>
-<p>En un primer paso los datos deben verse así
-<img alt="viz-resultado-provincial-por-listas" src="../../_images/viz-resultado-provincial-por-listas.png" /></p>
-<p>Una de las columnas incluye el porcentaje de la agrupación, este número
-viene sin decimales. Necesitamos hacer una nuestra con la formula que
-corresponde.</p>
-<p>La función es:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>=I2/sum(I$2:I$12) * 100
+<p>Como primer análisis vamos a ver y ordenar los datos totales por provincia.</p>
+<p>La lista de totales por agrupación representa los votos a todas las agrupaciones desagregado por sección electoral pero tiene un <strong>detalle o falla</strong>. Si se suma la columna de votos el total resultante es <strong>el doble de los votos reales</strong>. Esto se debe a que la tabla al final tiene la sección 999 que representa el total provincial. Esto no esta bien visto en el mundo de las bases de datos, duplicar información que podría obtenerse simplemente sumando los departamentos no es útil.</p>
+<p>Podemos ver estos datos haciendo un filtro (menú <em>Datos</em> opción <em>Filtro</em>) para ver solo la <em>Sección</em> 999 (que representa totales provinciales) puede verse así:</p>
+<div class="figure">
+<img alt="../../_images/viz-resultado-provincial-por-listas.png" src="../../_images/viz-resultado-provincial-por-listas.png" />
+</div>
+<p>Para separar estos datos hacemos una nueva hoja en la planilla de cálculo y <em>linkeamos</em> estos datos. Sabemos que la planilla subida siempre tendrá la misma cantidad de filas por lo que podemos en este nueva hoja usar el signo <em>=</em> para vincular estas celdas con el contenido de la tabla original.</p>
+<p>Esto es particularmente útil si esperamos actualizar (pisando los datos) de la primera hoja cada 5 o 10 minutos. <strong>Nuestra idea es desarrollar resultados, análisis y visualizaciones que se actualicen automáticamente cada vez que actualicemos datos en la hoja original</strong>.</p>
+<p>La nueva hoja podrá verse así.</p>
+<div class="figure">
+<img alt="../../_images/viz-resultado-provincial-por-listas2.png" src="../../_images/viz-resultado-provincial-por-listas2.png" />
+</div>
+<p>En la hoja de totales podemos ver una de las columnas que incluye el porcentaje de la agrupación, este número
+viene sin decimales.
+Parece una mala idea esta forma de publicación por dos motivos:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Es un dato que podemos calcular nosotros simplemente dividiendo los votos de cada agrupación por el total de votos.</li>
+<li>Por que necesitaríamos dividirlo por 100 para saber el porcentaje real.</li>
+</ul>
+</div></blockquote>
+<p>Es por esto que agregamos una columna extra al final con la formula que corresponde.</p>
+<p>La fórmula es:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">I2</span><span class="o">/</span><span class="nb">sum</span><span class="p">(</span><span class="n">I2</span><span class="p">:</span><span class="n">I8</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
 </pre></div>
 </div>
+<p>Nótese que podemos hacer fórmulas que incluyan operaciones matemáticas simples y funciones en la misma celda.</p>
 <p>Esa formula puede estirarse para completar hasta el final. Analizar la
-necesidad de los signos <em>$</em>.</p>
-<div class="figure" id="id1">
+necesidad de los signos <em>$</em> en las fórmulas.</p>
+<div class="figure">
 <img alt="viz-resultado-provincial-por-listas-02" src="../../_images/viz-resultado-provincial-por-listas-02.png" />
-<p class="caption"><span class="caption-text">viz-resultado-provincial-por-listas-02</span></p>
 </div>
 <p>Lo que necesitamos a continuación son los nombres de las agrupaciones.
 Si bien podemos hacerlo a mano es bueno conectarlo a la lista accesoria
@@ -163,35 +197,41 @@ datos relacionados a ese mismo código en otra tabla. En este caso
 tenemos el código de la agrupación y en una tabla accesoria dos datos
 (nombre y descripción) de la agrupación.</p>
 <p>La formula para la primera fila.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>=VLOOKUP(H2;Listas!A$2:C$461;2)
+<div class="highlight-default"><div class="highlight"><pre><span></span>=VLOOKUP(H2;agrupaciones!A$2:B$158;2;FALSE)
 </pre></div>
 </div>
 <p><strong>Nótese</strong> nuevamente la necesidad del signo <em>$</em>.</p>
 <p>Debe quedar así:</p>
-<div class="figure" id="id2">
+<div class="figure">
 <img alt="viz-resultado-provincial-por-listas-03" src="../../_images/viz-resultado-provincial-por-listas-03.png" />
-<p class="caption"><span class="caption-text">viz-resultado-provincial-por-listas-03</span></p>
 </div>
 <p>Es necesario ordenar estos datos según la cantidad de votos que irá
 cambiando durante el día de la elección. Para es útil la función <em>sort</em>.</p>
 <p>Debajo de la lista anterior podemos poner la fórmula:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">sort</span><span class="p">(</span><span class="n">A2</span><span class="p">:</span><span class="n">E12</span><span class="p">;</span><span class="mi">2</span><span class="p">;</span><span class="n">FALSE</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">SORT</span><span class="p">(</span><span class="n">H2</span><span class="p">:</span><span class="n">L8</span><span class="p">;</span><span class="mi">2</span><span class="p">;</span><span class="n">false</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="figure">
+<img alt="../../_images/ordenando-resultados.png" src="../../_images/ordenando-resultados.png" />
+</div>
+<p>La función SORT lleva 3 parámetros (6 si fueramos a ordenar por una segunda columna luego de la primera). El primer parámetro es el rango de celdas a ordenar. El segundo es el número de orden de la columna que vamos a tener como referencia para ordenar y finalmente el tercero es solo TRUE o FALSE según se haga un orden ascendente o no.</p>
 <p>Se generará automáticamente una nueva lista con los datos ordenados.
 Estos se actualizarán automáticamente cuando los datos cambien.</p>
-<p>Con las herramientas <a class="reference external" href="https://avdata99.github.io/Curso-practico-de-periodismo-de-datos-en-elecciones-legislativas/curso/publicar-tablas-y-graficos.html">usadas para publicar y visualizar
-planillas</a>
-es posible publicar en tiempo real esta tabla y un gráfico.</p>
-<div class="figure" id="id3">
+</div>
+<div class="section" id="prueba">
+<h2>Prueba<a class="headerlink" href="#prueba" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Si cambiamos manualmente los resultados totales (sección 999) en la hoja inicial veremos como esta lista final
+se reordena convenientemente.</p>
+<p>Esta tabla de resultados ordenados es un ejemplo de dato de interés para publciar como gráfico tipo tabla en algún sitio web.</p>
+</div>
+<div class="section" id="visualizar">
+<h2>Visualizar<a class="headerlink" href="#visualizar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Con las herramientas usadas para publicar y visualizar
+planillas es posible publicar en tiempo real esta tabla y un gráfico.</p>
+<div class="figure">
 <img alt="viz-resultados-01" src="../../_images/viz-resultados-01.png" />
-<p class="caption"><span class="caption-text">viz-resultados-01</span></p>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Probar</span> <span class="n">en</span> <span class="n">la</span> <span class="n">lista</span> <span class="n">original</span> <span class="n">de</span> <span class="n">resultados</span> <span class="n">y</span> <span class="n">ver</span>
-<span class="n">como</span> <span class="n">se</span> <span class="n">reordena</span> <span class="n">la</span> <span class="n">lista</span> <span class="n">y</span> <span class="n">se</span> <span class="n">actualizan</span> <span class="n">los</span> <span class="n">gráficos</span><span class="o">.</span>
-</pre></div>
-</div>
-<p><a class="reference external" href="dont.md">&gt;&gt; Continuar con el cálculo de bancas con D&#8217;Hont &gt;&gt;</a></p>
+<p>Probar en la lista original de resultados y ver como se reordena la lista y se actualizan los gráficos.</p>
 </div>
 </div>
 
@@ -199,6 +239,15 @@ es posible publicar en tiempo real esta tabla y un gráfico.</p>
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dhont.html" class="btn btn-neutral float-right" title="D’Hont" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="como-publica-datos-el-ministerio-interior.html" class="btn btn-neutral" title="Datos el Ministerio del Interior" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

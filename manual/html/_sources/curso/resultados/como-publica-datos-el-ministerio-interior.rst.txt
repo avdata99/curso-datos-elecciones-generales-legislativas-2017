@@ -1,5 +1,5 @@
-Como publica los datos el Ministerio del Interior 
-=================================================
+Datos el Ministerio del Interior 
+================================
 
 Para 2017 (al igual que 2015) los interesados pueden recibir datos de la
 elección durante el día de la misma y posteriormente. Estos datos se
@@ -18,8 +18,8 @@ Para las elecciones 2017 todos estos datos se compartieron vía email: `muestra 
 
 El documento indica cuales y en que formatos están los documentos. El proceso a continuación es el uso de estos datos para construir resumenes y visualizaciones útiles.
 
-Datos y incluidos
-~~~~~~~~~~~~~~~~~~
+Datos incluidos
+~~~~~~~~~~~~~~~
 
 Para procesar estos daton abrimos una planilla de cálculo nueva de Google Drive en donde vamos a ir colocando copia de cada tabla.
 

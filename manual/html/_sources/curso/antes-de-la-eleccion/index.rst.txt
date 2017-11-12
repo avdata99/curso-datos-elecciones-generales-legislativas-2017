@@ -13,6 +13,7 @@ Antes de la elección
   primeros-ejercicios-de-datos
   primeras-visualizaciones
   agrupar-datos
+  conectar-datos
   geolocalizar-carta-marina
   ejercicios-de-mapa-colaborativo
   recursos

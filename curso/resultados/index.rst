@@ -6,7 +6,6 @@ Analizando resultados electorales
 
   como-publica-datos-el-ministerio-interior
   analizar-datos-ministerio-interior
-  conectar-datos
   dhont
   publicar-tablas-y-graficos
   visualizaciones-legislativas
