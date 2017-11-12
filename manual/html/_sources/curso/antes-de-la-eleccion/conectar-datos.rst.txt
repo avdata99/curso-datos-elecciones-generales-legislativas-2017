@@ -42,4 +42,4 @@ quede *alineada*.
    :alt: tablas-unidas
 
 
-* En realidad la clave única de cada circuito es la que surge de concatenar los datos de la sección y el circuito
+Finalmente en cada *fila* de la planilla debe quedar información relativa a un circuito electoral. De esta forma podrá verse cuales fueron los circuitos que mas crecieron o decrecieron, los que aparecieron y los que ya no están más.
