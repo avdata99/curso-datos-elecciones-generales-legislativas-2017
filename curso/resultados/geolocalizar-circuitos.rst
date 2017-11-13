@@ -20,8 +20,7 @@ Este recurso incluye a todos los circuitos vía carta marina a excepción de la 
    :alt: muestra-2007-2017
 
 
-`Localidades censales en
-SHP <../recursos/Capa-provincial-Cordoba-Localidades-Censales-2010-SHP.zip>`__.
+`Localidades censales en SHP <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/geo/capa-provincial-cordoba-localidades-censales-2010-shp.zip>`__.
 
 Añadir como capa vectorial con QGis.
 
@@ -52,7 +51,7 @@ Exportar a CSV con datos espaciales.
 Proyección *Posgar 94 EPSG:22184* se usa muchas veces en datos producidos en Argentina. En este caso es la del SHP de origen.
 Proyección *Pseido Mercator EPSG:4326*, recomendada para exportar siempre, es la que usamos para exportar.
 
-`Localidades censales en CSV desde el SHP <../recursos/localidades-censales-2010.csv>`__.
+`Localidades censales en CSV desde el SHP <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/geo/localidades-censales-2010.csv>`__.
 
 Ahora tenemos un CSV con campos espaciales junto a los datos de cada
 localidad censal usada en 2010 con motivo del censo. Son 522 registros
@@ -80,10 +79,5 @@ complejidad pero no debería llevar mucho tiempo).
 .. figure:: /img/csv-mezclados.png
    :alt: csv-mezclados
 
-`CSV
-terminado <../recursos/circuitos-geolocalizados-segun-localidades-censales-2010.csv>`__.
-
-`Todo junto en Google
-Drive <https://docs.google.com/spreadsheets/d/1fYJhzRYtZ_U3tj1tY9IspOQ24HGTzCoad1NfWj1Eb7I>`__.
-
+`CSV terminado <https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/geo/circuitos-geolocalizados-segun-localidades-censales-2010.csv>`__.
 
