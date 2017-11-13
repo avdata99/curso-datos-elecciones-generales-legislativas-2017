@@ -10,11 +10,10 @@ encuentran en disputas actualmente.
 
 .. figure:: /img/radios-municipales-cordoba.png
 
-La forma posibles es el uso de *localidades censales* descriptos en `el
-capítulo de recursos greográficos <poligonos.md>`__.
+La forma posibles es el uso de *localidades censales*.
 
 Antes de eso tomamos nuesra lista de Circuitos trabajados en base a la carta marina 2015. 
-`Circuitos y electores 2007 - 2017 <../recursos/circuitos-y-electores-2007-2017.csv>`__.
+`Circuitos y electores 2007 - 2017 <localidades-censales-2010.csv>`__.
 Este recurso incluye a todos los circuitos vía carta marina a excepción de la Capital que fue unificada como una única ciudad.
 
 .. figure:: /img/muestra-2007-2017.png

@@ -33,7 +33,10 @@
         <link rel="index" title="Índice"
               href="../../genindex.html"/>
         <link rel="search" title="Búsqueda" href="../../search.html"/>
-    <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/> 
+    <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/>
+        <link rel="up" title="Analizando resultados electorales" href="index.html"/>
+        <link rel="next" title="Geolocalizar Circuitos fuera de la capital." href="geolocalizar-circuitos.html"/>
+        <link rel="prev" title="Visualizaciones legislativas" href="visualizaciones-legislativas.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -83,8 +86,26 @@
             
             
                 <p class="caption"><span class="caption-text">Contenidos:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Analizando resultados electorales</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="como-publica-datos-el-ministerio-interior.html">Datos el Ministerio del Interior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analizar-datos-ministerio-interior.html">Analizando los datos del ministerio del interior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resultados-por-departamento.html">Resultados por departamento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dhont.html">D&#8217;Hont</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualizaciones-legislativas.html">Visualizaciones legislativas</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Formatos de datos espaciales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#kml">KML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wkt-para-csv">WKT (para CSV)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shp">SHP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geojson">GeoJSON</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poligonos.html">Poligonos de Secciones y Circuitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../mi-sitio-web/index.html">Mi sitio web</a></li>
 </ul>
 
@@ -116,6 +137,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../index.html">Docs</a> &raquo;</li>
       
+          <li><a href="index.html">Analizando resultados electorales</a> &raquo;</li>
+      
     <li>Formatos de datos espaciales</li>
       <li class="wy-breadcrumbs-aside">
         
@@ -132,74 +155,44 @@
             
   <div class="section" id="formatos-de-datos-espaciales">
 <h1>Formatos de datos espaciales<a class="headerlink" href="#formatos-de-datos-espaciales" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="line-block">
-<div class="line">Llamamos datos <em>espaciales</em> a aquellos que refieren a la ubicación en
-un espacio de referencia.</div>
-<div class="line">Decimos que son datos <em>georreferenciados</em> cuando esa referencia se
-establece sobre la superficie terrestre. <a class="reference external" href="https://es.wikipedia.org/wiki/Base_de_datos_espacial">Ver más en
-Wikipedia</a>.</div>
-</div>
+<p>Llamamos datos <em>espaciales</em> a aquellos que refieren a la ubicación en un espacio de referencia.
+Decimos que son datos <em>georreferenciados</em> cuando esa referencia se establece sobre la superficie terrestre. <a class="reference external" href="https://es.wikipedia.org/wiki/Base_de_datos_espacial">Ver más en Wikipedia</a>.</p>
 <p>Para representar datos georeferrenciados (en un plano de dos
-dimensiones) usamos tres tipos de objetos: - <strong>Puntos</strong>: Incluye dos
-valores que representan la latitud y la longitud. No existe una forma
-única de representar estos valores. Hay cientos de formas de representar
-estos valores, estos se llaman <em>Sistemas de proyección cartográfica</em>.
-Tengamos en cuenta que nuestro planeta es una espera y para representar
-una ubicación solo con dos puntos (dimensiones) necesitamos <em>proyectar</em>
-esa esfera en un plano de dos dimensiones. - <strong>Lineas</strong>: Un conjunto de
-<em>puntos</em> conectados, por ejemplo el recorrido de una linea de transporte
-público. - <strong>Polígonos</strong>: Igual que una línea pero se entiende que el
-último se conecta al primero formando un figura cerrada. Ejemplo:
-poligono de los límites de una ciudad o estado.</p>
-<p>Con estos tres alcanza para la gran mayoría de los casos aunque hay
-casos complejos y especiales que no exceden el alcance de este apunte.</p>
-<p><a class="reference external" href="https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cartogr%C3%A1fica">Ver más sobre proyección
-cartográfica</a>.</p>
-<p>Los formatos de interés para un periodista de datos o usuario de datos
-espaciales son (no en orden de importancia):</p>
+dimensiones) usamos tres tipos de objetos:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Puntos</strong>: Incluye dos valores que representan la latitud y la longitud. No existe una forma única de representar estos valores. Hay cientos de formas de representar estos valores, estos se llaman <em>Sistemas de proyección cartográfica</em>. Tengamos en cuenta que nuestro planeta es una espera y para representar una ubicación solo con dos puntos (dimensiones) necesitamos <em>proyectar</em> esa esfera en un plano de dos dimensiones.</li>
+<li><strong>Lineas</strong>: Un conjunto de <em>puntos</em> conectados, por ejemplo el recorrido de una linea de transporte público.</li>
+<li><strong>Polígonos</strong>: Igual que una línea pero se entiende que el último se conecta al primero formando un figura cerrada. Ejemplo: poligono de los límites de una ciudad o estado.</li>
+</ul>
+</div></blockquote>
+<p>Con estos tres alcanza para la gran mayoría de los casos aunque hay casos complejos y especiales que no exceden el alcance de este apunte.</p>
+<p><a class="reference external" href="https://es.wikipedia.org/wiki/Proyecci%C3%B3n_cartogr%C3%A1fica">Ver más sobre proyección cartográfica</a>.</p>
+<p>Los formatos de interés para un periodista de datos o usuario de datos espaciales son (no en orden de importancia):</p>
 <div class="section" id="kml">
 <h2>KML<a class="headerlink" href="#kml" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="line-block">
-<div class="line">Es un archivo de texto que usa el marcado XML. Incluye la descripcion
-de objetos espaciales con coordendas. Puede enriquecese incluyendo
-estilos gráficos (ancho y color de bordes, rellenos, íconos, etc). Es
-usado por Google MyMaps y muchos otros para exportar.</div>
-<div class="line"><a class="reference external" href="https://es.wikipedia.org/wiki/KML">Ver más en Wikipedia</a>.</div>
-</div>
-<div class="figure" id="id1">
+<p>Es un archivo de texto que usa el marcado XML. Incluye la descripcion de objetos espaciales con coordendas. Puede enriquecese incluyendo estilos gráficos (ancho y color de bordes, rellenos, íconos, etc). Es usado por Google MyMaps y muchos otros para exportar. <a class="reference external" href="https://es.wikipedia.org/wiki/KML">Ver más en Wikipedia</a>.</p>
+<div class="figure">
 <img alt="kml-sample" src="../../_images/kml-sample.png" />
-<p class="caption"><span class="caption-text">kml-sample</span></p>
 </div>
 </div>
 <div class="section" id="wkt-para-csv">
 <h2>WKT (para CSV)<a class="headerlink" href="#wkt-para-csv" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="line-block">
-<div class="line">Es una forma de texto muy simple para describir objetos espaciales. Es
-útil para combinar como columna extra en CSV. Es compatible con muchas
-herramientas de mapeo.</div>
-<div class="line"><a class="reference external" href="https://es.wikipedia.org/wiki/Well_Known_Text">Ver más en
-Wikipedia</a>
-<img alt="CSV-WKT-sample" src="../../_images/CSV-WKT-sample.png" /></div>
+<p>Es una forma de texto muy simple para describir objetos espaciales. Es útil para combinar como columna extra en CSV. Es compatible con mucha herramientas de mapeo. <a class="reference external" href="https://es.wikipedia.org/wiki/Well_Known_Text">Ver más en Wikipedia</a></p>
+<div class="figure">
+<img alt="../../_images/CSV-WKT-sample.png" src="../../_images/CSV-WKT-sample.png" />
 </div>
 </div>
 <div class="section" id="shp">
 <h2>SHP<a class="headerlink" href="#shp" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Es un formato de archivo propietario de datos espaciales desarrollado
-por la compañía ESRI. En realidad son múltiples archivos (uno para las
-corrdenadas, otros para los datos y otro para los índices) que suelen
-incluirse en uno final comprimido. Es usado en los entornos más técnicos
-de cartógrafos y afines. hay mucho material interesante en este formato.
-Se puede pasar a formatos más <em>amigables</em> con productos como QGis u
-Ogr2ogr.</p>
-<p><a class="reference external" href="https://es.wikipedia.org/wiki/Shapefile">Ver más en Wikipedia</a></p>
+<p>Es un formato de archivo propietario de datos espaciales desarrollado por la compañía ESRI. En realidad son múltiples archivos (uno para las corrdenadas, otros para los datos y otro para los índices) que suelen incluirse en uno final comprimido. Es usado en los entornos más técnicos de cartógrafos y afines. hay mucho material interesante en este formato. Se puede pasar a formatos más <em>amigables</em> con productos como QGis u
+Ogr2ogr. <a class="reference external" href="https://es.wikipedia.org/wiki/Shapefile">Ver más en Wikipedia</a></p>
 </div>
 <div class="section" id="geojson">
 <h2>GeoJSON<a class="headerlink" href="#geojson" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="line-block">
-<div class="line">Es un archivo de texto que cumple con las normas JSON pero que incluye
-datos espaciales.</div>
-<div class="line"><a class="reference external" href="http://geojson.org/">Ver más sobre GeoJSON</a>.</div>
-<div class="line"><img alt="json-sample" src="../../_images/json-sample.png" /></div>
+<p>Es un archivo de texto que cumple con las normas JSON pero que incluye datos espaciales. <a class="reference external" href="http://geojson.org/">Ver más sobre GeoJSON</a>.</p>
+<div class="figure">
+<img alt="../../_images/json-sample.png" src="../../_images/json-sample.png" />
 </div>
 </div>
 </div>
@@ -208,6 +201,15 @@ datos espaciales.</div>
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="geolocalizar-circuitos.html" class="btn btn-neutral float-right" title="Geolocalizar Circuitos fuera de la capital." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="visualizaciones-legislativas.html" class="btn btn-neutral" title="Visualizaciones legislativas" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

@@ -104,3 +104,5 @@ planillas es posible publicar en tiempo real esta tabla y un gráfico.
 
 Probar en la lista original de resultados y ver como se reordena la lista y se actualizan los gráficos. 
 
+
+

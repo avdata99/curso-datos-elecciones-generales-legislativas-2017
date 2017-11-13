@@ -6,10 +6,11 @@ Analizando resultados electorales
 
   como-publica-datos-el-ministerio-interior
   analizar-datos-ministerio-interior
+  resultados-por-departamento
   dhont
-  publicar-tablas-y-graficos
   visualizaciones-legislativas
   formatos-geo
-  geolocalizar-circuitos
   poligonos
+  geolocalizar-circuitos
+  mapa-resultados-por-departamento
   recursos-externos-y-ejemplos

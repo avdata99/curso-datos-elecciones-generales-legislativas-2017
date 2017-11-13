@@ -35,8 +35,8 @@
         <link rel="search" title="Búsqueda" href="../../search.html"/>
     <link rel="top" title="documentación de Curso Elecciones Legislativas 2017 en Córdoba - " href="../../index.html"/>
         <link rel="up" title="Analizando resultados electorales" href="index.html"/>
-        <link rel="next" title="Recursos y ejemplos" href="recursos-externos-y-ejemplos.html"/>
-        <link rel="prev" title="Geolocalizar Circuitos fuera de la capital." href="geolocalizar-circuitos.html"/> 
+        <link rel="next" title="Geolocalizar Circuitos fuera de la capital." href="geolocalizar-circuitos.html"/>
+        <link rel="prev" title="Formatos de datos espaciales" href="formatos-geo.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -89,19 +89,19 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../antes-de-la-eleccion/index.html">Antes de la elección</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Analizando resultados electorales</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="como-publica-datos-el-ministerio-interior.html">Como publica los datos el Ministerio del Interior</a></li>
+<li class="toctree-l2"><a class="reference internal" href="como-publica-datos-el-ministerio-interior.html">Datos el Ministerio del Interior</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analizar-datos-ministerio-interior.html">Analizando los datos del ministerio del interior</a></li>
-<li class="toctree-l2"><a class="reference internal" href="conectar-datos.html">Conectar datos de planillas distintas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resultados-por-departamento.html">Resultados por departamento</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dhont.html">D&#8217;Hont</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publicar-tablas-y-graficos.html">Publicar tablas y gráficos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="visualizaciones-legislativas.html">Visualizaciones legislativas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="formatos-geo.html">Formatos de datos espaciales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Poligonos de Secciones y Circuitos</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#secciones-electorales">Secciones electorales</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#circuitos-electorales">Circuitos electorales</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="geolocalizar-circuitos.html">Geolocalizar Circuitos fuera de la capital.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mapa-resultados-por-departamento.html">Mapa de los resultados por departamento</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recursos-externos-y-ejemplos.html">Recursos y ejemplos</a></li>
 </ul>
 </li>
@@ -160,13 +160,12 @@ electoral) se requieren los <em>polígonos</em> o puntos que los representan.</p
 <h2>Secciones electorales<a class="headerlink" href="#secciones-electorales" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>La secciones electorales (depratamentos) tienen una definición clara y
 están disponibles desde el
-<a class="reference external" href="http://estadistica.cba.gov.ar/Territorio/GeoPortal/tabid/564/language/es-AR/Default.aspx">GeoPortal</a>
+<a class="reference external" href="https://datosestadistica.cba.gov.ar/organization/geoportal">GeoPortal</a>
 de la Provincia de Córdoba.</p>
-<div class="figure" id="id1">
-<img alt="geoportal" src="../../_images/geoportal-home.png" />
-<p class="caption"><span class="caption-text">geoportal</span></p>
+<div class="figure">
+<img alt="../../_images/geoportal.png" src="../../_images/geoportal.png" />
 </div>
-<p>El GeoPortal incluye muchos datos útiles, en este caso tienen <a class="reference external" href="http://estadistica.cba.gov.ar/Territorio/GeoPortal/CapasProvincia/CapasGeneralesProvincia/CapasdePol%C3%ADticayAdministraci%C3%B3nProvincia/tabid/847/language/es-AR/Default.aspx">una
+<p>El GeoPortal incluye muchos datos útiles, en este caso tienen <a class="reference external" href="https://datosestadistica.cba.gov.ar/dataset/provincia-mapas-capas-y-tablas">una
 sección</a>
 que inluye (entre otros datos útiles) los <em>poligonos</em> de los
 departamentos de la Provincia.</p>
@@ -175,20 +174,15 @@ departamentos de la Provincia.</p>
 formato es usado en ambientes técnicos y todavía no compatible con otras
 herramientas más simples de este curso.</p>
 <p>Los departamentos de Córdoba en SHP pueden descargarse desde
-<a class="reference external" href="http://estadistica.cba.gov.ar/LinkClick.aspx?fileticket=A4SgYgeHpIc%3d&amp;tabid=696&amp;language=es-AR">aquí</a>.</p>
-<div class="figure" id="id2">
+<a class="reference external" href="https://datosestadistica.cba.gov.ar/dataset/6b0e69cb-71c4-4064-82ac-69d8aab6c7b3/resource/2d99c688-f49f-4391-b8a4-e0bfd8bf91c2/download/capa-provincial-cordoba-division-censal-departamentos-2010-shp.zip">aquí</a>. Con una <a class="reference external" href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/geo/capa-provincial-cordoba-division-censal-departamentos-2010-shp.zip">copia local aquí</a></p>
+<div class="figure">
 <img alt="geoportal-poligonos" src="../../_images/geoportal-poligonos.png" />
-<p class="caption"><span class="caption-text">geoportal-poligonos</span></p>
 </div>
-<p>En el portal de Gobierno Abierto de la Ciudad de Córdoba se replica este
-datos y se agrega un mapa online y otros formatos más fáciles de
-reulizar.</p>
-<p><a class="reference external" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/datos-geograficos-y-mapas/departamentos-de-la-provincia-de-cordoba/214">Ir al
-recurso</a>.</p>
-<div class="figure" id="id3">
-<img alt="departamentos-cordoba-portal-muni" src="../../_images/departamentos-cordoba-portal-muni.png" />
-<p class="caption"><span class="caption-text">departamentos-cordoba-portal-muni</span></p>
+<p>En <a class="reference external" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/datos-geograficos-y-mapas/departamentos-de-la-provincia-de-cordoba/214">el portal de Gobierno Abierto de la Ciudad de Córdoba</a> se replica este datos y se agrega un mapa online y otros formatos más fáciles de reulizar.</p>
+<div class="figure">
+<a class="reference external image-reference" href="https://gobiernoabierto.cordoba.gob.ar/data/datos-abiertos/categoria/datos-geograficos-y-mapas/departamentos-de-la-provincia-de-cordoba/214"><img alt="departamentos-cordoba-portal-muni" src="../../_images/departamentos-cordoba-portal-muni.png" /></a>
 </div>
+<p>Los archivos CSV con WKT pueden ser difíciles de editar con planillas de cálculo simples. Para esto es útil usar versiones que asumiendo alguna perdida de calidad en los datos son versiones simplificadas y fáciles de manipular. Para este curso se ha dispuesto <a class="reference external" href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/geo/departamentos-poligonos-simplificado-WKT.csv">una versión simplificada</a> de los polígonos de los departamentos de la Provincia de Córdoba.</p>
 </div>
 <div class="section" id="circuitos-electorales">
 <h2>Circuitos electorales<a class="headerlink" href="#circuitos-electorales" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -208,17 +202,10 @@ territorios que si pertenecen se encuentran en disputas actualmente.</p>
 </div>
 <p>El recurso más aproximado que aparece son los puntos de <em>localidades
 censales</em> de 2010 que se encuentra en el mismo GeoPortal de la Provincia
-de Córdoba: <a class="reference external" href="http://estadistica.cba.gov.ar/LinkClick.aspx?fileticket=eEKeiKWrGvE%3d&amp;tabid=696&amp;language=es-AR">SHP Localidades Censales
-2010</a>.</p>
+de Córdoba: <a class="reference external" href="https://datosestadistica.cba.gov.ar/dataset/provincia-mapas-capas-y-tablas">SHP Localidades Censales 2010</a>. Dejamos una <a class="reference external" href="https://avdata99.github.io/curso-datos-elecciones-generales-legislativas-2017/datos-a-usar/geo/capa-provincial-cordoba-localidades-censales-2010-shp.zip">copia local</a> en este repositorio.</p>
 <p>El problema con este recurso es que las <em>localidades censales</em> son más
 parecidas a una lista de asentamientos humanos que no diferencia las
 delimitaciones de ciudades o circuitos electorales.</p>
-<p>Todos estos recursos son datos geoespaciales en diferentes formatos.
-Vale la pena revisar las diferencias y alcances de cada uno en la
-<a class="reference external" href="formatos-geo.md">siguiente sección</a></p>
-<div class="figure">
-<img alt="../../_images/radios-municipales-cordoba.png" src="../../_images/radios-municipales-cordoba.png" />
-</div>
 </div>
 </div>
 
@@ -229,10 +216,10 @@ Vale la pena revisar las diferencias y alcances de cada uno en la
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="recursos-externos-y-ejemplos.html" class="btn btn-neutral float-right" title="Recursos y ejemplos" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="geolocalizar-circuitos.html" class="btn btn-neutral float-right" title="Geolocalizar Circuitos fuera de la capital." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="geolocalizar-circuitos.html" class="btn btn-neutral" title="Geolocalizar Circuitos fuera de la capital." accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="formatos-geo.html" class="btn btn-neutral" title="Formatos de datos espaciales" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
