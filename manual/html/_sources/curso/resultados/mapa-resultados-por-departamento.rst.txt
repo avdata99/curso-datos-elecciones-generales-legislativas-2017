@@ -63,3 +63,9 @@ Este archivo debe descargarse en formato CSV (sólo la hoja actual de resultados
 
 Este mapa puede usarse para armar mapas de cada uno de los partidos.
 
+Ejemplo 3: Desempeño del FIT
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Con lo aprendido elaborar un mapa del desempeño de Union por Córdoba:
+
+.. figure:: /img/Desempeno-UPC.png
