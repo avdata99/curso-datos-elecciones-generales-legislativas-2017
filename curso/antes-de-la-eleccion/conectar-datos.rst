@@ -39,7 +39,6 @@ circuitos simplemente deberán insertarse celdas para que la planilla
 quede *alineada*.
 
 .. figure:: /img/tablas-unidas.png
-   :alt: tablas-unidas
 
 
 Finalmente en cada *fila* de la planilla debe quedar información relativa a un circuito electoral. De esta forma podrá verse cuales fueron los circuitos que mas crecieron o decrecieron, los que aparecieron y los que ya no están más.

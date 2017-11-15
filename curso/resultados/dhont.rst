@@ -88,7 +88,6 @@ Note y comprenda la necesidad del signo *$*.
     =countif(G$11:G$19; F22)
 
 .. figure:: /img/dhont-06b.png
-   :alt: dhont-06
 
 
 Esta tabla final puede publicarse como tal y publicar para mantener esta información actualziada el día de la elección.
